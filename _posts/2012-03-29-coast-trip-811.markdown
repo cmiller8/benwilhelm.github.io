@@ -1,0 +1,21 @@
+---
+layout: portfolio
+status: publish
+published: true
+title: Berkeley to Portland, Aug 2011
+author:
+  display_name: Ben
+  login: benwilhelm
+  email: benjamin.m.wilhelm@gmail.com
+  url: ''
+author_login: benwilhelm
+author_email: benjamin.m.wilhelm@gmail.com
+wordpress_id: 251
+wordpress_url: http://benwilhelm.com/?post_type=portfolio&#038;p=251
+date: '2012-03-29 07:27:55 -0500'
+date_gmt: '2012-03-29 07:27:55 -0500'
+categories: []
+tags: []
+comments: []
+---
+

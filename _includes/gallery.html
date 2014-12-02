@@ -1,0 +1,8 @@
+
+<div class="gallery">
+  {% for image in page.images %}
+  	<div class='item'>
+		<img src='/files/{{image.src}}' />
+	</div>
+  {% endfor %}
+</div>

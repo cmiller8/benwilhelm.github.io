@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: Grapefruit on Rye
+author:
+  display_name: Ben
+  login: benwilhelm
+  email: benjamin.m.wilhelm@gmail.com
+  url: ''
+author_login: benwilhelm
+author_email: benjamin.m.wilhelm@gmail.com
+wordpress_id: 969
+wordpress_url: http://benwilhelm.com/?p=969
+date: '2013-11-15 20:38:21 -0600'
+date_gmt: '2013-11-15 20:38:21 -0600'
+categories:
+- Make Stuff
+- Food and Drink
+tags: []
+comments: []
+---
+<p>A while back we went to a whiskey tasting at <a title="Koval Caraway Liqueur" href="http://www.koval-distillery.com/" target="_blank">Koval Distillery</a> in our neighborhood, and came home with a bottle of their caraway liqueur. &nbsp;I do love a whiskey cocktail and after Swedish Chefing<a href="#one_969" name='one_969_source'><sup>[1]</sup></a> around in the kitchen a little bit, I came up with the following. &nbsp;Serve in a rocks glass over one big-ass cube. (I'm sure there's a name for those big-ass cubes, but I'm not that fancy)</p>
+<ul>
+<li>2p Bulleit Rye</li>
+<li>1p Caraway Liqueur</li>
+<li>1p Grapefruit juice</li>
+<li>Dash of Angostura</li><br />
+</ul><br />
+--</p>
+<p><a name="one_969"></a>1) <em>Swedish Chefing</em> is a common phenomenon in our kitchen.<br />
+<a href='#one_969_source'>back</a></p>
+<p>http://youtu.be/9OfsABOGw3c</p>

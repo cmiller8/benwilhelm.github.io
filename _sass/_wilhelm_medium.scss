@@ -1,0 +1,26 @@
+@include media-query($on-laptop) {
+
+	.post.album.has-meta {
+
+		.post-header {
+			width: auto;
+			float: none;
+		}
+
+		.meta {
+			width: auto;
+			float: none;
+			margin-left: 0;
+
+			dl {
+				float: left;
+				width: auto;
+				margin-right: 3em;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

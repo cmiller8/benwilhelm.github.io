@@ -1,0 +1,15 @@
+# Site settings
+title: Ben Wilhelm
+email: benjamin.m.wilhelm@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'm a web developer and sometime theatrical lighting designer living in Chicago, IL.
+  At some point I'll probably write more here...
+  
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://benwilhelm.com" # the base hostname & protocol for your site
+github_username:  benwilhelm
+
+# Build settings
+markdown: kramdown
+
+highligher: pygments

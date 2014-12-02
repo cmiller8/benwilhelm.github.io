@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="post album {% if page.meta %}has-meta{% endif %} ">
+
+  <header class="post-header">
+    {% if page.type %}<p class='quiet'>Lighting Design</p>{% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<h2>{{page.subtitle}}</h2>{% endif %}
+  </header>
+
+  <aside class='meta'>
+  {% for item in page.meta %}
+  <dl>
+    <dt>{{item[0]}}</dt>
+    <dd>{{item[1]}}</dd>
+  </dl>
+  {% endfor %}
+  </aside>
+
+  <hr class='clear' />
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  {% include gallery.html %}
+</div>

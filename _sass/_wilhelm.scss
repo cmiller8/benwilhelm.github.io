@@ -1,0 +1,86 @@
+.clear { clear: both; }
+hr.clear { border: none; border-top: 1px solid #eee; margin: 1em 0 }
+.quiet { color: #888; font-weight: lighter; }
+
+.post.album {
+
+	.post-header > * {
+		margin: 0 0 10px;
+		padding: 0;
+	}
+
+}
+
+.post.album.has-meta {
+
+	.post-header {
+		width: 50%;
+		float: left;
+	}
+
+	.meta {
+		width: 40%;
+		margin-left: 2em;
+		float: right;
+
+		dl {
+			float: left;
+			width: 50%;
+
+			dt {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+
+.gallery {
+	@include column-count(2);
+	@include column-gap(1em);
+
+	.item {
+		background-color: #f8f8f8;
+		border: 1px solid #eee;
+		margin: 0 0 1em;
+		padding: 15px;
+	}
+}
+
+.portfolio-list {
+	@include column-count(3);
+	@include column-gap(1em);
+
+	.item {
+		background-color: #f8f8f8;
+		border: 1px solid #eee;
+		margin: 0 0 1em;
+		padding: 15px;
+		position: relative;
+
+		.caption {
+			display: none;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+
+			a {
+				background-color: rgba(100, 100, 100, 0.7);
+				color: #fff;
+				display: block;
+				font-size: small;
+				padding: 1em;
+				margin: 0 16px 16px;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		&:hover .caption {
+			display: block;
+		}
+	}
+}
