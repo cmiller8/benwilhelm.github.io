@@ -1,0 +1,25 @@
+{
+  "name": "benwilhelm.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benwilhelm/benwilhelm.github.io.git"
+  },
+  "author": "Ben Wilhelm <ben@doublebeamdesign.com> (http://doublebeamdesign.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benwilhelm/benwilhelm.github.io/issues"
+  },
+  "homepage": "https://github.com/benwilhelm/benwilhelm.github.io",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-image-resize": "^0.4.0",
+    "grunt-jekyll": "^0.4.2"
+  }
+}

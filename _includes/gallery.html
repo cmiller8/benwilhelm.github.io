@@ -2,7 +2,9 @@
 <div class="gallery">
   {% for image in page.images %}
   	<div class='item'>
-		<img src='/files/{{image.src}}' />
+		<a href='/files/{{image.src}}'>
+			<img src='/thumbs/{{image.src}}' />
+		</a>
 	</div>
   {% endfor %}
 </div>
