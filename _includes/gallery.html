@@ -2,8 +2,8 @@
 <div class="gallery">
   {% for image in page.images %}
   	<div class='item'>
-		<a href='/files/{{image.src}}'>
-			<img src='/thumbs/{{image.src}}' />
+		<a href='{{ site.dropbox_path }}/files/{{image.src}}'>
+			<img src='{{ site.dropbox_path }}/thumbs/{{image.src}}' />
 		</a>
 	</div>
   {% endfor %}

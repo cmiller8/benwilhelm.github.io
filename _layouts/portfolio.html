@@ -13,7 +13,7 @@ layout: default
     <div class="portfolio-list">
     {% for album in page.albums %}
   	<div class="item">
-  		<a href='{{ album[0] }}'><img src='/thumbs/{{album[1].cover}}' /></a>
+  		<a href='{{ album[0] }}'><img src='{{ site.dropbox_path }}/thumbs/{{album[1].cover}}' /></a>
 
       <div class="caption">
         <a href='{{ album[0] }}'>
