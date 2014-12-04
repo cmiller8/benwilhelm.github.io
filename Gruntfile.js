@@ -55,4 +55,5 @@ grunt.initConfig({
 	}
 });
 
+grunt.registerTask('default', ["jekyll:dist"]);
 grunt.registerTask('resize', ["image_resize:thumbs", "image_resize:large"]);
