@@ -12,6 +12,8 @@ github_username:  benwilhelm
 # Build settings
 markdown: kramdown
 
+permalink: none
+
 highligher: pygments
 
 dropbox_path: https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com
