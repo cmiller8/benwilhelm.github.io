@@ -1,7 +1,10 @@
 ---
 permalink: /lighting/ddsu/
 layout: album
+
 type: Lighting Design
+backto: /lighting
+
 title: Dave DaVinci Saves the Universe
 subtitle: The House Theatre of Chicago
 

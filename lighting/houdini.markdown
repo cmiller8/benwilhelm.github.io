@@ -1,7 +1,10 @@
 ---
 permalink: /lighting/houdini/
 layout: album
+
 type: Lighting Design
+backto: /lighting
+
 title: Death and Harry Houdini
 subtitle: The House Theatre of Chicago
 

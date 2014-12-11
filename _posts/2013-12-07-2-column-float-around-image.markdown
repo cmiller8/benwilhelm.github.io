@@ -3,15 +3,10 @@ layout: post
 status: publish
 published: true
 title: 2-Column Float Around Image
-author: Ben
-author_login: benwilhelm
-author_email: benjamin.m.wilhelm@gmail.com
 excerpt: It's common in print design to wrap text in two columns around both sides
   of an image. However, it's a surprisingly difficult thing to do in web design. Here's
   one method of solving it which allows for separating the image from the text in
   the context of a CMS.
-wordpress_id: 977
-wordpress_url: http://benwilhelm.com/?p=977
 date: '2013-12-07 22:48:41 -0600'
 date_gmt: '2013-12-07 22:48:41 -0600'
 categories:
@@ -66,8 +61,12 @@ The Markup:
   <div class="spacer"></div>
   <div class="img"></div>
 
-  <p>Lorem ipsum...</p>
-  <p>Lorem ipsum...</p>
+  
+Lorem ipsum...
+
+  
+Lorem ipsum...
+
 
 </div>
 
@@ -76,8 +75,12 @@ The Markup:
   <div class="spacer"></div>
   <div class="img"></div>
   
-  <p>Lorem ipsum...</p>
-  <p>Lorem ipsum...</p>
+  
+Lorem ipsum...
+
+  
+Lorem ipsum...
+
 
 </div>
 {% endhighlight %}

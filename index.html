@@ -1,23 +1,23 @@
 ---
-layout: default
+layout: has_sidebar
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-title">The Latest</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="page-content">
+    <ul class="post-list">
+      {% for post in site.posts %}
+      {% include post-excerpt.html %}
+      {% endfor %}
+    </ul>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+  <div class="page-sidebar">
+    
+  </div>
+  
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

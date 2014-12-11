@@ -2,7 +2,7 @@
 <div class="gallery">
   {% for image in page.images %}
   	<div class='item'>
-		<a href='{{ site.dropbox_path }}/originals/{{image.src}}'>
+		<a href='{{ site.dropbox_path }}/large/{{image.src}}'>
 			<img src='{{ site.dropbox_path }}/thumbs/{{image.src}}' />
 		</a>
 	</div>

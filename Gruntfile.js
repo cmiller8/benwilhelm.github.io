@@ -49,7 +49,10 @@ grunt.initConfig({
 			options: {
 				config: "_config.yml",
 				serve: true,
-				watch: true
+				watch: true,
+				verbose: true,
+				quiet: false,
+				detach: false
 			}
 		}
 	}

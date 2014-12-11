@@ -1,7 +1,10 @@
 ---
 permalink: /lighting/anarchist/
 layout: album
+
 type: Lighting Design
+backto: /lighting
+
 title: Accidental Death of an Anarchist
 subtitle: Next Theatre Company
 

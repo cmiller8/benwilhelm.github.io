@@ -1,0 +1,13 @@
+---
+layout: has_sidebar
+---
+<div class="category-archive">
+  <div>
+	<ul class="post-list">
+      {% for post in page.posts %}
+      {% include post-excerpt.html %}
+      {% endfor %}
+    </ul>
+
+  </div>
+</div>

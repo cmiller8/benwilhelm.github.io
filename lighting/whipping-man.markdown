@@ -1,7 +1,10 @@
 ---
 permalink: /lighting/whipping-man/
 layout: album
+
 type: Lighting Design
+backto: /lighting
+
 title: The Whipping Man
 subtitle: Marin Theatre Company
 
