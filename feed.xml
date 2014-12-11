@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ben Wilhelm</title>
+    <description>I&#39;m a web developer and sometime theatrical lighting designer living in Chicago, IL. At some point I&#39;ll probably write more here...
+</description>
+    <link>http://benwilhelm.com/</link>
+    <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 11 Dec 2014 09:49:55 -0600</pubDate>
+    <lastBuildDate>Thu, 11 Dec 2014 09:49:55 -0600</lastBuildDate>
+    <generator>Jekyll v2.5.2</generator>
+    
+      <item>
+        <title>2-Column Float Around Image</title>
+        <description>&lt;p&gt;This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it:&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;2-Column Image Float&quot; href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg&quot;&gt;&lt;/a&gt;&amp;lt;/a&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;TL;DR? Click the image above to grab the code.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When I first looked at the design comp (not pictured), the two columns around the text jumped out at me right away as one of those &lt;em&gt;well-I’m-sure-that-can-be-solved-but-I-have-no-idea-how-yet&lt;/em&gt; kind of problems. I set to work slicing up the comp and building the site, all the while letting this challenge ruminate in the back of my head. After a couple of hours, the build was done save for this element. And I still only had a few rough ideas of how to attack it, because there are a few details that make it extra challenging. The obvious problem of course is how to get that float to span both columns, but the extra tricky bit, if you look closely, is that the image has to float a set distance from the top of the column, rather than being anchored to the top of an element such as a paragraph.  The site is being built in Drupal, so I wanted to make sure that the client was able to edit the text of both columns without worrying about how it would affect the placement of the image.  Brainstorming with a co-worker, we found a few solutions that came close:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Close…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sampsonresume.com/labs/img-in-middle/&quot; target=&quot;_blank&quot;&gt;http://www.sampsonresume.com/labs/img-in-middle/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This one has the basic idea right, but it requires that the image be aligned to the top of the two columns. It set us down the right path, though.  Essentially, you’re showing half of the image in each column by floating a div of half the image width, and using the background-image and background-position properties to show the appropriate half of the image in each column.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Closer…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a title=&quot;A List Apart - Cross-Column Pull-Outs&quot; href=&quot;http://alistapart.com/article/crosscolumn&quot; target=&quot;_blank&quot;&gt;http://alistapart.com/article/crosscolumn&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This one gets a little closer to the solution in that it allows you to arbitrarily place the image in the text without having to anchor to the top of an element. However, this article is ten years old&lt;a href=&quot;#ann_one&quot; name=&quot;source_one&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;, from before the widespread use of content management systems, and advocates simply sticking the image into the text of the paragraph wherever you’d like it. That’s fine, but you also have to match the placement of the other half of the image with a trial-and-error method in the other column.  As I said above, I want the client to be able to edit the text of both columns without worrying about the image placement.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Bingo!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The second solution was so close, but still not quite viable. So I did what I often do when presented with a difficult problem: I made my lunch and chewed on the problem while I chewed on a pastrami sandwich&lt;sup&gt;&lt;a href=&quot;#ann_two&quot; name=&quot;source_two&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;. I came back to my computer and looked at it for just a second longer, and the solution became clear. What I needed was a prop of constant dimension to anchor to the top of each column, then push the two halves of the image down the appropriate distance. Using a combination of floating and clearing, I was able to put a one-pixel-wide prop before the image in each column, putting each image at the top of its respective column and therefore separating the image from the text content. Relevant bits of code are below, full working example can be found on &lt;a href=&quot;http://jsbin.com/urIWofuY/2/edit&quot; target=&quot;_blank&quot;&gt;JSBin&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Markup:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col left&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;Left Column&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;spacer&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;img&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+  
+Lorem ipsum...
+
+  
+Lorem ipsum...
+
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col right&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;Right Column&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;spacer&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;img&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  
+  
+Lorem ipsum...
+
+  
+Lorem ipsum...
+
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;The CSS:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;relative&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.col&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;365px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.spacer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(http://placehold.it/300x300)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;no-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.col.right&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;background-position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.col.left&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.spacer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.col.left&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.col.right&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.spacer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.col.right&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Hopefully this post will help someone else facing the same problem, but who may not have the aid of a pastrami sandwich.&lt;/p&gt;
+
+&lt;p&gt;–
+Notes&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;ann_one&quot;&gt;&lt;/a&gt;1) Kudos to ALA for promoting the type of content on their blog that is still mostly relevant after ten years. Taken out of a CMS context, this method is still a totally viable, semantically correct solution to the problem. Three cheers for web standards!&lt;br /&gt;
+&lt;a href=&quot;#source_one&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;ann_two&quot;&gt;&lt;/a&gt;2) I’m a big fan of stepping back from a problem when I feel stuck. Another developer whose blog I enjoy &lt;a href=&quot;http://www.garann.com/dev/2013/the-step-back/&quot; target=&quot;_blank&quot;&gt;agrees with me&lt;/a&gt;.&lt;br /&gt;
+&lt;a href=&quot;#source_two&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 07 Dec 2013 22:48:41 -0600</pubDate>
+        <link>http://benwilhelm.com/nerd-stuff/2-column-float-around-image.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/nerd-stuff/2-column-float-around-image.html</guid>
+        
+        <category>CSS</category>
+        
+        <category>image float</category>
+        
+        <category>columns</category>
+        
+        
+        <category>nerd stuff</category>
+        
+      </item>
+    
+      <item>
+        <title>Hot Caraway Cider Toddy</title>
+        <description>&lt;p&gt;Our friends Lee and Chelsea hosted Thanksgiving dinner this year as usual, and we were tasked with supplying a beverage to share. Last year I made a cider toddy from a recipe provided by a co-worker which was well received, and this year we had some &lt;a href=&quot;http://www.koval-distillery.com/newsite/other-liqueurs/caraway&quot; target=&quot;_blank&quot;&gt;caraway liqueur&lt;/a&gt; on hand which I have used to make some excellent &lt;a title=&quot;Grapefruit on Rye&quot; href=&quot;http://benwilhelm.com/uncategorized/grapefruit-on-rye/&quot;&gt;whiskey cocktails&lt;/a&gt;.  I decided to riff on the recipe a bit to make use of the caraway, and the result was a fragrant&lt;a href=&quot;#one_962&quot; name=&quot;source_one_962&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;, delicious hit. The recipe is easily scaled to whatever number of people you are planning to serve, so I give it to you here measured simply in parts. For large batches, heat on the stove until just before it simmers (boiling will boil off the alcohol) and then transfer to a crock pot to keep warm.  For making single servings, a microwave works just fine.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;4p Apple Cider&lt;/strong&gt; - Any cider will do, but I prefer it on the less sweet side&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1p lemon juice&lt;/strong&gt; - If you want to garnish each drink with a lemon peel, you&#39;re welcome to squeeze a actual lemons. &amp;nbsp;For large batches, I say just use a store-bought bottle of lemon juice&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1p 50/50simple syrup&lt;/strong&gt; - simmer equal parts water and sugar until clear, then let cool.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2p 100 proof rye&lt;/strong&gt; - Nothing fancy, but high proof will stand up to the sweetness of the cider. Rittenhouse 100 is great.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1p caraway liqueur&lt;/strong&gt; - This one is optional, but definitely adds a little something. I used &lt;a title=&quot;Koval Caraway Liqueur&quot; href=&quot;http://www.koval-distillery.com/newsite/other-liqueurs/caraway&quot; target=&quot;_blank&quot;&gt;Koval&lt;/a&gt; (because they&#39;re down the street). If you forego the caraway, you might want to cut the lemon and simple syrup in half.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Whole Cloves&lt;/strong&gt; - Obviously, the quantity will depend on how much you&#39;re making. I made a big batch in a crock pot and put about a teaspoon of cloves into a tea bag while it heated.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dash of Angostura Bitters&lt;/strong&gt;&amp;nbsp;(top each serving) - Angostura is of course the easiest of bitters to find. Feel free to riff here.&lt;strong&gt;&lt;br /&gt;
+&lt;/strong&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;–
+Notes&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;one_962&quot;&gt;&lt;/a&gt; 1) Seriously fragrant. We tipped some over in the trunk of our hatchback on the way to dinner and the car still smells like boozy apple cider &lt;em&gt;#noreallyofficer&lt;/em&gt;&lt;br /&gt;
+&lt;a href=&quot;#source_one_962&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 28 Nov 2013 18:22:32 -0600</pubDate>
+        <link>http://benwilhelm.com/make-stuff/food-and-drink/hot-caraway-cider-toddy.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/make-stuff/food-and-drink/hot-caraway-cider-toddy.html</guid>
+        
+        
+        <category>make stuff</category>
+        
+        <category>food and drink</category>
+        
+      </item>
+    
+      <item>
+        <title>Grapefruit on Rye</title>
+        <description>&lt;p&gt;A while back we went to a whiskey tasting at &lt;a title=&quot;Koval Caraway Liqueur&quot; href=&quot;http://www.koval-distillery.com/&quot; target=&quot;_blank&quot;&gt;Koval Distillery&lt;/a&gt; in our neighborhood, and came home with a bottle of their caraway liqueur.  I do love a whiskey cocktail and after Swedish Chefing&lt;a href=&quot;#one_969&quot; name=&quot;one_969_source&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; around in the kitchen a little bit, I came up with the following.  Serve in a rocks glass over one big-ass cube. (I’m sure there’s a name for those big-ass cubes, but I’m not that fancy)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2p Bulleit Rye&lt;/li&gt;
+&lt;li&gt;1p Caraway Liqueur&lt;/li&gt;
+&lt;li&gt;1p Grapefruit juice&lt;/li&gt;
+&lt;li&gt;Dash of Angostura&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br /&gt;
+–&lt;/p&gt;
+
+&lt;p&gt;&lt;a name=&quot;one_969&quot;&gt;&lt;/a&gt;1) &lt;em&gt;Swedish Chefing&lt;/em&gt; is a common phenomenon in our kitchen.&lt;br /&gt;
+&lt;a href=&quot;#one_969_source&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;http://youtu.be/9OfsABOGw3c&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 15 Nov 2013 20:38:21 -0600</pubDate>
+        <link>http://benwilhelm.com/make-stuff/food-and-drink/grapefruit-on-rye.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/make-stuff/food-and-drink/grapefruit-on-rye.html</guid>
+        
+        
+        <category>make stuff</category>
+        
+        <category>food and drink</category>
+        
+      </item>
+    
+      <item>
+        <title>Miscellany</title>
+        <description>&lt;p&gt;It’s been a while since I’ve posted anything to the ol’ blog, so here are some photos from the last few weeks.&lt;/p&gt;
+
+&lt;p&gt;[gallery ids=”897,900,901,898,899,930,902”]&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 04 Nov 2013 03:23:31 -0600</pubDate>
+        <link>http://benwilhelm.com/photos/chicago-adventures/travel/miscellany.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/photos/chicago-adventures/travel/miscellany.html</guid>
+        
+        
+        <category>photos</category>
+        
+        <category>chicago adventures</category>
+        
+        <category>travel</category>
+        
+      </item>
+    
+      <item>
+        <title>Die Alpenh&amp;uuml;tten</title>
+        <description>&lt;p&gt;So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as &lt;em&gt;hütten&lt;/em&gt; (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying little more than your clothing and some snacks for the trail. Jen has already &lt;a href=&quot;http://www.slithy-tove.net/archives/1544&quot; target=&quot;blank&quot;&gt;detailed the trip&lt;/a&gt; in her blog far better than I could here, so I offer some photos and video. The alps really are like nothing I’ve ever seen. Huge, majestic, imposing, rugged. They seem to go on forever in every direction, including up. The photos and video really don’t do them justice, but it’s the best I can do without dragging you up to the tops of these mountains so you can see them for yourself.&lt;/p&gt;
+
+&lt;p&gt;[gallery ids=”868,863,861,866,859,865,860,862”]&lt;/p&gt;
+
+&lt;p&gt;And holy cow, here are some cows! The wind-chimey sound is because &lt;em&gt;every&lt;/em&gt; cow had a bell.&lt;/p&gt;
+
+&lt;p&gt;http://flickr.com/photos/ben624/9337917568/&lt;/p&gt;
+
+&lt;p&gt;A full panorama of the meadow&lt;/p&gt;
+
+&lt;p&gt;http://flickr.com/photos/ben624/9335928457/&lt;/p&gt;
+
+&lt;p&gt;And here’s video from the peak of a mountain that we set out to walk around, but decided to climb instead. It’s 2,100m high (about 7,000 feet). It’s no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.&lt;/p&gt;
+
+&lt;p&gt;http://flickr.com/photos/ben624/9335837375/&lt;/p&gt;
+
+&lt;p&gt;And here’s dinner&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130715_180239.jpg&quot;&gt;&lt;img class=&quot;alignnone size-full&quot; title=&quot;20130715_180239.jpg&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130715_180239.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 21 Jul 2013 12:59:00 -0500</pubDate>
+        <link>http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html</guid>
+        
+        <category>backpacking</category>
+        
+        <category>Austria</category>
+        
+        <category>Alps</category>
+        
+        
+        <category>photos</category>
+        
+        <category>travel</category>
+        
+        <category>austrian adventures</category>
+        
+        <category>honeymoon 2013</category>
+        
+      </item>
+    
+      <item>
+        <title>A Brief Interlude</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130719_075538.jpg&quot;&gt;&lt;img title=&quot;IMG_20130719_075538.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130719_075538.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We’re currently on the fast train between Munich and Berlin and as I’m watching southern Germany fly by in the morning light, I’m remembering back about four years ago. My open-ended trip across the US took me through morning-sun-drenched fields very similar to these–on a German motorcycle, no less. While I never quite put it into words at the time, I was struck by the thought, however cliché, that the sun rises on these fields every morning just like it does in Chicago. I was pretty caught up in my own problems in those months and seeking a little perspective, which I think I found over time. This feels like an extension of that moment. A simple reminder that whatever’s going on in &lt;em&gt;my&lt;/em&gt; world, there are 7 billion other people in &lt;em&gt;our&lt;/em&gt; world.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 19 Jul 2013 00:00:00 -0500</pubDate>
+        <link>http://benwilhelm.com/off-the-cuff/photos/a-brief-interlude.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/off-the-cuff/photos/a-brief-interlude.html</guid>
+        
+        <category>unapologetically sappy</category>
+        
+        
+        <category>off the cuff</category>
+        
+        <category>photos</category>
+        
+      </item>
+    
+      <item>
+        <title>The Road North, or an Introduction to Italian Bureaucracy</title>
+        <description>&lt;p&gt;So. It’s been a few days since the last post, and a lot has happened.  I’ll try to get you all caught up efficiently, as that is the Austrian way (and not, as you shall soon see, the Italian way).&lt;/p&gt;
+
+&lt;p&gt;After our day at Cinque Terre, it was time to bid farewell to our Italian home and our warm, generous hosts, Chiara and Paolo.  We were headed for Innsbruck, Austria with a one-night stop in Milan to see a college friend of Jen’s and meet her husband and new baby.  One final Italian road trip got us up to Milan where we returned our rental car at the airport and took the local train into &lt;em&gt;Stazzione Milano Centrale&lt;/em&gt;. We would be taking the train to Innsbruck the next morning, and for reasons that are not worth going into, we had to change our reservation to an earlier train.  It was about 3pm and we figured we’d just breeze in, change our tickets, hop in a cab to Mattie’s place and be sipping wine by 4. Italians are known for their institutional efficiency, right?&lt;/p&gt;
+
+&lt;p&gt;No? Oh.  &lt;/p&gt;
+
+&lt;p&gt;Crap.&lt;/p&gt;
+
+&lt;p&gt;We were unable to change our reservations at the automated machines, and we were directed down to the ticket office in the dungeon of the train station. (yeah, the basement. isn’t that what I said?) There we took a number.  Actually, we took two numbers.  There was a little machine that asked you what your problem was and issued you a number accordingly.  I drew E285 and the Big Board (any Kubrick fans out there?) was showing that they were currently helping E250.  Not too bad, because they were calling out a new number every five to ten seconds.  After watching for a few minutes though, I discovered that they were calling a new E number about once every five to ten &lt;em&gt;minutes&lt;/em&gt;. A’s and B’s, on the other hand, were clicking off like a coke-addled bingo caller. Ok, let’s play the naive tourist and pull a number for a different category. I pulled a B. B806 to be exact. I look up at the Big Board and they are currently helping B532.  Not looking good for our heroes.  Jen despairs of ever leaving the station, collapses on the floor, wailing, clutching her babushka around her shoulders, all of her worldly possessions in a single bag at her feet, and throws herself on the mercy of the uniformed man at the automated machine.  I remain stoic in my best suit and hat amidst the wailing of hundreds of refugees, sure that if we can just make it past this official, a new and better life awaits us in the New World.&lt;/p&gt;
+
+&lt;p&gt;Ok, it wasn’t quite like that.&lt;/p&gt;
+
+&lt;p&gt;The man at the machine wasn’t a uniformed official, but an enterprising fellow who would push the buttons for you in the hopes that you might drop a Euro or two in his hand. Every couple of minutes an &lt;em&gt;actual&lt;/em&gt; uniformed official would stroll by and the man would miraculously disappear, only to reappear as soon as the official would go.  It was like watching a cartoon where Bugs Bunny would hide behind an impossibly narrow tree, or elude Elmer Fudd by following right behind him and matching his movements exactly. I considered pulling another lottery ticket, but Jen rightly pointed out that probably one of the reasons there were so many numbers ahead of us was jerks like me pulling multiple tickets. Fair point well made. I left Jen to keep our place in line and to let Mattie know that we were going to be later than anticipated while I headed out into the station to find:&lt;/p&gt;
+
+&lt;p&gt;A) Cash - because we had none on us&lt;/p&gt;
+
+&lt;p&gt;B) Food and/or caffiene - because our lack of cash would become a real problem if Jen had to bail me out of an Italian jail when my hunger caused me to turn Hulk in the Milano station.  &lt;/p&gt;
+
+&lt;p&gt;C) Another way to change our tickets - because what did we have to lose?&lt;/p&gt;
+
+&lt;p&gt;I was unable to find A, and thus unable to acquire B*.  However, I was able to find a travel agent that advertised that it could book TrenItalia** tickets. Our situation was slightly complicated by the fact that we were on a EuRail pass, which has all kinds of restrictions and only certain people can deal with, but as noted above, what did we have to lose? I mentally stocked up on as many Italian travel words and phrases as I could, armed myself with my most charmingest, disarmingest midwestern smile, and walked up to the counter.   &lt;/p&gt;
+
+&lt;p&gt;I apologized in Italian and asked the man at the counter if he speaks English. “A bit”, he replied, although it turned out that his English is perfectly functional.  English-speakers are truly spoiled by the fact that so many other people in the world speak our language. I asked him if he can book a reservation on a EuRail pass, and he said no.  Well, it was worth a shot.  I thanked him and headed back to see how Jen was faring at the ticket office.  She was faring about as well as you can imagine.  The numbers were inching closer to ours, but we were estimating another hour’s wait at least. I told her about the travel agent, and she said I should go back and see how much it would cost just to book the ticket, screw the EuRail pass. Our existing reservations were non-refundable so we were going to have to pay a bit for our new reservations anyway.  We decided on a yea/nay monetary threshold for the cost of the tickets, and I went back, this time with our rail pass and our existing reservations. &lt;/p&gt;
+
+&lt;p&gt;I said hello again to my new friend the travel agent. He was my friend in that junior high, you’re-my-friend-but-maybe-I’m-not-yours sort of way. I hadn’t quite won him over, but again, had nothing to lose. I asked him what it would cost to book the tickets on the 9:05 to Innsbruck &lt;em&gt;without&lt;/em&gt; the rail pass. It was well within the yea/nay threshold and so I asked him to please book it and showed him my existing reservation to make sure we were headed to the right station.&lt;/p&gt;
+
+&lt;p&gt;“You’re already booked to Innsbruck” he said, looking at my reservation. &lt;/p&gt;
+
+&lt;p&gt;“I know that, but I need an earlier train.”&lt;/p&gt;
+
+&lt;p&gt;“It will cost you more.”&lt;/p&gt;
+
+&lt;p&gt;Oh rub it in. &lt;/p&gt;
+
+&lt;p&gt;“I know that, but the line to book new reservations at the ticket office is at least another hour, and we have plans this evening.”&lt;/p&gt;
+
+&lt;p&gt;“Ok fine. Give me your EuRail pass, I can book you another reservation on it.”&lt;/p&gt;
+
+&lt;p&gt;Ah, excellent.  Wait, what? You told me not ten minutes ago that you couldn’t do that, and to go to the ticket office.  It was like Will Ferrell’s character in whichever Austin Powers movie that was, where you have to ask him everything three times, but then he’ll tell you anything you want to know. &lt;/p&gt;
+
+&lt;p&gt;He told me the price. I asked him if he accepted credit cards and he said yes, but would cost four euros more. Ok, no problem.  I mean, at this point what’s another four euros? &lt;/p&gt;
+
+&lt;p&gt;Wait for it…&lt;/p&gt;
+
+&lt;p&gt;He needs those four euros in cash. Recall from items A, B, and C above that I had not yet been able to locate the cash machine. I falter momentarily, but regain that winningest, grinningest smile and ask him with amicable sheepishness (I’m winning him over, I can tell) if there is an ATM nearby. He looks at me for a second, then tells me to step two windows to the right where he can process those extra four euros by credit card.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Bene&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;So I do, and he does.  He hands me my train tickets, and I string together as many &lt;em&gt;grazies&lt;/em&gt;, &lt;em&gt;moltos&lt;/em&gt;, &lt;em&gt;milles&lt;/em&gt;, and &lt;em&gt;benes&lt;/em&gt; as possible in as many combinations as I can think of, and he finally smiles. I return to the ticket office to find my wife who is now resigned to her purgatorial existence. I burst through the doors, tickets clutched in one fist, both arms up and head tipped back in a victory cry. I muscle my way through the crowd, effortlessly scoop my wife into my arms and carry her out the door to the taxi stand, hundreds of beleaguered travelers erupting into cheers and applause behind us.&lt;/p&gt;
+
+&lt;p&gt;Ok, again, it was not quite like that. But I did silently strike that victory pose and it did turn a few heads. We headed out to the taxi stand and within twenty minutes we were eating cheese and drinking prosecco at Mattie’s place before heading out for a highlights-only walking tour and a fancy italian dinner at the Bulgari Hotel. &lt;em&gt;Molto bene&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the end, of course, it was not my winning smile and midwestern charm that won over the travel agent.  My guess is that he just didn’t want to deal with me. I think he finally just assessed that the quickest way to get me out the door was to just book the stupid rail pass. But hey, whatever works, right?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;because, it turned out later, the map on the wall showing the location of the ATM was oriented 180 degrees from reality&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** once you notice that the word TrenItalia so closely resembles the word Genitalia, you can’t unsee it. You will giggle a little at every train that goes by.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 18 Jul 2013 13:55:46 -0500</pubDate>
+        <link>http://benwilhelm.com/travel/italian-adventures/the-road-north-or-an-introduction-to-italian-bureaucracy.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/travel/italian-adventures/the-road-north-or-an-introduction-to-italian-bureaucracy.html</guid>
+        
+        
+        <category>travel</category>
+        
+        <category>italian adventures</category>
+        
+      </item>
+    
+      <item>
+        <title>Cinque Terre and High Performance Driving School - AKA the Autostrada Through the Italian Riviera</title>
+        <description>&lt;p&gt;Yesterday, Jen and I went to Cinque Terre for the day. The three-plus hour drive to get there made it a little ambitious for a day trip, but well worth it in the end. Like every morning so far, we had grand plans for being up at 7 and on the road by 7:30. And like every morning so far, the previous night’s three-hour dinner that didn’t start until 9pm meant that we weren’t up until 8 (…ish). We were more or less ready to go by 9:30 or so, and then caused a minor kerfluffle when we came through the breakfast room intending to just grab some yogurt to eat on the road and met Paolo, our amazing and generous host, setting up the breakfast spread.  He seemed genuinely concerned that we were not going to be eating a full breakfast, and we assured him (and assured him and assured him) that we would eat more on the road and that we would join him and the other guests for a full breakfast again tomorrow, but we had to get on the road early today (which was already not happening).  &lt;/p&gt;
+
+&lt;p&gt;Yogurt and peaches in hand (and &lt;em&gt;due espresso&lt;/em&gt; in stomach) we hopped in little Umberto Cinque and took off for the coast.  At this point we’ve gotten pretty familiar with the roads around our village, and the freeways and toll roads out here are pretty unremarkable highway driving. An hour and a half into the drive (and &lt;em&gt;due espresso&lt;/em&gt; later) we turned from the A6 onto the E80 and the fun began. This road runs from Genova along the coast of the Ligurian Sea and is a place where driving should be thought of as a grand adventure.  Speed limits can be interpreted as a relative scale here.  For instance, a speed limit of 130 k/h means drivers will be traveling somewhere between 130 and 180.  A speed limit of 90 k/h means that drivers will be traveling somewhere between 90 and 180.  See how that works? Quite clever. Little Umberto, while lacking the muscle to spring off the starting line, has the scrap and tenacity to (eventually) get up to 150 and handles like a champ at that speed.  I’m also beginning to discover that a driver following closely on your tail here is not being aggressive, it’s just the way that people signal that they would like to go around you.  It’s pretty practical, really. If I fail to notice someone who would like to pass me, he can politely reach out and tap me on the shoulder.&lt;/p&gt;
+
+&lt;p&gt;Following our lesson in performance driving we arrived in Monterossa, the westernmost of the Cinque Terre.  While the Terre were once sleepy little fishing villages, they are now hyper-caffeinated tourist spots and by some miracle we got the last parking space in the lot closest to the town. As we got out of the car we discovered that no, it is not cooler by the sea.  In fact, it was hot enough that we began to doubt our plan to hike all five villages.  Monterossa is split into Old Town and New Town, and we made our way into New Town because that’s where the train station is. New Town contains the only sand beach in all of the five villages, so it’s a bit like a tiny Miami Beach. There are a thousand beach umbrellas packed as tightly as possible, and a boardwalk catering to all of the beachgoers, and all of humanity stacked on top of each other. Determined to retain Monterossa’s cultural identity, the chalkboards outside these traditional establishments would advertise such local specialties as the “drunk-ass bucket”.  (These we renamed the “drunk ass-bucket” in honor of the champs who were drinking from them). In short, New Town Monterossa was kind of awful.  We got a quick slice of pizza and a coke for lunch, and got our combination train ticket and hiking pass at the train station, where we learned that most of the trails were closed for maintenance today.  Instead of hiking all five villages as we had planned, we would only be able to hike between village #2 (Vernazza) and village #3 (Corneglia). We’d be doing the rest of our village-hopping by train. Given the heat, that was A-OK with us.&lt;/p&gt;
+
+&lt;p&gt;We caught the first train to Vernazza which, while still overrun with tourists, was not so much of a spring-break-style bacchanalia as Monterossa had been.  Vernazza is a spectacular terraced village cut into the hillside surrounded by vineyards that have to be harvested using a special trolley system to get the grapes up and down the hill.  We tromped through the town and headed out onto the path to Corneglia, where we were sent on our way by a man playing an accordion on the hiking path.  Awesome. &lt;em&gt;Molto bene&lt;/em&gt;. It was about a 90 minute hike between the towns, and we drank in the spectacular coastal views as the path jutted out and back into the woods along the seaside. We were greeted just outside Corneglia by two more street musicians standing on the trail, this time an accordion and a saxophone.  We were pretty wilted as we walked into town, and followed signs down to the marina, where we found a few dozen people swimming and sunning themselves on the rocky shore there.  This was a little more our speed.  With a modicum of modesty, we changed into our swim suits and hopped, squealing, into the chilly water.  That perked us right up, let me tell you. &lt;/p&gt;
+
+&lt;p&gt;After that, we climbed back up the hill and found an afternoon gelato and a beer, took a quick jaunt on the train to Manola, the fourth village and scoped out the view, then boarded the train back to Monterossa for dinner. It turns out that Old Town Monterossa is way more charming and way less douchey than New Town Monterossa, and we had a delicious seafood dinner sitting at an outdoor table on a street about eight feet wide.  We had to make it quick because we were getting on the road, so dinner was only two hours long. Another extended lesson in performance driving got us home, and we were in bed, road-weary and sun-baked, by about 12:30. &lt;/p&gt;
+
+&lt;p&gt;Next chapter: A Fancy Evening in Milano and the Trip to Innsbruck.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 12 Jul 2013 20:27:48 -0500</pubDate>
+        <link>http://benwilhelm.com/travel/italian-adventures/cinque-terre-and-high-performance-driving-school-aka-the-autostrada-through-the-italian-riviera.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/travel/italian-adventures/cinque-terre-and-high-performance-driving-school-aka-the-autostrada-through-the-italian-riviera.html</guid>
+        
+        <category>italia</category>
+        
+        <category>Cinque Terre</category>
+        
+        <category>Autostrada</category>
+        
+        
+        <category>travel</category>
+        
+        <category>italian adventures</category>
+        
+      </item>
+    
+      <item>
+        <title>Arrivederci, Italia! Grazie!</title>
+        <description>&lt;p&gt;Leaving Italy today for Innsbruck. More travelogues to come, but here are a few pictures in the meantime.&lt;/p&gt;
+
+&lt;p&gt;The view from our agriturismo, Cascina Sant’Eufemia&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130711_123351.jpg&quot;&gt;&lt;img title=&quot;20130711_123351.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130711_123351.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The view of the view&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130709_203639.jpg&quot;&gt;&lt;img title=&quot;IMG_20130709_203639.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130709_203639.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Beer o’clock in Torino&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130712_180220.jpg&quot;&gt;&lt;img title=&quot;IMG_20130712_180220.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130712_180220.jpg&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;In Italy, donuts are apparently known as “Simpsons”&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_165901.jpg&quot;&gt;&lt;img title=&quot;20130709_165901.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_165901.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 12 Jul 2013 15:58:20 -0500</pubDate>
+        <link>http://benwilhelm.com/photos/travel/italian-adventures/arrivederci-italia-grazie.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/photos/travel/italian-adventures/arrivederci-italia-grazie.html</guid>
+        
+        <category>italy</category>
+        
+        <category>torino</category>
+        
+        <category>piemonte</category>
+        
+        <category>donuts</category>
+        
+        <category>beer o&#39;clock</category>
+        
+        <category>agriturismo</category>
+        
+        
+        <category>photos</category>
+        
+        <category>travel</category>
+        
+        <category>italian adventures</category>
+        
+      </item>
+    
+      <item>
+        <title>On the road to Torino</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_123104.jpg&quot;&gt;&lt;img title=&quot;20130709_123104.jpg&quot; class=&quot;aligncenter size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_123104.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On the road with &lt;em&gt;Umberetto Cinque&lt;/em&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 09 Jul 2013 18:21:34 -0500</pubDate>
+        <link>http://benwilhelm.com/photos/travel/italian-adventures/on-the-road-to-torino.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/photos/travel/italian-adventures/on-the-road-to-torino.html</guid>
+        
+        <category>travel</category>
+        
+        <category>torino</category>
+        
+        <category>italia</category>
+        
+        
+        <category>photos</category>
+        
+        <category>travel</category>
+        
+        <category>italian adventures</category>
+        
+      </item>
+    
+  </channel>
+</rss>

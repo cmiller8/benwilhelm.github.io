@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>2-Column Float Around Image</title>
+  <meta name="description" content="It's common in print design to wrap text in two columns around both sides of an image. However, it's a surprisingly difficult thing to do in web design. Here...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://benwilhelm.com/nerd-stuff/2-column-float-around-image.html">
+  <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
+
+  <script src="/js/jquery-2.1.1.min.js"></script>
+  <script src="/js/jquery.fluidbox.min.js"></script>
+  <script src="/js/site.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Ben Wilhelm</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          <a class="page-link" href="/lighting/">
+            Lighting
+          </a>
+        
+          <a class="page-link" href="/photography/">
+            Photography
+          </a>
+        
+          <a class="page-link" href="/">
+            Bloggishness
+          </a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="sidebar-main">
+	<div class="post">
+
+  <header class="post-header">
+  	<p class="quiet"><a href="/">&larr; Back to Posts</a></p>
+    <h1 class="post-title">2-Column Float Around Image</h1>
+    <p class="post-meta">Dec 7, 2013</p>
+  </header>
+
+  <article class="post-content">
+    <p>This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it:</p>
+
+<p><a title="2-Column Image Float" href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg"></a>&lt;/a&gt;</p>
+
+<p><strong>TL;DR? Click the image above to grab the code.</strong></p>
+
+<p>When I first looked at the design comp (not pictured), the two columns around the text jumped out at me right away as one of those <em>well-I’m-sure-that-can-be-solved-but-I-have-no-idea-how-yet</em> kind of problems. I set to work slicing up the comp and building the site, all the while letting this challenge ruminate in the back of my head. After a couple of hours, the build was done save for this element. And I still only had a few rough ideas of how to attack it, because there are a few details that make it extra challenging. The obvious problem of course is how to get that float to span both columns, but the extra tricky bit, if you look closely, is that the image has to float a set distance from the top of the column, rather than being anchored to the top of an element such as a paragraph.  The site is being built in Drupal, so I wanted to make sure that the client was able to edit the text of both columns without worrying about how it would affect the placement of the image.  Brainstorming with a co-worker, we found a few solutions that came close:</p>
+
+<p><strong>Close…</strong></p>
+
+<p><a href="http://www.sampsonresume.com/labs/img-in-middle/" target="_blank">http://www.sampsonresume.com/labs/img-in-middle/</a></p>
+
+<p>This one has the basic idea right, but it requires that the image be aligned to the top of the two columns. It set us down the right path, though.  Essentially, you’re showing half of the image in each column by floating a div of half the image width, and using the background-image and background-position properties to show the appropriate half of the image in each column.</p>
+
+<p><strong>Closer…</strong></p>
+
+<p><a title="A List Apart - Cross-Column Pull-Outs" href="http://alistapart.com/article/crosscolumn" target="_blank">http://alistapart.com/article/crosscolumn</a></p>
+
+<p>This one gets a little closer to the solution in that it allows you to arbitrarily place the image in the text without having to anchor to the top of an element. However, this article is ten years old<a href="#ann_one" name="source_one"><sup>[1]</sup></a>, from before the widespread use of content management systems, and advocates simply sticking the image into the text of the paragraph wherever you’d like it. That’s fine, but you also have to match the placement of the other half of the image with a trial-and-error method in the other column.  As I said above, I want the client to be able to edit the text of both columns without worrying about the image placement.</p>
+
+<p><strong>Bingo!</strong></p>
+
+<p>The second solution was so close, but still not quite viable. So I did what I often do when presented with a difficult problem: I made my lunch and chewed on the problem while I chewed on a pastrami sandwich<sup><a href="#ann_two" name="source_two">[2]</a></sup>. I came back to my computer and looked at it for just a second longer, and the solution became clear. What I needed was a prop of constant dimension to anchor to the top of each column, then push the two halves of the image down the appropriate distance. Using a combination of floating and clearing, I was able to put a one-pixel-wide prop before the image in each column, putting each image at the top of its respective column and therefore separating the image from the text content. Relevant bits of code are below, full working example can be found on <a href="http://jsbin.com/urIWofuY/2/edit" target="_blank">JSBin</a>.</p>
+
+<p>The Markup:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col left&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Left Column<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;spacer&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;img&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+  
+Lorem ipsum...
+
+  
+Lorem ipsum...
+
+
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;col right&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>Right Column<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;spacer&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;img&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+  
+  
+Lorem ipsum...
+
+  
+Lorem ipsum...
+
+
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p><br /></p>
+
+<p>The CSS:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">*</span> <span class="p">{</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">relative</span>
+<span class="p">}</span>
+<span class="nc">.col</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">365px</span><span class="p">;</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.spacer</span> <span class="p">{</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">1px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">div</span><span class="nc">.img</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="sx">url(http://placehold.it/300x300)</span> <span class="k">top</span> <span class="k">left</span> <span class="k">no-repeat</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col.right</span> <span class="nt">div</span><span class="nc">.img</span> <span class="p">{</span>
+  <span class="k">background-position</span><span class="o">-</span><span class="n">x</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col.left</span> <span class="nc">.spacer</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col.left</span> <span class="nc">.img</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+  <span class="k">clear</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+  <span class="k">margin-right</span><span class="o">:</span> <span class="m">-15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col.right</span> <span class="nc">.spacer</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.col.right</span> <span class="nc">.img</span> <span class="p">{</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">clear</span><span class="o">:</span> <span class="k">left</span><span class="p">;</span>
+  <span class="k">margin-left</span><span class="o">:</span> <span class="m">-15px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Hopefully this post will help someone else facing the same problem, but who may not have the aid of a pastrami sandwich.</p>
+
+<p>–
+Notes</p>
+
+<p><a name="ann_one"></a>1) Kudos to ALA for promoting the type of content on their blog that is still mostly relevant after ten years. Taken out of a CMS context, this method is still a totally viable, semantically correct solution to the problem. Three cheers for web standards!<br />
+<a href="#source_one">back</a></p>
+
+<p><a name="ann_two"></a>2) I’m a big fan of stepping back from a problem when I feel stuck. Another developer whose blog I enjoy <a href="http://www.garann.com/dev/2013/the-step-back/" target="_blank">agrees with me</a>.<br />
+<a href="#source_two">back</a></p>
+
+
+  </article>
+
+</div>
+
+</div>
+
+<div class="sidebar-sidebar">
+	<div class="inner">
+	
+		<h3>Post Categories</h3>
+
+		<div class="sidebar-item">
+			<ul id="category_list">
+				
+				<li>
+					<a href="/category/nerd-stuff/index.html">
+					Nerd stuff
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/make-stuff/index.html">
+					Make stuff
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/bay-area-adventures/index.html">
+					Bay area adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/personal/index.html">
+					Personal
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/photos/index.html">
+					Photos
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/off-the-cuff/index.html">
+					Off the cuff
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/chicago-adventures/index.html">
+					Chicago adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/travel/index.html">
+					Travel
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/food-and-drink/index.html">
+					Food and drink
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/italian-adventures/index.html">
+					Italian adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/austrian-adventures/index.html">
+					Austrian adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/honeymoon-2013/index.html">
+					Honeymoon 2013
+					</a>
+				</li>
+				
+			</ul>
+		</div>	
+	</div>
+</div>
+
+<div class="clear"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Ben Wilhelm</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Ben Wilhelm</li>
+          <li><a href="mailto:benjamin.m.wilhelm@gmail.com">benjamin.m.wilhelm@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/benwilhelm">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">benwilhelm</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">I'm a web developer and sometime theatrical lighting designer living in Chicago, IL. At some point I'll probably write more here...
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
