@@ -19,10 +19,10 @@ tags:
 comments: []
 ---
 
-<a href="http://benwilhelm.com/files/2013/02/wpid-IMG_20130204_221639.jpg"><img class="alignnone" title="IMG_20130204_221639.jpg" alt="image" src="http://benwilhelm.com/files/2013/02/wpid-IMG_20130204_221639.jpg" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_221639.jpg"><img class="alignnone" title="IMG_20130204_221639.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130204_221639.jpg" /></a>
 
 
-<a href="http://benwilhelm.com/files/2013/02/wpid-IMG_20130204_222427.jpg"><img class="alignnone" title="IMG_20130204_222427.jpg" alt="image" src="http://benwilhelm.com/files/2013/02/wpid-IMG_20130204_222427.jpg" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_222427.jpg"><img class="alignnone" title="IMG_20130204_222427.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130204_222427.jpg" /></a>
 
 
 Welles Park, Chicago.

@@ -15,7 +15,7 @@ tags:
 comments: []
 ---
 
-http://www.flickr.com/photos/ben624/6872169694/
+{% oembed http://www.flickr.com/photos/ben624/6872169694/ %}
 
 
 This is my first robot, built with Lego Mindstorms, which I'm planning to use to teach the kids at <a title="Berkeley Youth Alternatives" href="http://byaonline.org" target="_blank">Berkeley Youth Alternatives</a> about computer programming.&nbsp; The idea is pretty simple: the robot uses an optical sensor pointed at the ground to detect the black lines of the maze.&nbsp; When it hits a &ldquo;wall&rdquo;, it turns 90 degrees to the right and tries to continue.&nbsp; If it hits another wall right away, it spins 180 degrees and continues on its way.&nbsp; The algorithm is far from perfect, as there's no way for the robot to detect a gap in a wall that's parallel to its path, and if it were to travel all the way down a dead end, it would get caught in an endless loop of 180 turns, bouncing back and forth between the walls.&nbsp; But I think it will be a perfect entry point into the concepts of programming.&nbsp; From here I hope to iterate on the program, teaching the kids about incremental development.&nbsp; Ultimately I'm going to work with the students to create a program which can not only find its way through the maze, but remember the solution for the next time through, hopefully even learning and storing several mazes at a time.

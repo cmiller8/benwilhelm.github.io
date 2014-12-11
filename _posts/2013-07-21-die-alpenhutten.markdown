@@ -75,5 +75,5 @@ http://flickr.com/photos/ben624/9335837375/
 And here's dinner
 
 
-<a href="http://benwilhelm.com/files/2013/07/wpid-20130715_180239.jpg"><img class="alignnone size-full" title="20130715_180239.jpg" alt="image" src="http://benwilhelm.com/files/2013/07/wpid-20130715_180239.jpg" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130715_180239.jpg"><img class="alignnone size-full" title="20130715_180239.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130715_180239.jpg" /></a>
 

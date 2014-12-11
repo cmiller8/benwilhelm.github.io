@@ -13,5 +13,5 @@ tags:
 comments: []
 ---
 
-<a href="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/01/wpid-20130121_233735.jpg"><img class="alignnone size-full wp-image-622" alt="wpid-20130121_233735.jpg" src="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/01/wpid-20130121_233735.jpg" width="500" height="375" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130121_233735.jpg"><img class="alignnone size-full wp-image-622" alt="wpid-20130121_233735.jpg" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130121_233735.jpg"   /></a>
 

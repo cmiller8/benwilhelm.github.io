@@ -14,7 +14,7 @@ tags:
 comments: []
 ---
 
-<a href="http://benwilhelm.com/files/2013/01/wpid-IMG_20130105_151611.jpg"><img class="alignnone" alt="image" src="http://benwilhelm.com/files/2013/01/wpid-IMG_20130105_151611.jpg" width="500" height="500" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130105_151611.jpg"><img class="alignnone" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130105_151611.jpg"   /></a>
 
 
 Taken from the second floor balcony of Cleveland's West Side Market.

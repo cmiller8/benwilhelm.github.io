@@ -21,7 +21,7 @@ comments: []
 This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it:
 
 
-<a title="2-Column Image Float" href="http://jsbin.com/urIWofuY/2/edit" target="_blank"><img class=" wp-image-978" alt="2-column-float" src="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/12/2-column-float.jpg" /></a>
+<a title="2-Column Image Float" href="{{ site.dropbox_path }}/large/posts/misc/2-column-float.jpg" /></a>
 
 <strong>TL;DR? Click the image above to grab the code.</strong>
 

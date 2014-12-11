@@ -13,7 +13,7 @@ tags: []
 comments: []
 ---
 
-<a href="http://benwilhelm.com/files/2012/10/bunting-color.jpg"><img class="aligncenter size-large wp-image-443" src="http://benwilhelm.com/files/2012/10/bunting-color-1024x1024.jpg" alt="" width="640" height="640" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/wedding/bunting-color.jpg"><img class="aligncenter size-large wp-image-443" src="{{ site.dropbox_path }}/thumbs/posts/wedding/bunting-color.jpg" alt=""   /></a>
 
 
 Wow. &nbsp;It's taken me a couple of days to fully process the three days full of love and joy that were our wedding, but now Jen and I want to say a huge <em>THANK YOU</em>&nbsp;to all of the people that came out to California or just sent their well-wishes and made this weekend the happiest, most perfect that we could have possibly imagined.

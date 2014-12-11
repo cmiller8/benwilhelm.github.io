@@ -18,7 +18,7 @@ It appears that someone left a battleship parked outside my hotel.
 The <a href="http://en.wikipedia.org/wiki/USS_Wisconsin_(BB-64)" title="Wikipedia: USS Wisconsin (BB-64)" target="_blank">USS Wisconsin</a>, Norfolk VA.
 
 
-<a href="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/IMG_20130228_171418.jpg"><img src="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/IMG_20130228_171418.jpg" alt="IMG_20130228_171418" width="822" height="822" class="alignnone size-full wp-image-765" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/IMG_20130228_171418.jpg"><img src="{{ site.dropbox_path }}/thumbs/posts/misc/IMG_20130228_171418.jpg" alt="IMG_20130228_171418"   class="alignnone size-full wp-image-765" /></a>
 
 
 [gallery ids="764,762,763"]

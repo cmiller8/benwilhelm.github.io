@@ -25,23 +25,23 @@ Leaving Italy today for Innsbruck. More travelogues to come, but here are a few 
 The view from our agriturismo, Cascina Sant'Eufemia
 
 
-<a href="http://benwilhelm.com/files/2013/07/wpid-20130711_123351.jpg"><img title="20130711_123351.jpg" class="alignnone size-full" alt="image" src="http://benwilhelm.com/files/2013/07/wpid-20130711_123351.jpg" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130711_123351.jpg"><img title="20130711_123351.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130711_123351.jpg" /></a>
 
 
 The view of the view
 
 
-<a href="http://benwilhelm.com/files/2013/07/wpid-IMG_20130709_203639.jpg"><img title="IMG_20130709_203639.jpg" class="alignnone size-full" alt="image" src="http://benwilhelm.com/files/2013/07/wpid-IMG_20130709_203639.jpg" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130709_203639.jpg"><img title="IMG_20130709_203639.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130709_203639.jpg" /></a>
 
 
 Beer o'clock in Torino
 
 
-<a href="http://benwilhelm.com/files/2013/07/wpid-IMG_20130712_180220.jpg"><img title="IMG_20130712_180220.jpg" class="alignnone size-full" alt="image" src="http://benwilhelm.com/files/2013/07/wpid-IMG_20130712_180220.jpg" /></a> 
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130712_180220.jpg"><img title="IMG_20130712_180220.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130712_180220.jpg" /></a> 
 
 
 In Italy, donuts are apparently known as "Simpsons"
 
 
-<a href="http://benwilhelm.com/files/2013/07/wpid-20130709_165901.jpg"><img title="20130709_165901.jpg" class="alignnone size-full" alt="image" src="http://benwilhelm.com/files/2013/07/wpid-20130709_165901.jpg" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130709_165901.jpg"><img title="20130709_165901.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130709_165901.jpg" /></a>
 

@@ -14,7 +14,7 @@ tags:
 comments: []
 ---
 
-http://www.flickr.com/photos/ben624/7238968950/
+{% oembed http://www.flickr.com/photos/ben624/7238968950 %}
 
 
 The video above is a time lapse of the annular solar eclipse that occurred in the western US on May 20.&nbsp; An annular eclipse, often called a "Ring of Fire" eclipse, occurs when the moon is far enough from the earth on its elliptical orbit that it does not completely cover the sun.&nbsp; As you can see, I was not far enough north for the moon to pass directly through the center of the sun, but it was still pretty dang cool.&nbsp; Literally.&nbsp; It got very cold at the height of the eclipse.

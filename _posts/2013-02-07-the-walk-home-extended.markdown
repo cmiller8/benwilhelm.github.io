@@ -18,11 +18,11 @@ tags:
 comments: []
 ---
 
-<a href="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/wpid-IMG_20130207_000051.jpg"><img class="alignnone size-full wp-image-649" alt="wpid-IMG_20130207_000051.jpg" src="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/wpid-IMG_20130207_000051.jpg" width="500" height="500" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130207_000051.jpg"><img class="alignnone size-full wp-image-649" alt="wpid-IMG_20130207_000051.jpg" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130207_000051.jpg"   /></a>
 
 
-<a href="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/wpid-IMG_20130206_235925.jpg"><img class="alignnone size-full wp-image-650" alt="wpid-IMG_20130206_235925.jpg" src="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/wpid-IMG_20130206_235925.jpg" width="500" height="500" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130206_235925.jpg"><img class="alignnone size-full wp-image-650" alt="wpid-IMG_20130206_235925.jpg" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130206_235925.jpg"   /></a>
 
 
-<a href="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/wpid-IMG_20130206_235511.jpg"><img class="alignnone size-full wp-image-651" alt="wpid-IMG_20130206_235511.jpg" src="http://c9fdb1675999412f8bcb-7ceff41fb86acf15799809f3d548ce6b.r79.cf1.rackcdn.com/2/files/2013/02/wpid-IMG_20130206_235511.jpg" width="500" height="500" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130206_235511.jpg"><img class="alignnone size-full wp-image-651" alt="wpid-IMG_20130206_235511.jpg" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130206_235511.jpg"   /></a>
 

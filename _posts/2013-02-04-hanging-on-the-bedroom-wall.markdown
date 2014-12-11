@@ -14,5 +14,5 @@ tags:
 comments: []
 ---
 
-<a href="http://benwilhelm.com/files/2013/02/wpid-IMG_20130203_224841.jpg"><img class="alignnone" title="IMG_20130203_224841.jpg" alt="image" src="http://benwilhelm.com/files/2013/02/wpid-IMG_20130203_224841.jpg" /></a>
+<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130203_224841.jpg"><img class="alignnone" title="IMG_20130203_224841.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130203_224841.jpg" /></a>
 
