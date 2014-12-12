@@ -1,7 +1,7 @@
 
-<div class="gallery">
+<div class="gallery packery">
   {% for image in page.images %}
-  	<div class='item'>
+  	<div class='item pack'>
 		<a href='{{ site.dropbox_path }}/large/{{image.src}}'>
 			<img src='{{ site.dropbox_path }}/thumbs/{{image.src}}' />
 		</a>

@@ -2,26 +2,28 @@
 layout: default
 ---
 
-<div class="sidebar-main">
-	{{content}}
-</div>
+<div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
 
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
+			<div class="sidebar-item">
+				<ul id="category_list">
+					{% for category in site.categories %}
+					<li>
+						{% categorylink category[0] %}
+						{{ category | first | capitalize }}
+						{% endcategorylink %}
+					</li>
+					{% endfor %}
+				</ul>
+			</div>	
+		</div>
+	</aside>
 
-		<div class="sidebar-item">
-			<ul id="category_list">
-				{% for category in site.categories %}
-				<li>
-					{% categorylink category[0] %}
-					{{ category | first | capitalize }}
-					{% endcategorylink %}
-				</li>
-				{% endfor %}
-			</ul>
-		</div>	
+	<div class="sidebar-main">
+		{{content}}
 	</div>
 </div>
 

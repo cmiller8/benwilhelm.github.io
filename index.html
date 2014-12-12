@@ -7,13 +7,15 @@ layout: has_sidebar
   <h1 class="page-title">The Latest</h1>
 
   <div class="page-content">
-    <ul class="post-list">
+    <ul class="post-list packery-posts">
       {% for post in site.posts %}
       {% include post-excerpt.html %}
       {% endfor %}
     </ul>
+	<div class="clear"></div>
   </div>
   
+
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

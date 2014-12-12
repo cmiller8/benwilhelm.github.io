@@ -1,10 +1,10 @@
 ---
 layout: has_sidebar
 ---
-<div class="category-archive">
+<div class="category-archive packery-posts">
   <div>
 	<ul class="post-list">
-      {% for post in page.posts %}
+      {% for post in page.posts reversed %}
       {% include post-excerpt.html %}
       {% endfor %}
     </ul>

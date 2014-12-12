@@ -1,5 +1,13 @@
 @include media-query($on-laptop) {
 
+	.sidebar-main {
+		width: auto;
+	}
+
+	.portfolio-list {
+		@include column-count(2);
+	}
+
 	.post.album.has-meta {
 
 		.post-header {
@@ -15,7 +23,7 @@
 			dl {
 				float: left;
 				width: auto;
-				margin-right: 3em;
+				margin-right: 2em;
 
 				&:last-child {
 					margin-right: 0;
@@ -23,4 +31,7 @@
 			}
 		}
 	}
+
+
+
 }

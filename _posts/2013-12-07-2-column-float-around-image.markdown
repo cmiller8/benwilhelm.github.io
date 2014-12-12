@@ -18,12 +18,15 @@ tags:
 comments: []
 ---
 
-This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it:
 
 
-<a title="2-Column Image Float" href="{{ site.dropbox_path }}/large/posts/misc/2-column-float.jpg" /></a>
+<a title="2-Column Image Float" href="{{ site.dropbox_path }}/large/posts/misc/2-column-float.jpg" >
+  <img src="{{ site.dropbox_path }}/large/posts/misc/2-column-float.jpg" alt="" />
+</a>
 
 <strong>TL;DR? Click the image above to grab the code.</strong>
+
+This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it.
 
 When I first looked at the design comp (not pictured), the two columns around the text jumped out at me right away as one of those <em>well-I'm-sure-that-can-be-solved-but-I-have-no-idea-how-yet</em> kind of problems. I set to work slicing up the comp and building the site, all the while letting this challenge ruminate in the back of my head. After a couple of hours, the build was done save for this element. And I still only had a few rough ideas of how to attack it, because there are a few details that make it extra challenging. The obvious problem of course is how to get that float to span both columns, but the extra tricky bit, if you look closely, is that the image has to float a set distance from the top of the column, rather than being anchored to the top of an element such as a paragraph. &nbsp;The site is being built in Drupal, so I wanted to make sure that the client was able to edit the text of both columns without worrying about how it would affect the placement of the image. &nbsp;Brainstorming with a co-worker, we found a few solutions that came close:
 

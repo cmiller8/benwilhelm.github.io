@@ -2,14 +2,66 @@
 hr.clear { border: none; border-top: 1px solid #eee; margin: 1em 0 }
 .quiet, .quiet a { color: #888; font-weight: lighter; }
 
-.sidebar-main {
-	float: right;
-	width: 66%;
+body {
+	margin-top: 3em;
+}
+
+.site-header {
+	background-color: #fdfdfd;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1009;
+}
+
+.wrapper {
+	max-width: none;
+}
+
+.post-list .post {
+	float: left;
+	margin-bottom: 0;
+	width: 33%;
+
+	&:nth-child(3n+1) {
+		clear: left;
+	}
+
+	&:first-child {
+		clear: none;
+	}
+
+	.inner {
+		border-left: 1px solid #e3e3e3;
+		padding: 1em 2em 3em 1em;
+	}
+
+	.post-meta {
+		border-top: 1px solid #ddd;
+		margin-left: -1em;
+		padding-left: 1em;
+		padding-top: 1em;
+	}
+
+	.read-more {
+		display: block;
+		text-align: right;
+	}
+}
+
+.has-sidebar {
+	padding-left: 250px;
+}
+
+.sidebar-main .post.single {
+	max-width: 640px;
 }
 
 .sidebar-sidebar {
 	float: left;
-	width: 33%;
+	margin-left: -250px;
+	width: 250px;
 
 	.inner {
 		padding-right: 2em;
@@ -58,7 +110,7 @@ hr.clear { border: none; border-top: 1px solid #eee; margin: 1em 0 }
 
 		dl {
 			float: left;
-			width: 50%;
+			width: 10em;
 
 			dt {
 				font-weight: bold;
@@ -69,16 +121,15 @@ hr.clear { border: none; border-top: 1px solid #eee; margin: 1em 0 }
 
 
 .gallery {
-	@include column-count(2);
-	@include column-gap(1em);
+
+	margin-bottom: 3em;
 
 	.item {
-		background-color: #f8f8f8;
-		border: 1px solid #eee;
 		display: inline-block;
-		margin: 0 0 1em;
+		margin: 0;
 		min-height: 100px;
-		padding: 15px;
+		width: 300px;
+		padding: 0;
 	}
 }
 

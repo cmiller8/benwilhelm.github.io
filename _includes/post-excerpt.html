@@ -1,9 +1,19 @@
-        <li>
-          <div class="internal">
+        <li class='post'>
+          <div class="inner">
             <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
-            {{ post.excerpt }}
+
+            {% if post.images %}
+            <p>
+              <a href="{{ site.dropbox_path }}/large/{{ post.images[0].src }}">
+                <img src='{{ site.dropbox_path }}/thumbs/{{ post.images[0].src }}' />
+              </a>
+            </p>
+            {% endif %}
+
+            {{ post.excerpt | striphtml | truncatewords:50 }}
+            <a class='read-more' href="{{ post.url | prepend: site.baseurl }}">Read More &rarr;</a>
           </div>
         </li>
