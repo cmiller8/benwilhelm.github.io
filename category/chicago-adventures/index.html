@@ -14,9 +14,11 @@
   <link rel="canonical" href="http://benwilhelm.com/category/chicago-adventures/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -61,59 +63,161 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="category-archive">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="category-archive packery-posts">
   <div>
 	<ul class="post-list">
       
-              <li>
-          <div class="internal">
-            <span class="post-meta">Feb 5, 2013</span>
-            <h2>
-              <a class="post-link" href="/off-the-cuff/photos/chicago-adventures/my-walk-to-work.html">My walk to work</a>
-            </h2>
-            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/walk-home/wpid-IMG_20130204_221639.jpg"><img class="alignnone" title="IMG_20130204_221639.jpg" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/walk-home/wpid-IMG_20130204_221639.jpg" /></a></p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Feb 9, 2013</span>
-            <h2>
-              <a class="post-link" href="/photos/chicago-adventures/blizzardling.html">Blizzardling</a>
-            </h2>
-            <p>Before it became a full-on blizzard for the east coast, it came through Chicago as an ice storm.</p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Apr 18, 2013</span>
-            <h2>
-              <a class="post-link" href="/photos/chicago-adventures/after-the-flood.html">After the flood</a>
-            </h2>
-            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130418_163022.jpg"><img title="IMG_20130418_163022.jpg" class="alignnone size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130418_163022.jpg" /></a></p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Nov 4, 2013</span>
             <h2>
               <a class="post-link" href="/photos/chicago-adventures/travel/miscellany.html">Miscellany</a>
             </h2>
+
+            
+
             <p>It’s been a while since I’ve posted anything to the ol’ blog, so here are some photos from the last few weeks.</p>
 
 
+            <a class='read-more' href="/photos/chicago-adventures/travel/miscellany.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Apr 18, 2013</span>
+            <h2>
+              <a class="post-link" href="/photos/chicago-adventures/after-the-flood.html">After the flood</a>
+            </h2>
+
+            
+
+            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130418_163022.jpg"><img title="IMG_20130418_163022.jpg" class="alignnone size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130418_163022.jpg" /></a></p>
+
+
+            <a class='read-more' href="/photos/chicago-adventures/after-the-flood.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Feb 9, 2013</span>
+            <h2>
+              <a class="post-link" href="/photos/chicago-adventures/blizzardling.html">Blizzardling</a>
+            </h2>
+
+            
+
+            <p>Before it became a full-on blizzard for the east coast, it came through Chicago as an ice storm.</p>
+
+
+            <a class='read-more' href="/photos/chicago-adventures/blizzardling.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Feb 5, 2013</span>
+            <h2>
+              <a class="post-link" href="/off-the-cuff/photos/chicago-adventures/my-walk-to-work.html">My walk to work</a>
+            </h2>
+
+            
+
+            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/walk-home/wpid-IMG_20130204_221639.jpg"><img class="alignnone" title="IMG_20130204_221639.jpg" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/walk-home/wpid-IMG_20130204_221639.jpg" /></a></p>
+
+
+            <a class='read-more' href="/off-the-cuff/photos/chicago-adventures/my-walk-to-work.html">Read More &rarr;</a>
           </div>
         </li>
 
@@ -123,90 +227,6 @@
   </div>
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

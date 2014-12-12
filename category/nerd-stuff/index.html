@@ -14,9 +14,11 @@
   <link rel="canonical" href="http://benwilhelm.com/category/nerd-stuff/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -61,81 +63,189 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="category-archive">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="category-archive packery-posts">
   <div>
 	<ul class="post-list">
       
-              <li>
-          <div class="internal">
-            <span class="post-meta">Feb 27, 2012</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/make-stuff/fireflies-prototype.html">Fireflies Prototype</a>
-            </h2>
-            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Mar 25, 2012</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/make-stuff/robot-the-first.html">Robot, The First</a>
-            </h2>
-            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">May 24, 2012</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Solar Eclipse!</a>
-            </h2>
-            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Jan 5, 2013</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Back at it.  Or, the Ten Minute Hack.</a>
-            </h2>
-            <p>So… the blog has been languishing.  I’ve been meaning to post, really I have, but well, you know.  Busy busy.  Always too busy.  And I have all of these Capital-I-Ideas for huge epic posts about how to make the world a better place and all the crazy stuff I’m planning to make/build/program, but every time I sit down to try to write one, it’s too intimidating.  So I’m taking a combined page from my wife–who has recently started blogging just a short paragraph each day in order to blog more frequently–and from David Kadavy (by way of lifehacker.com) and his <a title="The Ten Minute Hack" href="http://lifehacker.com/5889332/the-10+minute-hack" target="_blank">Ten Minute Hack</a>.  I love this idea.  I have two seemingly incongruous tendencies, which are that I am fairly scattered and have a few too many balls in the air most of the time, but when I really get going on something, I will focus on it for hours at a time, forgetting to eat or drink or look at the clock. (This sometimes results in dropping the aforementioned balls, but that’s fodder for another post.) The Hack is a beautiful motivator to get over that hump of inertia and reach the point where you’re no longer looking at the clock.  And if after ten minutes you’re still looking at the clock?  Move on and go about your day.  Pretty cool, right?  And it’s working before your very eyes.  I’ve been at this post now for 25 minutes, and only just now looked at the clock.</p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Feb 13, 2013</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/personal/some-days.html">Some Days...</a>
-            </h2>
-            <img class="alignnone" alt="" src="http://imgs.xkcd.com/comics/computer_problems.png" />
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Dec 7, 2013</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/2-column-float-around-image.html">2-Column Float Around Image</a>
             </h2>
+
+            
+
             It's common in print design to wrap text in two columns around both sides of an image. However, it's a surprisingly difficult thing to do in web design. Here's one method of solving it which allows for separating the image from the text in the context of a CMS.
+            <a class='read-more' href="/nerd-stuff/2-column-float-around-image.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Feb 13, 2013</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/personal/some-days.html">Some Days...</a>
+            </h2>
+
+            
+
+            <img class="alignnone" alt="" src="http://imgs.xkcd.com/comics/computer_problems.png" />
+            <a class='read-more' href="/nerd-stuff/personal/some-days.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Jan 5, 2013</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Back at it.  Or, the Ten Minute Hack.</a>
+            </h2>
+
+            
+
+            <p>So… the blog has been languishing.  I’ve been meaning to post, really I have, but well, you know.  Busy busy.  Always too busy.  And I have all of these Capital-I-Ideas for huge epic posts about how to make the world a better place and all the crazy stuff I’m planning...
+            <a class='read-more' href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">May 24, 2012</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Solar Eclipse!</a>
+            </h2>
+
+            
+
+            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
+
+
+            <a class='read-more' href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Mar 25, 2012</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/make-stuff/robot-the-first.html">Robot, The First</a>
+            </h2>
+
+            
+
+            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
+
+
+            <a class='read-more' href="/nerd-stuff/make-stuff/robot-the-first.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Feb 27, 2012</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/make-stuff/fireflies-prototype.html">Fireflies Prototype</a>
+            </h2>
+
+            
+
+            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
+
+
+            <a class='read-more' href="/nerd-stuff/make-stuff/fireflies-prototype.html">Read More &rarr;</a>
           </div>
         </li>
 
@@ -145,90 +255,6 @@
   </div>
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

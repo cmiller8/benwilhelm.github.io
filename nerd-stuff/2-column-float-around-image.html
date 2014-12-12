@@ -13,9 +13,11 @@
   <link rel="canonical" href="http://benwilhelm.com/nerd-stuff/2-column-float-around-image.html">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -60,21 +62,118 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="post">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="post single">
 
   <header class="post-header">
   	<p class="quiet"><a href="/">&larr; Back to Posts</a></p>
     <h1 class="post-title">2-Column Float Around Image</h1>
     <p class="post-meta">Dec 7, 2013</p>
+
+    <p class="categories quiet">Posted in
+	
+	- <a href='/category/nerd-stuff'>nerd stuff</a>
+	
+    </p>
   </header>
 
   <article class="post-content">
-    <p>This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it:</p>
 
-<p><a title="2-Column Image Float" href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg"></a>&lt;/a&gt;</p>
+	
+
+    <p><a title="2-Column Image Float" href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg">
+  <img src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg" alt="" />
+</a></p>
 
 <p><strong>TL;DR? Click the image above to grab the code.</strong></p>
+
+<p>This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it.</p>
 
 <p>When I first looked at the design comp (not pictured), the two columns around the text jumped out at me right away as one of those <em>well-I’m-sure-that-can-be-solved-but-I-have-no-idea-how-yet</em> kind of problems. I set to work slicing up the comp and building the site, all the while letting this challenge ruminate in the back of my head. After a couple of hours, the build was done save for this element. And I still only had a few rough ideas of how to attack it, because there are a few details that make it extra challenging. The obvious problem of course is how to get that float to span both columns, but the extra tricky bit, if you look closely, is that the image has to float a set distance from the top of the column, rather than being anchored to the top of an element such as a paragraph.  The site is being built in Drupal, so I wanted to make sure that the client was able to edit the text of both columns without worrying about how it would affect the placement of the image.  Brainstorming with a co-worker, we found a few solutions that came close:</p>
 
@@ -182,90 +281,6 @@ Notes</p>
 
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

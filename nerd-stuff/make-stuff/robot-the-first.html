@@ -13,9 +13,11 @@
   <link rel="canonical" href="http://benwilhelm.com/nerd-stuff/make-stuff/robot-the-first.html">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -60,16 +62,113 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="post">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="post single">
 
   <header class="post-header">
   	<p class="quiet"><a href="/">&larr; Back to Posts</a></p>
     <h1 class="post-title">Robot, The First</h1>
     <p class="post-meta">Mar 25, 2012</p>
+
+    <p class="categories quiet">Posted in
+	
+	- <a href='/category/nerd-stuff'>nerd stuff</a>
+	
+	- <a href='/category/make-stuff'>make stuff</a>
+	
+    </p>
   </header>
 
   <article class="post-content">
+
+	
+
     <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
 
 <p>This is my first robot, built with Lego Mindstorms, which I’m planning to use to teach the kids at <a title="Berkeley Youth Alternatives" href="http://byaonline.org" target="_blank">Berkeley Youth Alternatives</a> about computer programming.  The idea is pretty simple: the robot uses an optical sensor pointed at the ground to detect the black lines of the maze.  When it hits a “wall”, it turns 90 degrees to the right and tries to continue.  If it hits another wall right away, it spins 180 degrees and continues on its way.  The algorithm is far from perfect, as there’s no way for the robot to detect a gap in a wall that’s parallel to its path, and if it were to travel all the way down a dead end, it would get caught in an endless loop of 180 turns, bouncing back and forth between the walls.  But I think it will be a perfect entry point into the concepts of programming.  From here I hope to iterate on the program, teaching the kids about incremental development.  Ultimately I’m going to work with the students to create a program which can not only find its way through the maze, but remember the solution for the next time through, hopefully even learning and storing several mazes at a time.</p>
@@ -83,90 +182,6 @@
 
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

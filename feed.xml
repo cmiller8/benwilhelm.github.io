@@ -6,17 +6,19 @@
 </description>
     <link>http://benwilhelm.com/</link>
     <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 11 Dec 2014 09:49:55 -0600</pubDate>
-    <lastBuildDate>Thu, 11 Dec 2014 09:49:55 -0600</lastBuildDate>
+    <pubDate>Fri, 12 Dec 2014 17:50:11 -0600</pubDate>
+    <lastBuildDate>Fri, 12 Dec 2014 17:50:11 -0600</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
         <title>2-Column Float Around Image</title>
-        <description>&lt;p&gt;This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it:&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&quot;2-Column Image Float&quot; href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg&quot;&gt;&lt;/a&gt;&amp;lt;/a&amp;gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a title=&quot;2-Column Image Float&quot; href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg&quot;&gt;
+  &lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;TL;DR? Click the image above to grab the code.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it.&lt;/p&gt;
 
 &lt;p&gt;When I first looked at the design comp (not pictured), the two columns around the text jumped out at me right away as one of those &lt;em&gt;well-I’m-sure-that-can-be-solved-but-I-have-no-idea-how-yet&lt;/em&gt; kind of problems. I set to work slicing up the comp and building the site, all the while letting this challenge ruminate in the back of my head. After a couple of hours, the build was done save for this element. And I still only had a few rough ideas of how to attack it, because there are a few details that make it extra challenging. The obvious problem of course is how to get that float to span both columns, but the extra tricky bit, if you look closely, is that the image has to float a set distance from the top of the column, rather than being anchored to the top of an element such as a paragraph.  The site is being built in Drupal, so I wanted to make sure that the client was able to edit the text of both columns without worrying about how it would affect the placement of the image.  Brainstorming with a co-worker, we found a few solutions that came close:&lt;/p&gt;
 
@@ -223,26 +225,58 @@ Notes&lt;/p&gt;
         <title>Die Alpenh&amp;uuml;tten</title>
         <description>&lt;p&gt;So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as &lt;em&gt;hütten&lt;/em&gt; (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying little more than your clothing and some snacks for the trail. Jen has already &lt;a href=&quot;http://www.slithy-tove.net/archives/1544&quot; target=&quot;blank&quot;&gt;detailed the trip&lt;/a&gt; in her blog far better than I could here, so I offer some photos and video. The alps really are like nothing I’ve ever seen. Huge, majestic, imposing, rugged. They seem to go on forever in every direction, including up. The photos and video really don’t do them justice, but it’s the best I can do without dragging you up to the tops of these mountains so you can see them for yourself.&lt;/p&gt;
 
-&lt;p&gt;[gallery ids=”868,863,861,866,859,865,860,862”]&lt;/p&gt;
+&lt;div class=&quot;gallery packery&quot;&gt;
+  
+  	&lt;div class=&quot;item pack&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps07-960x1200.jpg&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps07-960x1200.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps06-1200x960.jpg&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps06-1200x960.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps01-1200x960.jpg&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps01-1200x960.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps04-1200x960.jpg&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps04-1200x960.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps05-1200x960.jpg&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps05-1200x960.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+&lt;/div&gt;
 
 &lt;p&gt;And holy cow, here are some cows! The wind-chimey sound is because &lt;em&gt;every&lt;/em&gt; cow had a bell.&lt;/p&gt;
 
-&lt;p&gt;http://flickr.com/photos/ben624/9337917568/&lt;/p&gt;
+&lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=296e8dc7db&amp;amp;photo_id=9337917568&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=296e8dc7db&amp;amp;photo_id=9337917568&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
 
 &lt;p&gt;A full panorama of the meadow&lt;/p&gt;
 
-&lt;p&gt;http://flickr.com/photos/ben624/9335928457/&lt;/p&gt;
+&lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=25be0fca47&amp;amp;photo_id=9335928457&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=25be0fca47&amp;amp;photo_id=9335928457&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
 
 &lt;p&gt;And here’s video from the peak of a mountain that we set out to walk around, but decided to climb instead. It’s 2,100m high (about 7,000 feet). It’s no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.&lt;/p&gt;
 
-&lt;p&gt;http://flickr.com/photos/ben624/9335837375/&lt;/p&gt;
+&lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=5858ac1b36&amp;amp;photo_id=9335837375&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=5858ac1b36&amp;amp;photo_id=9335837375&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
 
 &lt;p&gt;And here’s dinner&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130715_180239.jpg&quot;&gt;&lt;img class=&quot;alignnone size-full&quot; title=&quot;20130715_180239.jpg&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130715_180239.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 21 Jul 2013 12:59:00 -0500</pubDate>
+        <pubDate>Sun, 21 Jul 2013 00:00:00 -0500</pubDate>
         <link>http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html</link>
         <guid isPermaLink="true">http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html</guid>
         
@@ -265,9 +299,7 @@ Notes&lt;/p&gt;
     
       <item>
         <title>A Brief Interlude</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130719_075538.jpg&quot;&gt;&lt;img title=&quot;IMG_20130719_075538.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130719_075538.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We’re currently on the fast train between Munich and Berlin and as I’m watching southern Germany fly by in the morning light, I’m remembering back about four years ago. My open-ended trip across the US took me through morning-sun-drenched fields very similar to these–on a German motorcycle, no less. While I never quite put it into words at the time, I was struck by the thought, however cliché, that the sun rises on these fields every morning just like it does in Chicago. I was pretty caught up in my own problems in those months and seeking a little perspective, which I think I found over time. This feels like an extension of that moment. A simple reminder that whatever’s going on in &lt;em&gt;my&lt;/em&gt; world, there are 7 billion other people in &lt;em&gt;our&lt;/em&gt; world.&lt;/p&gt;
+        <description>&lt;p&gt;We’re currently on the fast train between Munich and Berlin and as I’m watching southern Germany fly by in the morning light, I’m remembering back about four years ago. My open-ended trip across the US took me through morning-sun-drenched fields very similar to these–on a German motorcycle, no less. While I never quite put it into words at the time, I was struck by the thought, however cliché, that the sun rises on these fields every morning just like it does in Chicago. I was pretty caught up in my own problems in those months and seeking a little perspective, which I think I found over time. This feels like an extension of that moment. A simple reminder that whatever’s going on in &lt;em&gt;my&lt;/em&gt; world, there are 7 billion other people in &lt;em&gt;our&lt;/em&gt; world.&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 19 Jul 2013 00:00:00 -0500</pubDate>

@@ -14,9 +14,11 @@
   <link rel="canonical" href="http://benwilhelm.com/category/make-stuff/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -61,72 +63,174 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="category-archive">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="category-archive packery-posts">
   <div>
 	<ul class="post-list">
       
-              <li>
-          <div class="internal">
-            <span class="post-meta">Feb 27, 2012</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/make-stuff/fireflies-prototype.html">Fireflies Prototype</a>
-            </h2>
-            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Mar 25, 2012</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/make-stuff/robot-the-first.html">Robot, The First</a>
-            </h2>
-            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">May 24, 2012</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Solar Eclipse!</a>
-            </h2>
-            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Nov 15, 2013</span>
-            <h2>
-              <a class="post-link" href="/make-stuff/food-and-drink/grapefruit-on-rye.html">Grapefruit on Rye</a>
-            </h2>
-            <p>A while back we went to a whiskey tasting at <a title="Koval Caraway Liqueur" href="http://www.koval-distillery.com/" target="_blank">Koval Distillery</a> in our neighborhood, and came home with a bottle of their caraway liqueur.  I do love a whiskey cocktail and after Swedish Chefing<a href="#one_969" name="one_969_source"><sup>[1]</sup></a> around in the kitchen a little bit, I came up with the following.  Serve in a rocks glass over one big-ass cube. (I’m sure there’s a name for those big-ass cubes, but I’m not that fancy)</p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Nov 28, 2013</span>
             <h2>
               <a class="post-link" href="/make-stuff/food-and-drink/hot-caraway-cider-toddy.html">Hot Caraway Cider Toddy</a>
             </h2>
-            <p>Our friends Lee and Chelsea hosted Thanksgiving dinner this year as usual, and we were tasked with supplying a beverage to share. Last year I made a cider toddy from a recipe provided by a co-worker which was well received, and this year we had some <a href="http://www.koval-distillery.com/newsite/other-liqueurs/caraway" target="_blank">caraway liqueur</a> on hand which I have used to make some excellent <a title="Grapefruit on Rye" href="http://benwilhelm.com/uncategorized/grapefruit-on-rye/">whiskey cocktails</a>.  I decided to riff on the recipe a bit to make use of the caraway, and the result was a fragrant<a href="#one_962" name="source_one_962"><sup>[1]</sup></a>, delicious hit. The recipe is easily scaled to whatever number of people you are planning to serve, so I give it to you here measured simply in parts. For large batches, heat on the stove until just before it simmers (boiling will boil off the alcohol) and then transfer to a crock pot to keep warm.  For making single servings, a microwave works just fine.</p>
+
+            
+
+            <p>Our friends Lee and Chelsea hosted Thanksgiving dinner this year as usual, and we were tasked with supplying a beverage to share. Last year I made a cider toddy from a recipe provided by a co-worker which was well received, and this year we had some <a href="http://www.koval-distillery.com/newsite/other-liqueurs/caraway" target="_blank">caraway liqueur</a>...
+            <a class='read-more' href="/make-stuff/food-and-drink/hot-caraway-cider-toddy.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Nov 15, 2013</span>
+            <h2>
+              <a class="post-link" href="/make-stuff/food-and-drink/grapefruit-on-rye.html">Grapefruit on Rye</a>
+            </h2>
+
+            
+
+            <p>A while back we went to a whiskey tasting at <a title="Koval Caraway Liqueur" href="http://www.koval-distillery.com/" target="_blank">Koval Distillery</a> in our neighborhood, and came home with a bottle of their caraway liqueur.  I do love a whiskey cocktail and after Swedish Chefing<a href="#one_969" name="one_969_source"><sup>[1]</sup></a> around in the kitchen a little bit, I...
+            <a class='read-more' href="/make-stuff/food-and-drink/grapefruit-on-rye.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">May 24, 2012</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Solar Eclipse!</a>
+            </h2>
+
+            
+
+            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
 
 
+            <a class='read-more' href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Mar 25, 2012</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/make-stuff/robot-the-first.html">Robot, The First</a>
+            </h2>
+
+            
+
+            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
+
+
+            <a class='read-more' href="/nerd-stuff/make-stuff/robot-the-first.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Feb 27, 2012</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/make-stuff/fireflies-prototype.html">Fireflies Prototype</a>
+            </h2>
+
+            
+
+            <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
+
+
+            <a class='read-more' href="/nerd-stuff/make-stuff/fireflies-prototype.html">Read More &rarr;</a>
           </div>
         </li>
 
@@ -136,90 +240,6 @@
   </div>
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

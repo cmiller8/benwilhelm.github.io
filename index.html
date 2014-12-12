@@ -14,9 +14,11 @@
   <link rel="canonical" href="http://benwilhelm.com/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -61,608 +63,764 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="home">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="home">
 
   <h1 class="page-title">The Latest</h1>
 
   <div class="page-content">
-    <ul class="post-list">
+    <ul class="post-list packery-posts">
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Dec 7, 2013</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/2-column-float-around-image.html">2-Column Float Around Image</a>
             </h2>
+
+            
+
             It's common in print design to wrap text in two columns around both sides of an image. However, it's a surprisingly difficult thing to do in web design. Here's one method of solving it which allows for separating the image from the text in the context of a CMS.
+            <a class='read-more' href="/nerd-stuff/2-column-float-around-image.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Nov 28, 2013</span>
             <h2>
               <a class="post-link" href="/make-stuff/food-and-drink/hot-caraway-cider-toddy.html">Hot Caraway Cider Toddy</a>
             </h2>
-            <p>Our friends Lee and Chelsea hosted Thanksgiving dinner this year as usual, and we were tasked with supplying a beverage to share. Last year I made a cider toddy from a recipe provided by a co-worker which was well received, and this year we had some <a href="http://www.koval-distillery.com/newsite/other-liqueurs/caraway" target="_blank">caraway liqueur</a> on hand which I have used to make some excellent <a title="Grapefruit on Rye" href="http://benwilhelm.com/uncategorized/grapefruit-on-rye/">whiskey cocktails</a>.  I decided to riff on the recipe a bit to make use of the caraway, and the result was a fragrant<a href="#one_962" name="source_one_962"><sup>[1]</sup></a>, delicious hit. The recipe is easily scaled to whatever number of people you are planning to serve, so I give it to you here measured simply in parts. For large batches, heat on the stove until just before it simmers (boiling will boil off the alcohol) and then transfer to a crock pot to keep warm.  For making single servings, a microwave works just fine.</p>
 
+            
 
+            <p>Our friends Lee and Chelsea hosted Thanksgiving dinner this year as usual, and we were tasked with supplying a beverage to share. Last year I made a cider toddy from a recipe provided by a co-worker which was well received, and this year we had some <a href="http://www.koval-distillery.com/newsite/other-liqueurs/caraway" target="_blank">caraway liqueur</a>...
+            <a class='read-more' href="/make-stuff/food-and-drink/hot-caraway-cider-toddy.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Nov 15, 2013</span>
             <h2>
               <a class="post-link" href="/make-stuff/food-and-drink/grapefruit-on-rye.html">Grapefruit on Rye</a>
             </h2>
-            <p>A while back we went to a whiskey tasting at <a title="Koval Caraway Liqueur" href="http://www.koval-distillery.com/" target="_blank">Koval Distillery</a> in our neighborhood, and came home with a bottle of their caraway liqueur.  I do love a whiskey cocktail and after Swedish Chefing<a href="#one_969" name="one_969_source"><sup>[1]</sup></a> around in the kitchen a little bit, I came up with the following.  Serve in a rocks glass over one big-ass cube. (I’m sure there’s a name for those big-ass cubes, but I’m not that fancy)</p>
 
+            
 
+            <p>A while back we went to a whiskey tasting at <a title="Koval Caraway Liqueur" href="http://www.koval-distillery.com/" target="_blank">Koval Distillery</a> in our neighborhood, and came home with a bottle of their caraway liqueur.  I do love a whiskey cocktail and after Swedish Chefing<a href="#one_969" name="one_969_source"><sup>[1]</sup></a> around in the kitchen a little bit, I...
+            <a class='read-more' href="/make-stuff/food-and-drink/grapefruit-on-rye.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Nov 4, 2013</span>
             <h2>
               <a class="post-link" href="/photos/chicago-adventures/travel/miscellany.html">Miscellany</a>
             </h2>
+
+            
+
             <p>It’s been a while since I’ve posted anything to the ol’ blog, so here are some photos from the last few weeks.</p>
 
 
+            <a class='read-more' href="/photos/chicago-adventures/travel/miscellany.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 21, 2013</span>
             <h2>
               <a class="post-link" href="/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html">Die Alpenh&uuml;tten</a>
             </h2>
-            <p>So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as <em>hütten</em> (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying little more than your clothing and some snacks for the trail. Jen has already <a href="http://www.slithy-tove.net/archives/1544" target="blank">detailed the trip</a> in her blog far better than I could here, so I offer some photos and video. The alps really are like nothing I’ve ever seen. Huge, majestic, imposing, rugged. They seem to go on forever in every direction, including up. The photos and video really don’t do them justice, but it’s the best I can do without dragging you up to the tops of these mountains so you can see them for yourself.</p>
 
+            
+            <p>
+              <a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps07-960x1200.jpg">
+                <img src='https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps07-960x1200.jpg' />
+              </a>
+            </p>
+            
 
+            <p>So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as <em>hütten</em> (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying...
+            <a class='read-more' href="/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 19, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/a-brief-interlude.html">A Brief Interlude</a>
             </h2>
-            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130719_075538.jpg"><img title="IMG_20130719_075538.jpg" class="alignnone size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130719_075538.jpg" /></a></p>
 
+            
+            <p>
+              <a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130719_075538.jpg">
+                <img src='https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130719_075538.jpg' />
+              </a>
+            </p>
+            
 
+            <p>We’re currently on the fast train between Munich and Berlin and as I’m watching southern Germany fly by in the morning light, I’m remembering back about four years ago. My open-ended trip across the US took me through morning-sun-drenched fields very similar to these–on a German motorcycle, no less. While...
+            <a class='read-more' href="/off-the-cuff/photos/a-brief-interlude.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 18, 2013</span>
             <h2>
               <a class="post-link" href="/travel/italian-adventures/the-road-north-or-an-introduction-to-italian-bureaucracy.html">The Road North, or an Introduction to Italian Bureaucracy</a>
             </h2>
+
+            
+
             <p>So. It’s been a few days since the last post, and a lot has happened.  I’ll try to get you all caught up efficiently, as that is the Austrian way (and not, as you shall soon see, the Italian way).</p>
 
 
+            <a class='read-more' href="/travel/italian-adventures/the-road-north-or-an-introduction-to-italian-bureaucracy.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 12, 2013</span>
             <h2>
               <a class="post-link" href="/travel/italian-adventures/cinque-terre-and-high-performance-driving-school-aka-the-autostrada-through-the-italian-riviera.html">Cinque Terre and High Performance Driving School - AKA the Autostrada Through the Italian Riviera</a>
             </h2>
-            <p>Yesterday, Jen and I went to Cinque Terre for the day. The three-plus hour drive to get there made it a little ambitious for a day trip, but well worth it in the end. Like every morning so far, we had grand plans for being up at 7 and on the road by 7:30. And like every morning so far, the previous night’s three-hour dinner that didn’t start until 9pm meant that we weren’t up until 8 (…ish). We were more or less ready to go by 9:30 or so, and then caused a minor kerfluffle when we came through the breakfast room intending to just grab some yogurt to eat on the road and met Paolo, our amazing and generous host, setting up the breakfast spread.  He seemed genuinely concerned that we were not going to be eating a full breakfast, and we assured him (and assured him and assured him) that we would eat more on the road and that we would join him and the other guests for a full breakfast again tomorrow, but we had to get on the road early today (which was already not happening).  </p>
 
+            
 
+            <p>Yesterday, Jen and I went to Cinque Terre for the day. The three-plus hour drive to get there made it a little ambitious for a day trip, but well worth it in the end. Like every morning so far, we had grand plans for being up at 7 and on...
+            <a class='read-more' href="/travel/italian-adventures/cinque-terre-and-high-performance-driving-school-aka-the-autostrada-through-the-italian-riviera.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 12, 2013</span>
             <h2>
               <a class="post-link" href="/photos/travel/italian-adventures/arrivederci-italia-grazie.html">Arrivederci, Italia! Grazie!</a>
             </h2>
+
+            
+
             <p>Leaving Italy today for Innsbruck. More travelogues to come, but here are a few pictures in the meantime.</p>
 
 
+            <a class='read-more' href="/photos/travel/italian-adventures/arrivederci-italia-grazie.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 9, 2013</span>
             <h2>
               <a class="post-link" href="/photos/travel/italian-adventures/on-the-road-to-torino.html">On the road to Torino</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_123104.jpg"><img title="20130709_123104.jpg" class="aligncenter size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_123104.jpg" /></a></p>
 
 
+            <a class='read-more' href="/photos/travel/italian-adventures/on-the-road-to-torino.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 7, 2013</span>
             <h2>
               <a class="post-link" href="/travel/italian-adventures/buongiorno-da-italia.html">Buongiorno da Italia!</a>
             </h2>
-            <p>We have begun our honeymoon; eight months late but totally worth the wait. Following a pretty rockin’ Fourth of July celebration, we boarded a plane on the fifth bound for Milan by way of Newark, NJ.  The overnight flight was uneventful, although neither of us got any sleep to speak of. We landed in Milan at 8:30am, bleary-eyed and armed with our Italian coffee-related phrases.</p>
 
+            
 
+            <p>We have begun our honeymoon; eight months late but totally worth the wait. Following a pretty rockin’ Fourth of July celebration, we boarded a plane on the fifth bound for Milan by way of Newark, NJ.  The overnight flight was uneventful, although neither of us got any sleep to speak...
+            <a class='read-more' href="/travel/italian-adventures/buongiorno-da-italia.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jun 24, 2013</span>
             <h2>
               <a class="post-link" href="/food-and-drink/birthday-brunch.html">Birthday Brunch!</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/20130624_114109.jpg"><img class="size-large wp-image-828" alt="Breakfast tacos, pepper and potato hash, fresh fruit salad." src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/20130624_114109.jpg" /></a> </p>
 
 
+            <a class='read-more' href="/food-and-drink/birthday-brunch.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Apr 18, 2013</span>
             <h2>
               <a class="post-link" href="/photos/chicago-adventures/after-the-flood.html">After the flood</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130418_163022.jpg"><img title="IMG_20130418_163022.jpg" class="alignnone size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130418_163022.jpg" /></a></p>
 
 
+            <a class='read-more' href="/photos/chicago-adventures/after-the-flood.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Apr 12, 2013</span>
             <h2>
               <a class="post-link" href="/bay-area-adventures/photos/photoshop-fun.html">Photoshop Fun</a>
             </h2>
-            <p>This is from a while back.  My brother-in-law grew a beard on a sailing trip.  When he decided he’d had his fun, he shaved it off.  Naturally, he did it in as many ridiculous stages as he could think of.  This is what happens when you let people take photos of the silly things you do…</p>
 
+            
 
+            <p>This is from a while back.  My brother-in-law grew a beard on a sailing trip.  When he decided he’d had his fun, he shaved it off.  Naturally, he did it in as many ridiculous stages as he could think of.  This is what happens when you let people take photos...
+            <a class='read-more' href="/bay-area-adventures/photos/photoshop-fun.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Apr 2, 2013</span>
             <h2>
               <a class="post-link" href="/bay-area-adventures/photos/travel/hiking-the-marin-headlands.html">Hiking the Marin Headlands</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130402_093811.jpg"><img title="IMG_20130402_093811.jpg" class="alignnone size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130402_093811.jpg" /></a></p>
 
 
+            <a class='read-more' href="/bay-area-adventures/photos/travel/hiking-the-marin-headlands.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 28, 2013</span>
             <h2>
               <a class="post-link" href="/photos/travel/youre-blocking-the-fire-lane.html">You're Blocking the Fire Lane...</a>
             </h2>
+
+            
+
             <p>It appears that someone left a battleship parked outside my hotel.</p>
 
 
+            <a class='read-more' href="/photos/travel/youre-blocking-the-fire-lane.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 28, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/travel/granby-main-norfolk-va.html">Granby &amp; Main, Norfolk VA</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130227_115434.jpg"><img class="alignnone size-full wp-image-752" alt="wpid-IMG_20130227_115434.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130227_115434.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/travel/granby-main-norfolk-va.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 18, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/travel/landing-in-norfolk-va.html">Landing in Norfolk, VA</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130217_151352.jpg"><img class="alignnone size-full wp-image-734" alt="wpid-IMG_20130217_151352.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130217_151352.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/travel/landing-in-norfolk-va.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 14, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/working-from-home-ii.html">Working From Home II</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130214_103855.jpg"><img src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130214_103855.jpg" alt="wpid-IMG_20130214_103855.jpg" class="alignnone size-full wp-image-732" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/working-from-home-ii.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 13, 2013</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/personal/some-days.html">Some Days...</a>
             </h2>
+
+            
+
             <img class="alignnone" alt="" src="http://imgs.xkcd.com/comics/computer_problems.png" />
+            <a class='read-more' href="/nerd-stuff/personal/some-days.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 9, 2013</span>
             <h2>
               <a class="post-link" href="/photos/chicago-adventures/blizzardling.html">Blizzardling</a>
             </h2>
+
+            
+
             <p>Before it became a full-on blizzard for the east coast, it came through Chicago as an ice storm.</p>
 
 
+            <a class='read-more' href="/photos/chicago-adventures/blizzardling.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 8, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/breakfast.html">Breakfast!</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/walk-home/wpid-IMG_20130208_092221.jpg"><img src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/walk-home/wpid-IMG_20130208_092221.jpg" alt="wpid-IMG_20130208_092221.jpg" class="alignnone size-full wp-image-668" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/breakfast.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 7, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/the-walk-home-extended.html">The walk home. Extended.</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/walk-home/wpid-IMG_20130207_000051.jpg"><img class="alignnone size-full wp-image-649" alt="wpid-IMG_20130207_000051.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/walk-home/wpid-IMG_20130207_000051.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/the-walk-home-extended.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 5, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/chicago-adventures/my-walk-to-work.html">My walk to work</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/walk-home/wpid-IMG_20130204_221639.jpg"><img class="alignnone" title="IMG_20130204_221639.jpg" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/walk-home/wpid-IMG_20130204_221639.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/chicago-adventures/my-walk-to-work.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 4, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/hanging-on-the-bedroom-wall.html">Hanging on the bedroom wall</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130203_224841.jpg"><img class="alignnone" title="IMG_20130203_224841.jpg" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130203_224841.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/hanging-on-the-bedroom-wall.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 1, 2013</span>
             <h2>
               <a class="post-link" href="/bay-area-adventures/off-the-cuff/photos/bye-bye-bay.html">Bye bye, Bay</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130201_105052.jpg"><img class="alignnone size-full wp-image-642" alt="wpid-IMG_20130201_105052.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130201_105052.jpg" /></a></p>
 
 
+            <a class='read-more' href="/bay-area-adventures/off-the-cuff/photos/bye-bye-bay.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 1, 2013</span>
             <h2>
               <a class="post-link" href="/bay-area-adventures/off-the-cuff/photos/unintended-product-of-an-instagram-bug.html">Unintended product of an instagram bug</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130201_104552.jpg"><img class="alignnone size-full wp-image-640" alt="wpid-IMG_20130201_104552.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130201_104552.jpg" /></a></p>
 
 
+            <a class='read-more' href="/bay-area-adventures/off-the-cuff/photos/unintended-product-of-an-instagram-bug.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 28, 2013</span>
             <h2>
               <a class="post-link" href="/bay-area-adventures/off-the-cuff/photos/you-are-beautiful.html">You are beautiful</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130127_185945.jpg"><img class="alignnone size-full wp-image-636" alt="wpid-IMG_20130127_185945.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130127_185945.jpg" /></a></p>
 
 
+            <a class='read-more' href="/bay-area-adventures/off-the-cuff/photos/you-are-beautiful.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 27, 2013</span>
             <h2>
               <a class="post-link" href="/bay-area-adventures/photos/hiking-in-palo-alto.html">Hiking in Palo Alto</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130126_171529.jpg"><img class="alignnone size-full wp-image-629" alt="wpid-IMG_20130126_171529.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130126_171529.jpg" /></a></p>
 
 
+            <a class='read-more' href="/bay-area-adventures/photos/hiking-in-palo-alto.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 25, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/working-from-home.html">Working from home</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130125_103048.jpg"><img class="alignnone size-full wp-image-626" alt="wpid-IMG_20130125_103048.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130125_103048.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/working-from-home.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 22, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/bedside-table-should-be-sleeping.html">Bedside table. Should be sleeping</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130121_233735.jpg"><img class="alignnone size-full wp-image-622" alt="wpid-20130121_233735.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130121_233735.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/bedside-table-should-be-sleeping.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 21, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/jen-hates-this-lamp.html">Jen hates this lamp</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130120_214424.jpg"><img class="alignnone size-full wp-image-619" alt="wpid-IMG_20130120_214424.jpg" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130120_214424.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/jen-hates-this-lamp.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 20, 2013</span>
             <h2>
               <a class="post-link" href="/photos/morning-frost-on-the-windows.html">Morning Frost on the Windows</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/8.jpg"><img class="alignnone  wp-image-592" alt="8" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/8.jpg" /></a></p>
 
 
+            <a class='read-more' href="/photos/morning-frost-on-the-windows.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 12, 2013</span>
             <h2>
               <a class="post-link" href="/off-the-cuff/photos/winter-in-cleveland.html">Winter in Cleveland</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130105_151611.jpg"><img class="alignnone" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130105_151611.jpg" /></a></p>
 
 
+            <a class='read-more' href="/off-the-cuff/photos/winter-in-cleveland.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jan 5, 2013</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Back at it.  Or, the Ten Minute Hack.</a>
             </h2>
-            <p>So… the blog has been languishing.  I’ve been meaning to post, really I have, but well, you know.  Busy busy.  Always too busy.  And I have all of these Capital-I-Ideas for huge epic posts about how to make the world a better place and all the crazy stuff I’m planning to make/build/program, but every time I sit down to try to write one, it’s too intimidating.  So I’m taking a combined page from my wife–who has recently started blogging just a short paragraph each day in order to blog more frequently–and from David Kadavy (by way of lifehacker.com) and his <a title="The Ten Minute Hack" href="http://lifehacker.com/5889332/the-10+minute-hack" target="_blank">Ten Minute Hack</a>.  I love this idea.  I have two seemingly incongruous tendencies, which are that I am fairly scattered and have a few too many balls in the air most of the time, but when I really get going on something, I will focus on it for hours at a time, forgetting to eat or drink or look at the clock. (This sometimes results in dropping the aforementioned balls, but that’s fodder for another post.) The Hack is a beautiful motivator to get over that hump of inertia and reach the point where you’re no longer looking at the clock.  And if after ten minutes you’re still looking at the clock?  Move on and go about your day.  Pretty cool, right?  And it’s working before your very eyes.  I’ve been at this post now for 25 minutes, and only just now looked at the clock.</p>
 
+            
 
+            <p>So… the blog has been languishing.  I’ve been meaning to post, really I have, but well, you know.  Busy busy.  Always too busy.  And I have all of these Capital-I-Ideas for huge epic posts about how to make the world a better place and all the crazy stuff I’m planning...
+            <a class='read-more' href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Oct 24, 2012</span>
             <h2>
               <a class="post-link" href="/bay-area-adventures/personal/photos/best-day-ever.html">Best. Day. Ever.</a>
             </h2>
+
+            
+
             <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/wedding/bunting-color.jpg"><img class="aligncenter size-large wp-image-443" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/wedding/bunting-color.jpg" alt="" /></a></p>
 
 
+            <a class='read-more' href="/bay-area-adventures/personal/photos/best-day-ever.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">May 24, 2012</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Solar Eclipse!</a>
             </h2>
+
+            
+
             <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=cb529b3673&amp;photo_id=7238968950&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
 
 
+            <a class='read-more' href="/nerd-stuff/make-stuff/bay-area-adventures/solar-eclipse.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Mar 25, 2012</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/make-stuff/robot-the-first.html">Robot, The First</a>
             </h2>
+
+            
+
             <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=d6118e107d&amp;photo_id=6872169694&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
 
 
+            <a class='read-more' href="/nerd-stuff/make-stuff/robot-the-first.html">Read More &rarr;</a>
           </div>
         </li>
 
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 27, 2012</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/make-stuff/fireflies-prototype.html">Fireflies Prototype</a>
             </h2>
+
+            
+
             <div class="embed video Flickr"><object type="application/x-shockwave-flash" width="500" height="281" data="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"> <param name="flashvars" value="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" /> <param name="movie" value="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" /> <param name="bgcolor" value="#000000" /> <param name="allowFullScreen" value="true" /><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/video/stewart.swf?v=1535363810" bgcolor="#000000" allowfullscreen="true" flashvars="intl_lang=en-us&amp;photo_secret=5a9098bc34&amp;photo_id=5632664465&amp;flickr_show_info_box=true" height="281" width="500" /></object></div>
 
 
+            <a class='read-more' href="/nerd-stuff/make-stuff/fireflies-prototype.html">Read More &rarr;</a>
           </div>
         </li>
 
       
     </ul>
+	<div class="clear"></div>
   </div>
   
+
   <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
 
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

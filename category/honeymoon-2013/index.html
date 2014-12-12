@@ -14,9 +14,11 @@
   <link rel="canonical" href="http://benwilhelm.com/category/honeymoon-2013/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -61,20 +63,114 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="category-archive">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="category-archive packery-posts">
   <div>
 	<ul class="post-list">
       
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 21, 2013</span>
             <h2>
               <a class="post-link" href="/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html">Die Alpenh&uuml;tten</a>
             </h2>
-            <p>So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as <em>hütten</em> (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying little more than your clothing and some snacks for the trail. Jen has already <a href="http://www.slithy-tove.net/archives/1544" target="blank">detailed the trip</a> in her blog far better than I could here, so I offer some photos and video. The alps really are like nothing I’ve ever seen. Huge, majestic, imposing, rugged. They seem to go on forever in every direction, including up. The photos and video really don’t do them justice, but it’s the best I can do without dragging you up to the tops of these mountains so you can see them for yourself.</p>
 
+            
+            <p>
+              <a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps07-960x1200.jpg">
+                <img src='https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps07-960x1200.jpg' />
+              </a>
+            </p>
+            
 
+            <p>So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as <em>hütten</em> (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying...
+            <a class='read-more' href="/photos/travel/austrian-adventures/honeymoon-2013/die-alpenhutten.html">Read More &rarr;</a>
           </div>
         </li>
 
@@ -84,90 +180,6 @@
   </div>
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

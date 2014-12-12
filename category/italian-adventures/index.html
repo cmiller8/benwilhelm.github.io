@@ -14,9 +14,11 @@
   <link rel="canonical" href="http://benwilhelm.com/category/italian-adventures/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -61,72 +63,174 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="category-archive">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="category-archive packery-posts">
   <div>
 	<ul class="post-list">
       
-              <li>
-          <div class="internal">
-            <span class="post-meta">Jul 7, 2013</span>
-            <h2>
-              <a class="post-link" href="/travel/italian-adventures/buongiorno-da-italia.html">Buongiorno da Italia!</a>
-            </h2>
-            <p>We have begun our honeymoon; eight months late but totally worth the wait. Following a pretty rockin’ Fourth of July celebration, we boarded a plane on the fifth bound for Milan by way of Newark, NJ.  The overnight flight was uneventful, although neither of us got any sleep to speak of. We landed in Milan at 8:30am, bleary-eyed and armed with our Italian coffee-related phrases.</p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Jul 9, 2013</span>
-            <h2>
-              <a class="post-link" href="/photos/travel/italian-adventures/on-the-road-to-torino.html">On the road to Torino</a>
-            </h2>
-            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_123104.jpg"><img title="20130709_123104.jpg" class="aligncenter size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_123104.jpg" /></a></p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Jul 12, 2013</span>
-            <h2>
-              <a class="post-link" href="/photos/travel/italian-adventures/arrivederci-italia-grazie.html">Arrivederci, Italia! Grazie!</a>
-            </h2>
-            <p>Leaving Italy today for Innsbruck. More travelogues to come, but here are a few pictures in the meantime.</p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Jul 12, 2013</span>
-            <h2>
-              <a class="post-link" href="/travel/italian-adventures/cinque-terre-and-high-performance-driving-school-aka-the-autostrada-through-the-italian-riviera.html">Cinque Terre and High Performance Driving School - AKA the Autostrada Through the Italian Riviera</a>
-            </h2>
-            <p>Yesterday, Jen and I went to Cinque Terre for the day. The three-plus hour drive to get there made it a little ambitious for a day trip, but well worth it in the end. Like every morning so far, we had grand plans for being up at 7 and on the road by 7:30. And like every morning so far, the previous night’s three-hour dinner that didn’t start until 9pm meant that we weren’t up until 8 (…ish). We were more or less ready to go by 9:30 or so, and then caused a minor kerfluffle when we came through the breakfast room intending to just grab some yogurt to eat on the road and met Paolo, our amazing and generous host, setting up the breakfast spread.  He seemed genuinely concerned that we were not going to be eating a full breakfast, and we assured him (and assured him and assured him) that we would eat more on the road and that we would join him and the other guests for a full breakfast again tomorrow, but we had to get on the road early today (which was already not happening).  </p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Jul 18, 2013</span>
             <h2>
               <a class="post-link" href="/travel/italian-adventures/the-road-north-or-an-introduction-to-italian-bureaucracy.html">The Road North, or an Introduction to Italian Bureaucracy</a>
             </h2>
+
+            
+
             <p>So. It’s been a few days since the last post, and a lot has happened.  I’ll try to get you all caught up efficiently, as that is the Austrian way (and not, as you shall soon see, the Italian way).</p>
 
 
+            <a class='read-more' href="/travel/italian-adventures/the-road-north-or-an-introduction-to-italian-bureaucracy.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Jul 12, 2013</span>
+            <h2>
+              <a class="post-link" href="/travel/italian-adventures/cinque-terre-and-high-performance-driving-school-aka-the-autostrada-through-the-italian-riviera.html">Cinque Terre and High Performance Driving School - AKA the Autostrada Through the Italian Riviera</a>
+            </h2>
+
+            
+
+            <p>Yesterday, Jen and I went to Cinque Terre for the day. The three-plus hour drive to get there made it a little ambitious for a day trip, but well worth it in the end. Like every morning so far, we had grand plans for being up at 7 and on...
+            <a class='read-more' href="/travel/italian-adventures/cinque-terre-and-high-performance-driving-school-aka-the-autostrada-through-the-italian-riviera.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Jul 12, 2013</span>
+            <h2>
+              <a class="post-link" href="/photos/travel/italian-adventures/arrivederci-italia-grazie.html">Arrivederci, Italia! Grazie!</a>
+            </h2>
+
+            
+
+            <p>Leaving Italy today for Innsbruck. More travelogues to come, but here are a few pictures in the meantime.</p>
+
+
+            <a class='read-more' href="/photos/travel/italian-adventures/arrivederci-italia-grazie.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Jul 9, 2013</span>
+            <h2>
+              <a class="post-link" href="/photos/travel/italian-adventures/on-the-road-to-torino.html">On the road to Torino</a>
+            </h2>
+
+            
+
+            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_123104.jpg"><img title="20130709_123104.jpg" class="aligncenter size-full" alt="image" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_123104.jpg" /></a></p>
+
+
+            <a class='read-more' href="/photos/travel/italian-adventures/on-the-road-to-torino.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Jul 7, 2013</span>
+            <h2>
+              <a class="post-link" href="/travel/italian-adventures/buongiorno-da-italia.html">Buongiorno da Italia!</a>
+            </h2>
+
+            
+
+            <p>We have begun our honeymoon; eight months late but totally worth the wait. Following a pretty rockin’ Fourth of July celebration, we boarded a plane on the fifth bound for Milan by way of Newark, NJ.  The overnight flight was uneventful, although neither of us got any sleep to speak...
+            <a class='read-more' href="/travel/italian-adventures/buongiorno-da-italia.html">Read More &rarr;</a>
           </div>
         </li>
 
@@ -136,90 +240,6 @@
   </div>
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

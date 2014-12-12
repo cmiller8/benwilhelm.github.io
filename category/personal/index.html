@@ -14,9 +14,11 @@
   <link rel="canonical" href="http://benwilhelm.com/category/personal/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
-  <script src="/js/jquery-2.1.1.min.js"></script>
-  <script src="/js/jquery.fluidbox.min.js"></script>
-  <script src="/js/site.js"></script>
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src='/bower_components/packery/dist/packery.pkgd.min.js'></script>
+  <script src='/bower_components/imagesloaded/imagesloaded.pkgd.min.js'></script>
+  <script src='/bower_components/fluidbox/jquery.fluidbox.min.js'></script>
+  <script src='/js/site.js'></script>
 </head>
 
 
@@ -61,44 +63,140 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="sidebar-main">
-	<div class="category-archive">
+        <div class="has-sidebar">
+	<aside class="sidebar-sidebar">
+		<div class="inner">
+		
+			<h3>Post Categories</h3>
+
+			<div class="sidebar-item">
+				<ul id="category_list">
+					
+					<li>
+						<a href="/category/nerd-stuff/index.html">
+						Nerd stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/make-stuff/index.html">
+						Make stuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/bay-area-adventures/index.html">
+						Bay area adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/personal/index.html">
+						Personal
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/photos/index.html">
+						Photos
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/off-the-cuff/index.html">
+						Off the cuff
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/chicago-adventures/index.html">
+						Chicago adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/travel/index.html">
+						Travel
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/food-and-drink/index.html">
+						Food and drink
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/italian-adventures/index.html">
+						Italian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/austrian-adventures/index.html">
+						Austrian adventures
+						</a>
+					</li>
+					
+					<li>
+						<a href="/category/honeymoon-2013/index.html">
+						Honeymoon 2013
+						</a>
+					</li>
+					
+				</ul>
+			</div>	
+		</div>
+	</aside>
+
+	<div class="sidebar-main">
+		<div class="category-archive packery-posts">
   <div>
 	<ul class="post-list">
       
-              <li>
-          <div class="internal">
-            <span class="post-meta">Oct 24, 2012</span>
-            <h2>
-              <a class="post-link" href="/bay-area-adventures/personal/photos/best-day-ever.html">Best. Day. Ever.</a>
-            </h2>
-            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/wedding/bunting-color.jpg"><img class="aligncenter size-large wp-image-443" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/wedding/bunting-color.jpg" alt="" /></a></p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
-            <span class="post-meta">Jan 5, 2013</span>
-            <h2>
-              <a class="post-link" href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Back at it.  Or, the Ten Minute Hack.</a>
-            </h2>
-            <p>So… the blog has been languishing.  I’ve been meaning to post, really I have, but well, you know.  Busy busy.  Always too busy.  And I have all of these Capital-I-Ideas for huge epic posts about how to make the world a better place and all the crazy stuff I’m planning to make/build/program, but every time I sit down to try to write one, it’s too intimidating.  So I’m taking a combined page from my wife–who has recently started blogging just a short paragraph each day in order to blog more frequently–and from David Kadavy (by way of lifehacker.com) and his <a title="The Ten Minute Hack" href="http://lifehacker.com/5889332/the-10+minute-hack" target="_blank">Ten Minute Hack</a>.  I love this idea.  I have two seemingly incongruous tendencies, which are that I am fairly scattered and have a few too many balls in the air most of the time, but when I really get going on something, I will focus on it for hours at a time, forgetting to eat or drink or look at the clock. (This sometimes results in dropping the aforementioned balls, but that’s fodder for another post.) The Hack is a beautiful motivator to get over that hump of inertia and reach the point where you’re no longer looking at the clock.  And if after ten minutes you’re still looking at the clock?  Move on and go about your day.  Pretty cool, right?  And it’s working before your very eyes.  I’ve been at this post now for 25 minutes, and only just now looked at the clock.</p>
-
-
-          </div>
-        </li>
-
-      
-              <li>
-          <div class="internal">
+              <li class='post'>
+          <div class="inner">
             <span class="post-meta">Feb 13, 2013</span>
             <h2>
               <a class="post-link" href="/nerd-stuff/personal/some-days.html">Some Days...</a>
             </h2>
+
+            
+
             <img class="alignnone" alt="" src="http://imgs.xkcd.com/comics/computer_problems.png" />
+            <a class='read-more' href="/nerd-stuff/personal/some-days.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Jan 5, 2013</span>
+            <h2>
+              <a class="post-link" href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Back at it.  Or, the Ten Minute Hack.</a>
+            </h2>
+
+            
+
+            <p>So… the blog has been languishing.  I’ve been meaning to post, really I have, but well, you know.  Busy busy.  Always too busy.  And I have all of these Capital-I-Ideas for huge epic posts about how to make the world a better place and all the crazy stuff I’m planning...
+            <a class='read-more' href="/nerd-stuff/personal/back-at-it-or-the-ten-minute-hack.html">Read More &rarr;</a>
+          </div>
+        </li>
+
+      
+              <li class='post'>
+          <div class="inner">
+            <span class="post-meta">Oct 24, 2012</span>
+            <h2>
+              <a class="post-link" href="/bay-area-adventures/personal/photos/best-day-ever.html">Best. Day. Ever.</a>
+            </h2>
+
+            
+
+            <p><a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/wedding/bunting-color.jpg"><img class="aligncenter size-large wp-image-443" src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/wedding/bunting-color.jpg" alt="" /></a></p>
+
+
+            <a class='read-more' href="/bay-area-adventures/personal/photos/best-day-ever.html">Read More &rarr;</a>
           </div>
         </li>
 
@@ -108,90 +206,6 @@
   </div>
 </div>
 
-</div>
-
-<div class="sidebar-sidebar">
-	<div class="inner">
-	
-		<h3>Post Categories</h3>
-
-		<div class="sidebar-item">
-			<ul id="category_list">
-				
-				<li>
-					<a href="/category/nerd-stuff/index.html">
-					Nerd stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/make-stuff/index.html">
-					Make stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay area adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/off-the-cuff/index.html">
-					Off the cuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/chicago-adventures/index.html">
-					Chicago adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food and drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-			</ul>
-		</div>	
 	</div>
 </div>
 

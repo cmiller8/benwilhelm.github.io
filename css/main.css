@@ -361,13 +361,50 @@ hr.clear {
   color: #888;
   font-weight: lighter; }
 
-.sidebar-main {
-  float: right;
-  width: 66%; }
+body {
+  margin-top: 3em; }
+
+.site-header {
+  background-color: #fdfdfd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1009; }
+
+.wrapper {
+  max-width: none; }
+
+.post-list .post {
+  float: left;
+  margin-bottom: 0;
+  width: 33%; }
+  .post-list .post:nth-child(3n+1) {
+    clear: left; }
+  .post-list .post:first-child {
+    clear: none; }
+  .post-list .post .inner {
+    border-left: 1px solid #e3e3e3;
+    padding: 1em 2em 3em 1em; }
+  .post-list .post .post-meta {
+    border-top: 1px solid #ddd;
+    margin-left: -1em;
+    padding-left: 1em;
+    padding-top: 1em; }
+  .post-list .post .read-more {
+    display: block;
+    text-align: right; }
+
+.has-sidebar {
+  padding-left: 250px; }
+
+.sidebar-main .post.single {
+  max-width: 640px; }
 
 .sidebar-sidebar {
   float: left;
-  width: 33%; }
+  margin-left: -250px;
+  width: 250px; }
   .sidebar-sidebar .inner {
     padding-right: 2em; }
   .sidebar-sidebar .sidebar-item ul {
@@ -393,24 +430,18 @@ hr.clear {
   float: right; }
   .post.album.has-meta .meta dl {
     float: left;
-    width: 50%; }
+    width: 10em; }
     .post.album.has-meta .meta dl dt {
       font-weight: bold; }
 
 .gallery {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em; }
+  margin-bottom: 3em; }
   .gallery .item {
-    background-color: #f8f8f8;
-    border: 1px solid #eee;
     display: inline-block;
-    margin: 0 0 1em;
+    margin: 0;
     min-height: 100px;
-    padding: 15px; }
+    width: 300px;
+    padding: 0; }
 
 .portfolio-list {
   -webkit-column-count: 3;
@@ -446,6 +477,14 @@ hr.clear {
       display: block; }
 
 @media screen and (max-width: 800px) {
+  .sidebar-main {
+    width: auto; }
+
+  .portfolio-list {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; }
+
   .post.album.has-meta .post-header {
     width: auto;
     float: none; }
@@ -456,7 +495,7 @@ hr.clear {
     .post.album.has-meta .meta dl {
       float: left;
       width: auto;
-      margin-right: 3em; }
+      margin-right: 2em; }
       .post.album.has-meta .meta dl:last-child {
         margin-right: 0; } }
 @media screen and (max-width: 540px) {
@@ -468,7 +507,7 @@ hr.clear {
     .post.album.has-meta .meta dl:nth-child(2n) {
       text-align: right; }
 
-  .gallery {
+  .portfolio-list {
     -webkit-column-count: auto;
     -moz-column-count: auto;
     column-count: auto;
