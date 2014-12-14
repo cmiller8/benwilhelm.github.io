@@ -2083,7 +2083,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 990; }
+  z-index: 1100; }
 
 .wrapper {
   max-width: none; }
@@ -2091,13 +2091,9 @@ body {
 .post-list .post {
   float: left;
   margin-bottom: 0;
-  width: 33%; }
+  width: 32%; }
   .post-list .post.emphasize {
-    width: 66%; }
-  .post-list .post:nth-child(3n+1) {
-    clear: left; }
-  .post-list .post:first-child {
-    clear: none; }
+    width: 64%; }
   .post-list .post .inner {
     border-left: 1px solid #e3e3e3;
     padding: 1em 2em 3em 1em; }
@@ -2160,7 +2156,7 @@ body {
     display: inline-block;
     margin: 0;
     min-height: 100px;
-    width: 33%;
+    width: 32%;
     padding: 0; }
 
 .portfolio-list {

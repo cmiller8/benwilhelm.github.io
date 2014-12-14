@@ -4,6 +4,9 @@
 	
 		$('.gallery a, .post a')
 		.fluidbox({immediate:true})
+		.on('openstart', function(){
+			$(".site-header").fadeOut('fast');
+		})
 		.on('openend', function(){
 			var caption = $(this).attr('title');
 			if (caption) {
@@ -13,6 +16,7 @@
 		})
 		.on('closestart', function(){
 			$('body').find('>.caption').remove();
+			$(".site-header").fadeIn('fast');
 		});
 		
 		$(".packery").each(function(){
