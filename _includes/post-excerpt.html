@@ -19,9 +19,12 @@
                 </a>
               </p>
               {% endif %}
+            {% elsif post.video %}
+              {% oembed {{post.video}} %}
             {% endif %}
 
             {{ post.excerpt | strip_html | truncatewords:50 }}
+            
             <a class='read-more' href="{{ post.url | prepend: site.baseurl }}">Read More &rarr;</a>
           </div>
         </li>

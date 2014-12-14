@@ -52,7 +52,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 990;
+	z-index: 1100;
 }
 
 .wrapper {
@@ -66,14 +66,6 @@ body {
 
 	&.emphasize {
 		width: 66%;
-	}
-
-	&:nth-child(3n+1) {
-		clear: left;
-	}
-
-	&:first-child {
-		clear: none;
 	}
 
 	.inner {
@@ -183,6 +175,7 @@ body {
 		min-height: 100px;
 		width: 33%;
 		padding: 0;
+
 	}
 }
 

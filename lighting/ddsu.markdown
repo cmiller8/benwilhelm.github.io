@@ -21,6 +21,7 @@ images:
   - src: lighting/ddsu/ddsu_ps06-1200x960.jpg
   - src: lighting/ddsu/ddsu_ps01-1200x960.jpg
   - src: lighting/ddsu/ddsu_ps04-1200x960.jpg
+    emphasize: true
   - src: lighting/ddsu/ddsu_ps05-1200x960.jpg
 
 
