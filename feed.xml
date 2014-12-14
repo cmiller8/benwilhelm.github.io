@@ -6,17 +6,51 @@
 </description>
     <link>http://benwilhelm.com/</link>
     <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 12 Dec 2014 17:50:11 -0600</pubDate>
-    <lastBuildDate>Fri, 12 Dec 2014 17:50:11 -0600</lastBuildDate>
+    <pubDate>Sat, 13 Dec 2014 19:08:23 -0600</pubDate>
+    <lastBuildDate>Sat, 13 Dec 2014 19:08:23 -0600</lastBuildDate>
     <generator>Jekyll v2.5.2</generator>
     
       <item>
-        <title>2-Column Float Around Image</title>
-        <description>&lt;p&gt;&lt;a title=&quot;2-Column Image Float&quot; href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg&quot;&gt;
-  &lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/2-column-float.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;/a&gt;&lt;/p&gt;
+        <title>Responsive Video Players</title>
+        <description>&lt;p&gt;I’m in the middle of rebuilding my blog using &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; (about which I’ll be writing a whole new post) but in doing so I came across this elegant CSS-only solution for responsive sizing of embedded video players.  It’s the best I’ve found so far, and I’ve looked at a lot of different solutions to this problem.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;TL;DR? Click the image above to grab the code.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://alistapart.com/article/creating-intrinsic-ratios-for-video&quot;&gt;http://alistapart.com/article/creating-intrinsic-ratios-for-video&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.videoWrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;56.25%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;embed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;videoWrapper&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;object&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;embed&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/object&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 12 Dec 2014 00:00:00 -0600</pubDate>
+        <link>http://benwilhelm.com/nerd-stuff/responsive-videos.html</link>
+        <guid isPermaLink="true">http://benwilhelm.com/nerd-stuff/responsive-videos.html</guid>
+        
+        
+        <category>nerd stuff</category>
+        
+      </item>
+    
+      <item>
+        <title>2-Column Float Around Image</title>
+        <description>&lt;p&gt;&lt;strong&gt;TL;DR? &lt;a href=&quot;http://jsbin.com/urIWofuY&quot;&gt;Grab the code&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it.&lt;/p&gt;
 
@@ -122,7 +156,7 @@ Notes&lt;/p&gt;
 &lt;a href=&quot;#source_two&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 07 Dec 2013 22:48:41 -0600</pubDate>
+        <pubDate>Sat, 07 Dec 2013 00:00:00 -0600</pubDate>
         <link>http://benwilhelm.com/nerd-stuff/2-column-float-around-image.html</link>
         <guid isPermaLink="true">http://benwilhelm.com/nerd-stuff/2-column-float-around-image.html</guid>
         
@@ -205,7 +239,51 @@ Notes&lt;/p&gt;
         <title>Miscellany</title>
         <description>&lt;p&gt;It’s been a while since I’ve posted anything to the ol’ blog, so here are some photos from the last few weeks.&lt;/p&gt;
 
-&lt;p&gt;[gallery ids=”897,900,901,898,899,930,902”]&lt;/p&gt;
+&lt;div class=&quot;gallery packery&quot;&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_121322.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_121322.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/architecture/IMG_20131103_124211.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/architecture/IMG_20131103_124211.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_120403.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_120403.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_121001.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_121001.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_123916.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_123916.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_124817.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_124817.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131109_022453.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131109_022453.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+&lt;/div&gt;
 
 </description>
         <pubDate>Mon, 04 Nov 2013 03:23:31 -0600</pubDate>
@@ -227,49 +305,75 @@ Notes&lt;/p&gt;
 
 &lt;div class=&quot;gallery packery&quot;&gt;
   
-  	&lt;div class=&quot;item pack&quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps07-960x1200.jpg&quot;&gt;
-			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps07-960x1200.jpg&quot; /&gt;
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05585.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05585.jpg&quot; /&gt;
 		&lt;/a&gt;
 	&lt;/div&gt;
   
-  	&lt;div class=&quot;item pack&quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps06-1200x960.jpg&quot;&gt;
-			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps06-1200x960.jpg&quot; /&gt;
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05439.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05439.jpg&quot; /&gt;
 		&lt;/a&gt;
 	&lt;/div&gt;
   
-  	&lt;div class=&quot;item pack&quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps01-1200x960.jpg&quot;&gt;
-			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps01-1200x960.jpg&quot; /&gt;
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05463.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05463.jpg&quot; /&gt;
 		&lt;/a&gt;
 	&lt;/div&gt;
   
-  	&lt;div class=&quot;item pack&quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps04-1200x960.jpg&quot;&gt;
-			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps04-1200x960.jpg&quot; /&gt;
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05467.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05467.jpg&quot; /&gt;
 		&lt;/a&gt;
 	&lt;/div&gt;
   
-  	&lt;div class=&quot;item pack&quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/lighting/ddsu/ddsu_ps05-1200x960.jpg&quot;&gt;
-			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/lighting/ddsu/ddsu_ps05-1200x960.jpg&quot; /&gt;
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05481.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05481.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05489.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05489.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05509.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05509.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05524.jpg&quot; title=&quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05524.jpg&quot; /&gt;
 		&lt;/a&gt;
 	&lt;/div&gt;
   
 &lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;And holy cow, here are some cows! The wind-chimey sound is because &lt;em&gt;every&lt;/em&gt; cow had a bell.&lt;/p&gt;
 
 &lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=296e8dc7db&amp;amp;photo_id=9337917568&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=296e8dc7db&amp;amp;photo_id=9337917568&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;A full panorama of the meadow&lt;/p&gt;
 
 &lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=25be0fca47&amp;amp;photo_id=9335928457&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=25be0fca47&amp;amp;photo_id=9335928457&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;And here’s video from the peak of a mountain that we set out to walk around, but decided to climb instead. It’s 2,100m high (about 7,000 feet). It’s no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.&lt;/p&gt;
 
 &lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=5858ac1b36&amp;amp;photo_id=9335837375&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=5858ac1b36&amp;amp;photo_id=9335837375&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;And here’s dinner&lt;/p&gt;
 
@@ -427,21 +531,33 @@ Notes&lt;/p&gt;
         <title>Arrivederci, Italia! Grazie!</title>
         <description>&lt;p&gt;Leaving Italy today for Innsbruck. More travelogues to come, but here are a few pictures in the meantime.&lt;/p&gt;
 
-&lt;p&gt;The view from our agriturismo, Cascina Sant’Eufemia&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130711_123351.jpg&quot;&gt;&lt;img title=&quot;20130711_123351.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130711_123351.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The view of the view&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130709_203639.jpg&quot;&gt;&lt;img title=&quot;IMG_20130709_203639.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130709_203639.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Beer o’clock in Torino&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130712_180220.jpg&quot;&gt;&lt;img title=&quot;IMG_20130712_180220.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130712_180220.jpg&quot; /&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;In Italy, donuts are apparently known as “Simpsons”&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_165901.jpg&quot;&gt;&lt;img title=&quot;20130709_165901.jpg&quot; class=&quot;alignnone size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_165901.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gallery packery&quot;&gt;
+  
+  	&lt;div class=&quot;item pack emphasize&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130712_180220.jpg&quot; title=&quot;Beer O&amp;#039;Clock in Torino&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130712_180220.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130711_123351.jpg&quot; title=&quot;The view from our agriturismo, Cascina Sant&amp;#039;Eufemia&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130711_123351.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-IMG_20130709_203639.jpg&quot; title=&quot;The view of the view.&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-IMG_20130709_203639.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+  	&lt;div class=&quot;item pack &quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_165901.jpg&quot; title=&quot;In Italy, donuts are apparently known as &amp;quot;Simpsons&amp;quot;&quot;&gt;
+			&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_165901.jpg&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+  
+&lt;/div&gt;
 
 </description>
         <pubDate>Fri, 12 Jul 2013 15:58:20 -0500</pubDate>
@@ -459,32 +575,6 @@ Notes&lt;/p&gt;
         <category>beer o&#39;clock</category>
         
         <category>agriturismo</category>
-        
-        
-        <category>photos</category>
-        
-        <category>travel</category>
-        
-        <category>italian adventures</category>
-        
-      </item>
-    
-      <item>
-        <title>On the road to Torino</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_123104.jpg&quot;&gt;&lt;img title=&quot;20130709_123104.jpg&quot; class=&quot;aligncenter size-full&quot; alt=&quot;image&quot; src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/wpid-20130709_123104.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;On the road with &lt;em&gt;Umberetto Cinque&lt;/em&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 09 Jul 2013 18:21:34 -0500</pubDate>
-        <link>http://benwilhelm.com/photos/travel/italian-adventures/on-the-road-to-torino.html</link>
-        <guid isPermaLink="true">http://benwilhelm.com/photos/travel/italian-adventures/on-the-road-to-torino.html</guid>
-        
-        <category>travel</category>
-        
-        <category>torino</category>
-        
-        <category>italia</category>
         
         
         <category>photos</category>
