@@ -1,5 +1,4 @@
 ---
-permalink: /lighting/whipping-man/
 layout: album
 
 type: Lighting Design

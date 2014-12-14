@@ -12,7 +12,7 @@ github_username:  benwilhelm
 # Build settings
 markdown: kramdown
 
-permalink: none
+permalink: pretty
 
 highligher: pygments
 

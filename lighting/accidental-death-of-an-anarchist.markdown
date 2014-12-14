@@ -1,5 +1,4 @@
 ---
-permalink: /lighting/anarchist/
 layout: album
 
 type: Lighting Design

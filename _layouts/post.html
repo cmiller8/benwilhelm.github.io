@@ -31,6 +31,9 @@ layout: has_sidebar
 			</a>
 		</p>
 		{% endif %}
+
+	{% elsif page.video %}
+	{% oembed {{page.video}} %}
 	{% endif %}
 
     {{ content }}

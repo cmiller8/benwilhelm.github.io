@@ -1,5 +1,4 @@
 ---
-permalink: /lighting/houdini/
 layout: album
 
 type: Lighting Design

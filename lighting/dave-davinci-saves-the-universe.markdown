@@ -1,5 +1,4 @@
 ---
-permalink: /lighting/ddsu/
 layout: album
 
 type: Lighting Design
