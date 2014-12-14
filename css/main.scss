@@ -28,6 +28,8 @@ $on-palm:          540px;
 $on-laptop:        800px;
 
 
+$fa-font-path:   "../bower_components/fontawesome/fonts";
+
 // Using media queries with like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -45,6 +47,7 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "../bower_components/fontawesome/scss/font-awesome.scss",
         "fluidbox",
         "base",
         "layout",

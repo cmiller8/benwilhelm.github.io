@@ -13,12 +13,16 @@ tags:
 - Austria
 - Alps
 
+emphasize: true
 images:
-  - src: lighting/ddsu/ddsu_ps07-960x1200.jpg
-  - src: lighting/ddsu/ddsu_ps06-1200x960.jpg
-  - src: lighting/ddsu/ddsu_ps01-1200x960.jpg
-  - src: lighting/ddsu/ddsu_ps04-1200x960.jpg
-  - src: lighting/ddsu/ddsu_ps05-1200x960.jpg
+  - src: photography/alps/DSC05585.jpg
+  - src: photography/alps/DSC05439.jpg
+  - src: photography/alps/DSC05463.jpg
+  - src: photography/alps/DSC05467.jpg
+  - src: photography/alps/DSC05481.jpg
+  - src: photography/alps/DSC05489.jpg
+  - src: photography/alps/DSC05509.jpg
+  - src: photography/alps/DSC05524.jpg
 
 ---
 
@@ -28,24 +32,25 @@ So. We went hiking through the Austrian Alps for four days and three nights, sle
 
 {% include gallery.html %}
 
+----
 
 And holy cow, here are some cows! The wind-chimey sound is because <em>every</em> cow had a bell.
 
-
 {% oembed http://flickr.com/photos/ben624/9337917568/ %}
 
+----
 
 A full panorama of the meadow
 
-
 {% oembed http://flickr.com/photos/ben624/9335928457/ %}
 
+----
 
 And here's video from the peak of a mountain that we set out to walk around, but decided to climb instead. It's 2,100m high (about 7,000 feet). It's no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.
 
-
 {% oembed http://flickr.com/photos/ben624/9335837375/ %}
 
+----
 
 And here's dinner
 

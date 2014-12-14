@@ -17,31 +17,19 @@ tags:
 - beer o'clock
 - agriturismo
 comments: []
+
+images: 
+  - src: posts/misc/wpid-IMG_20130712_180220.jpg
+    caption: Beer O&#039;Clock in Torino
+    emphasize: true
+  - src: posts/misc/wpid-20130711_123351.jpg
+    caption: The view from our agriturismo, Cascina Sant&#039;Eufemia
+  - src: posts/misc/wpid-IMG_20130709_203639.jpg
+    caption: The view of the view.
+  - src: posts/misc/wpid-20130709_165901.jpg
+    caption: In Italy, donuts are apparently known as &quot;Simpsons&quot;
 ---
 
 Leaving Italy today for Innsbruck. More travelogues to come, but here are a few pictures in the meantime.
 
-
-The view from our agriturismo, Cascina Sant'Eufemia
-
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130711_123351.jpg"><img title="20130711_123351.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130711_123351.jpg" /></a>
-
-
-The view of the view
-
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130709_203639.jpg"><img title="IMG_20130709_203639.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130709_203639.jpg" /></a>
-
-
-Beer o'clock in Torino
-
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130712_180220.jpg"><img title="IMG_20130712_180220.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130712_180220.jpg" /></a> 
-
-
-In Italy, donuts are apparently known as "Simpsons"
-
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130709_165901.jpg"><img title="20130709_165901.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130709_165901.jpg" /></a>
-
+{% include gallery.html %}

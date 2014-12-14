@@ -17,13 +17,14 @@ tags:
 - snow
 - trees
 comments: []
+
+images:
+  - src: posts/walk-home/wpid-IMG_20130204_221639.jpg
 ---
 
-<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_221639.jpg"><img class="alignnone" title="IMG_20130204_221639.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130204_221639.jpg" /></a>
-
-
-<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_222427.jpg"><img class="alignnone" title="IMG_20130204_222427.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130204_222427.jpg" /></a>
-
-
 Welles Park, Chicago.
+
+<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_222427.jpg"><img class="alignnone" title="IMG_20130204_222427.jpg" alt="image" src="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_222427.jpg" /></a>
+
+
 

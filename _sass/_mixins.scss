@@ -20,3 +20,30 @@
 	@include column-count(auto);
 	@include column-width(auto);
 }
+
+@mixin bmw-spin() {
+  -webkit-animation: bmw-spin 2s infinite linear;
+          animation: bmw-spin 2s infinite linear;
+}
+
+@-webkit-keyframes bmw-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes bmw-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}  

@@ -11,7 +11,8 @@ categories:
 tags:
 - Home
 comments: []
----
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130121_233735.jpg"><img class="alignnone size-full wp-image-622" alt="wpid-20130121_233735.jpg" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130121_233735.jpg"   /></a>
+images: 
+  - src: posts/misc/wpid-20130121_233735.jpg
+---
 

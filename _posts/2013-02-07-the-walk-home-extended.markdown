@@ -16,13 +16,11 @@ tags:
 - gin
 - night
 comments: []
+
+images:
+  - src: posts/walk-home/wpid-IMG_20130207_000051.jpg
+  - src: posts/walk-home/wpid-IMG_20130206_235925.jpg
+  - src: posts/walk-home/wpid-IMG_20130206_235511.jpg
+
 ---
-
-<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130207_000051.jpg"><img class="alignnone size-full wp-image-649" alt="wpid-IMG_20130207_000051.jpg" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130207_000051.jpg"   /></a>
-
-
-<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130206_235925.jpg"><img class="alignnone size-full wp-image-650" alt="wpid-IMG_20130206_235925.jpg" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130206_235925.jpg"   /></a>
-
-
-<a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130206_235511.jpg"><img class="alignnone size-full wp-image-651" alt="wpid-IMG_20130206_235511.jpg" src="{{ site.dropbox_path }}/thumbs/posts/walk-home/wpid-IMG_20130206_235511.jpg"   /></a>
 

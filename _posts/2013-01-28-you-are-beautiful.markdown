@@ -11,10 +11,10 @@ categories:
 - Photos
 tags: []
 comments: []
+
+images:
+  - src: posts/misc/wpid-IMG_20130127_185945.jpg
 ---
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130127_185945.jpg"><img class="alignnone size-full wp-image-636" alt="wpid-IMG_20130127_185945.jpg" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130127_185945.jpg"   /></a>
-
 
 Near Bernal Heights Park, San Francisco.
 

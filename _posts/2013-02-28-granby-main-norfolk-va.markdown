@@ -16,7 +16,8 @@ tags:
 - demolition
 - fire escapes
 comments: []
----
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130227_115434.jpg"><img class="alignnone size-full wp-image-752" alt="wpid-IMG_20130227_115434.jpg" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130227_115434.jpg"   /></a>
+images:
+  - src: posts/misc/wpid-IMG_20130227_115434.jpg
+---
 

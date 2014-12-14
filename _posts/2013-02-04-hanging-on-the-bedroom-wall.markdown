@@ -12,7 +12,8 @@ tags:
 - Home
 - should be sleeping
 comments: []
----
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130203_224841.jpg"><img class="alignnone" title="IMG_20130203_224841.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130203_224841.jpg" /></a>
+images:
+  - src: posts/misc/wpid-IMG_20130203_224841.jpg
+---
 

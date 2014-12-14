@@ -1,30 +1,27 @@
 ---
 layout: post
-status: publish
-published: true
 title: 2-Column Float Around Image
 excerpt: It's common in print design to wrap text in two columns around both sides
   of an image. However, it's a surprisingly difficult thing to do in web design. Here's
   one method of solving it which allows for separating the image from the text in
   the context of a CMS.
-date: '2013-12-07 22:48:41 -0600'
-date_gmt: '2013-12-07 22:48:41 -0600'
 categories:
 - Nerd Stuff
 tags:
 - CSS
 - image float
 - columns
-comments: []
+
+emphasize: true
+
+images:
+  - src: posts/misc/2-column-float.jpg
+
 ---
 
 
 
-<a title="2-Column Image Float" href="{{ site.dropbox_path }}/large/posts/misc/2-column-float.jpg" >
-  <img src="{{ site.dropbox_path }}/large/posts/misc/2-column-float.jpg" alt="" />
-</a>
-
-<strong>TL;DR? Click the image above to grab the code.</strong>
+<strong>TL;DR? [Grab the code](http://jsbin.com/urIWofuY).</strong>
 
 This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it.
 

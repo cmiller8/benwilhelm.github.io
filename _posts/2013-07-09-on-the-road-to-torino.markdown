@@ -14,10 +14,10 @@ tags:
 - torino
 - italia
 comments: []
+
+images:
+  - src: posts/misc/wpid-20130709_123104.jpg
 ---
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130709_123104.jpg"><img title="20130709_123104.jpg" class="aligncenter size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130709_123104.jpg" /></a>
-
-
-On the road with <em>Umberetto Cinque</em><em>.</em>
+On the road with _Umberto Cinque_.
 

@@ -11,10 +11,10 @@ categories:
 - Photos
 tags: []
 comments: []
+
+images:
+  - src: posts/misc/wpid-IMG_20130201_105052.jpg
 ---
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130201_105052.jpg"><img class="alignnone size-full wp-image-642" alt="wpid-IMG_20130201_105052.jpg" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130201_105052.jpg"   /></a>
-
 
 See you next time.
 

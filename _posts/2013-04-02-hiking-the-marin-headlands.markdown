@@ -16,13 +16,12 @@ tags:
 - san francisco
 - fog
 comments: []
+
+images: 
+  - src: posts/misc/wpid-IMG_20130402_093811.jpg
+  - src: posts/misc/wpid-IMG_20130402_093620.jpg
+  - src: posts/misc/wpid-IMG_20130402_093356.jpg
 ---
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130402_093811.jpg"><img title="IMG_20130402_093811.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130402_093811.jpg" /></a>
-
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130402_093620.jpg"><img title="IMG_20130402_093620.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130402_093620.jpg" /></a>
-
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130402_093356.jpg"><img title="IMG_20130402_093356.jpg" class="alignnone size-full" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130402_093356.jpg" /></a>
+{% include gallery.html %}
 

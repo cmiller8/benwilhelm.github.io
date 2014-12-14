@@ -12,9 +12,10 @@ tags:
 - architecture
 - Cleveland
 comments: []
----
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130105_151611.jpg"><img class="alignnone" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130105_151611.jpg"   /></a>
+images:
+  - src: posts/misc/wpid-IMG_20130105_151611.jpg
+---
 
 
 Taken from the second floor balcony of Cleveland's West Side Market.

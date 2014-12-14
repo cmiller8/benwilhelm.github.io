@@ -11,10 +11,10 @@ categories:
 tags:
 - Home
 comments: []
+
+images:
+  - src: posts/misc/wpid-IMG_20130120_214424.jpg
 ---
-
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130120_214424.jpg"><img class="alignnone size-full wp-image-619" alt="wpid-IMG_20130120_214424.jpg" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130120_214424.jpg"   /></a>
-
 
 ...but she likes the photo.
 

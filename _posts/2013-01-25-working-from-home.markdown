@@ -12,7 +12,9 @@ tags:
 - Home
 - zeke
 comments: []
----
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-IMG_20130125_103048.jpg"><img class="alignnone size-full wp-image-626" alt="wpid-IMG_20130125_103048.jpg" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-IMG_20130125_103048.jpg"   /></a>
+images:
+  - src: posts/misc/wpid-IMG_20130125_103048.jpg
+
+---
 

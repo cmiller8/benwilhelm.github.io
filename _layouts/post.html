@@ -17,12 +17,20 @@ layout: has_sidebar
 
   <article class="post-content">
 
-	{% if page.images %}
-	<p>
-		<a href="{{ site.dropbox_path }}/large/{{ page.images[0].src }}">
-			<img src='{{ site.dropbox_path }}/large/{{ page.images[0].src }}' />
-		</a>
-	</p>
+	{% if page.images.size == 1 %}
+		{% if page.images[0].external %}
+		<p>
+			<a href="{{ page.images[0].src }}">
+				<img src='{{ page.images[0].src }}' />
+			</a>
+		</p>
+		{% else %}
+		<p>
+			<a href="{{ site.dropbox_path }}/large/{{ page.images[0].src }}">
+				<img src='{{ site.dropbox_path }}/large/{{ page.images[0].src }}' />
+			</a>
+		</p>
+		{% endif %}
 	{% endif %}
 
     {{ content }}

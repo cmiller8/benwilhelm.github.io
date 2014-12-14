@@ -1,5 +1,13 @@
 @include media-query($on-laptop) {
 
+	.post-list .post {
+		width: 50%;
+
+		&:nth-child(2n+1) {
+			clear: left;
+		}
+	}
+
 	.sidebar-main {
 		width: auto;
 	}
