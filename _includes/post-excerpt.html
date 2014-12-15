@@ -15,7 +15,11 @@
               {% else %}
               <p>
                 <a href="{{ site.image_path }}/large/{{ post.images[0].src }}">
-                  <img src='{{ site.image_path }}/thumbs/{{ post.images[0].src }}' />
+                  {% if post.emphasize %}
+                    <img src='{{ site.image_path }}/medium/{{ post.images[0].src }}' />
+                  {% else %}
+                    <img src='{{ site.image_path }}/thumbs/{{ post.images[0].src }}' />
+                  {% endif %}
                 </a>
               </p>
               {% endif %}

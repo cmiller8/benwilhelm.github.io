@@ -68,6 +68,22 @@ grunt.initConfig({
 			}]
 		},
 
+		medium: {
+			options: {
+				width: 800,
+                overwrite: false
+			},
+
+			files: [{
+				expand: true,
+				cwd: "files/originals/",
+				src: "**/*.jpg",
+				dest: "files/medium/",
+				ext: ".jpg",
+				extDot: "first"
+			}]
+		},
+
         large: {
 			options: {
 				width: 1200, 
@@ -201,4 +217,4 @@ grunt.registerTask('build_deploy', [
 ]);
 
 
-grunt.registerTask('resize', ["image_resize:thumbs", "image_resize:large"]);
+grunt.registerTask('resize', ["image_resize:thumbs", "image_resize:medium", "image_resize:large"]);
