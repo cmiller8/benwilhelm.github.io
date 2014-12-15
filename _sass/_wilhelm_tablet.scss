@@ -1,0 +1,20 @@
+@include media-query($on-tablet) {
+
+	.post-list .post {
+		width: 50%;
+
+		&.emphasize {
+			width: auto;
+		}
+	}
+
+
+	.gallery .item {
+		width: 48%;
+	}
+
+	.portfolio-list {
+		@include no-columns();
+	}
+
+}

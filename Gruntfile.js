@@ -52,7 +52,7 @@ grunt.initConfig({
     // ====================
 	image_resize: {
 
-                thumbs: {
+        thumbs: {
 			options: {
 				width: 400,
                 overwrite: false
@@ -68,7 +68,7 @@ grunt.initConfig({
 			}]
 		},
 
-                large: {
+        large: {
 			options: {
 				width: 1200, 
                 overwrite: false
@@ -96,7 +96,7 @@ grunt.initConfig({
 			options: {
 				config: "_config.yml",
 				verbose: true,
-				raw: "exclude: [Gemfile, Gemfile.lock, bower.json, package.json, Gruntfile.js, node_modules]"
+				raw: "exclude: [Gemfile, Gemfile.lock, bower.json, package.json, Gruntfile.js, node_modules, bower_components]"
 			}
 		},
 
@@ -166,8 +166,9 @@ grunt.initConfig({
 				'./**/*.yml', 
 				'./**/*.scss',
 
-				"!./node_modules/*",
-				"!./_site/*"
+				"!./node_modules/",
+				"!./_site/*",
+				"!./_site/**/*"
 			],
 			tasks: ['jekyll:dev'],
 			options: {

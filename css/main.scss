@@ -25,7 +25,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 $content-width:    800px;
 
 $on-palm:          540px;
-$on-laptop:        800px;
+$on-tablet:        700px;
+$on-laptop:        990px;
 
 
 $fa-font-path:   "../bower_components/fontawesome/fonts";
@@ -53,7 +54,9 @@ $fa-font-path:   "../bower_components/fontawesome/fonts";
         "layout",
         "mixins",
         "wilhelm",
-        "wilhelm_medium",
-        "wilhelm_small",
-        "syntax-highlighting"
+        "wilhelm_laptop",
+        "wilhelm_tablet",
+        "wilhelm_palm",
+        "syntax-highlighting",
+        "development"
 ;

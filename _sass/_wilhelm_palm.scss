@@ -14,7 +14,8 @@
 		}
 	}
 
-	.portfolio-list {
-		@include no-columns();
+	.gallery .item {
+		width: auto;
 	}
+
 }

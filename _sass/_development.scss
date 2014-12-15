@@ -1,0 +1,15 @@
+body.development {
+
+	@include media-query($on-laptop) {
+		.site-header { background-color: #ddd; }
+	}
+
+	@include media-query($on-tablet) {
+		.site-header { background-color: #bbb; }
+	}
+
+	@include media-query($on-palm) {
+		.site-header { background-color: #999; }
+	}
+
+}

@@ -1,16 +1,20 @@
 @include media-query($on-laptop) {
 
-	.post-list .post {
-		width: 50%;
+	.has-sidebar {
+		padding-left: 0;
+	}
 
-		&:nth-child(2n+1) {
-			clear: left;
-		}
+	.sidebar-sidebar {
+		float: none;
+		margin-left: 0;
+		width: auto;
 	}
 
 	.sidebar-main {
+		float: none;
 		width: auto;
 	}
+
 
 	.portfolio-list {
 		@include column-count(2);
