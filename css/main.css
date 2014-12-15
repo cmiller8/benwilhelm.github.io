@@ -2120,17 +2120,18 @@ body {
   float: left;
   margin-left: -250px;
   width: 250px; }
-  .sidebar-sidebar .inner {
-    padding-right: 2em; }
-  .sidebar-sidebar .sidebar-item ul {
-    margin: 1em 0;
-    padding: 0; }
-    .sidebar-sidebar .sidebar-item ul ul {
-      padding-left: 1em; }
-  .sidebar-sidebar .sidebar-item li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
+  .sidebar-sidebar .sidebar-item {
+    padding-right: 2em;
+    margin-bottom: 3em; }
+    .sidebar-sidebar .sidebar-item ul {
+      margin: 1em 0;
+      padding: 0; }
+      .sidebar-sidebar .sidebar-item ul ul {
+        padding-left: 1em; }
+    .sidebar-sidebar .sidebar-item li {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
 
 .post.album .post-header > * {
   margin: 0 0 10px;
