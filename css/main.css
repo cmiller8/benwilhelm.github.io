@@ -2198,13 +2198,25 @@ body {
     padding-left: 0; }
 
   .sidebar-sidebar {
+    border-bottom: 1px solid #eee;
     float: none;
     margin-left: 0;
+    margin-bottom: 2em;
+    padding: 0 2em 2em;
     width: auto; }
+    .sidebar-sidebar .sidebar-item {
+      margin-bottom: 1.5em; }
+      .sidebar-sidebar .sidebar-item li {
+        display: inline; }
+        .sidebar-sidebar .sidebar-item li:after {
+          color: #999;
+          content: "•"; }
 
   .sidebar-main {
     float: none;
     width: auto; }
+    .sidebar-main .post.single {
+      max-width: none; }
 
   .portfolio-list {
     -webkit-column-count: 2;
