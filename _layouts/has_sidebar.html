@@ -4,21 +4,24 @@ layout: default
 
 <div class="has-sidebar">
 	<aside class="sidebar-sidebar">
-		<div class="inner">
 		
+		<div class="sidebar-item">
+			<h3><em>New site in progress...</em></h3>
+			<p>Whoa, check it out! A whole new site! I'm rebuilding benwilhelm.com in <a target='_blank' href='http://jekyllrb.com'>Jekyll</a>. I'll let you know how it goes...</p>
+		</div>
+
+		<div class="sidebar-item">
 			<h3>Post Categories</h3>
 
-			<div class="sidebar-item">
-				<ul id="category_list">
-					{% for category in site.categories %}
-					<li>
-						{% categorylink category[0] %}
-						{{ category | first | capitalize }}
-						{% endcategorylink %}
-					</li>
-					{% endfor %}
-				</ul>
-			</div>	
+			<ul id="category_list">
+				{% for category in site.categories %}
+				<li>
+					{% categorylink category[0] %}
+					{{ category | first | capitalize }}
+					{% endcategorylink %}
+				</li>
+				{% endfor %}
+			</ul>
 		</div>
 	</aside>
 

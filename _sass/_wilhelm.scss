@@ -107,12 +107,10 @@ body {
 	margin-left: -250px;
 	width: 250px;
 
-	.inner {
-		padding-right: 2em;
-	}
-
 	.sidebar-item {
-
+		padding-right: 2em;
+		margin-bottom: 3em;
+		
 		ul {
 			margin: 1em 0;
 			padding: 0;
