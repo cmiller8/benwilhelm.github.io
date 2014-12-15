@@ -10,13 +10,15 @@ url: "http://benwilhelm.com" # the base hostname & protocol for your site
 github_username:  benwilhelm
 
 # Build settings
+env: development
+
 markdown: kramdown
 
 permalink: pretty
 
 highligher: pygments
 
-dropbox_path: https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com
+image_path: https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com
 
 category_archive: 
   path: category
