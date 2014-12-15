@@ -1818,7 +1818,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
@@ -1942,7 +1942,7 @@ pre {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 990px) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -1989,7 +1989,7 @@ pre {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 990px) {
     .post-title {
       font-size: 36px; } }
 
@@ -1997,17 +1997,17 @@ pre {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 990px) {
       .post-content h4 {
         font-size: 18px; } }
 
@@ -2193,13 +2193,17 @@ body {
     .portfolio-list .item:hover .caption {
       display: block; }
 
-@media screen and (max-width: 800px) {
-  .post-list .post {
-    width: 50%; }
-    .post-list .post:nth-child(2n+1) {
-      clear: left; }
+@media screen and (max-width: 990px) {
+  .has-sidebar {
+    padding-left: 0; }
+
+  .sidebar-sidebar {
+    float: none;
+    margin-left: 0;
+    width: auto; }
 
   .sidebar-main {
+    float: none;
     width: auto; }
 
   .portfolio-list {
@@ -2220,6 +2224,22 @@ body {
       margin-right: 2em; }
       .post.album.has-meta .meta dl:last-child {
         margin-right: 0; } }
+@media screen and (max-width: 700px) {
+  .post-list .post {
+    width: 50%; }
+    .post-list .post.emphasize {
+      width: auto; }
+
+  .gallery .item {
+    width: 48%; }
+
+  .portfolio-list {
+    -webkit-column-count: auto;
+    -moz-column-count: auto;
+    column-count: auto;
+    -webkit-column-width: auto;
+    -moz-column-width: auto;
+    column-width: auto; } }
 @media screen and (max-width: 540px) {
   .post.album.has-meta .meta dl {
     width: 50%;
@@ -2229,13 +2249,8 @@ body {
     .post.album.has-meta .meta dl:nth-child(2n) {
       text-align: right; }
 
-  .portfolio-list {
-    -webkit-column-count: auto;
-    -moz-column-count: auto;
-    column-count: auto;
-    -webkit-column-width: auto;
-    -moz-column-width: auto;
-    column-width: auto; } }
+  .gallery .item {
+    width: auto; } }
 /**
  * Syntax highlighting styles
  */
@@ -2374,3 +2389,13 @@ body {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+@media screen and (max-width: 990px) {
+  body.development .site-header {
+    background-color: #ddd; } }
+@media screen and (max-width: 700px) {
+  body.development .site-header {
+    background-color: #bbb; } }
+@media screen and (max-width: 540px) {
+  body.development .site-header {
+    background-color: #999; } }
