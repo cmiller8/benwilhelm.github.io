@@ -5,16 +5,36 @@
 	}
 
 	.sidebar-sidebar {
+		border-bottom: 1px solid #eee;
 		float: none;
 		margin-left: 0;
+		margin-bottom: 2em;
+		padding: 0 2em 2em;
 		width: auto;
+
+		.sidebar-item {
+
+			margin-bottom: 1.5em;
+
+			li {
+				display: inline;
+
+				&:after {
+					color: #999;
+					content: "\2022"
+				}
+			}
+		}
 	}
 
 	.sidebar-main {
 		float: none;
 		width: auto;
-	}
 
+		.post.single {
+			max-width: none;
+		}
+	}
 
 	.portfolio-list {
 		@include column-count(2);

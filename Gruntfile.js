@@ -104,7 +104,7 @@ grunt.initConfig({
 			options: {
 				config: "_config.yml,_config_prod.yml",
 				verbose: true,
-				raw: "exclude: [Gemfile, Gemfile.lock, bower.json, package.json, Gruntfile.js, node_modules]"
+				raw: "exclude: [Gemfile, Gemfile.lock, bower.json, package.json, Gruntfile.js, node_modules, bower_components]"
 			}
 		}
 	},
