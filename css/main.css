@@ -2055,12 +2055,15 @@ hr {
     height: 100%; }
 
 .fluidbox-loading:after {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.85);
   content: "Loading...";
   font-size: xx-small;
   position: absolute;
   top: 0;
   right: 0; }
+
+.fluidbox-overlay {
+  background-color: rgba(0, 0, 0, 0.85); }
 
 body > .caption {
   position: fixed;
@@ -2108,6 +2111,10 @@ body {
 
 .has-sidebar {
   padding-left: 250px; }
+
+.sidebar-main {
+  float: right;
+  width: 100%; }
 
 .sidebar-main .post.single {
   max-width: 640px; }
@@ -2157,8 +2164,10 @@ body {
     display: inline-block;
     margin: 0;
     min-height: 100px;
-    width: 32%;
+    width: 31%;
     padding: 0; }
+    .gallery .item.emphasize {
+      width: 64%; }
 
 .portfolio-list {
   -webkit-column-count: 3;
@@ -2198,11 +2207,11 @@ body {
     padding-left: 0; }
 
   .sidebar-sidebar {
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
     float: none;
     margin-left: 0;
-    margin-bottom: 2em;
-    padding: 0 2em 2em;
+    margin-top: 2em;
+    padding: 2em;
     width: auto; }
     .sidebar-sidebar .sidebar-item {
       margin-bottom: 1.5em; }

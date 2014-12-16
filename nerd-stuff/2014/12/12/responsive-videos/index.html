@@ -63,6 +63,59 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="has-sidebar">
+
+	<div class="sidebar-main">
+		<div class="post single">
+
+  <header class="post-header">
+  	<p class="quiet"><a href="/">&larr; Back to Posts</a></p>
+    <h1 class="post-title">Responsive Video Players</h1>
+    <p class="post-meta">Dec 12, 2014</p>
+
+    <p class="categories quiet">Posted in
+	
+	- <a href='/category/nerd-stuff'>nerd stuff</a>
+	
+    </p>
+  </header>
+
+  <article class="post-content">
+
+	
+
+    <p>I’m in the middle of rebuilding my blog using <a href="http://jekyllrb.com">Jekyll</a> (about which I’ll be writing a whole new post) but in doing so I came across this elegant CSS-only solution for responsive sizing of embedded video players.  It’s the best I’ve found so far, and I’ve looked at a lot of different solutions to this problem.</p>
+
+<p><a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">http://alistapart.com/article/creating-intrinsic-ratios-for-video</a></p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.videoWrapper</span> <span class="p">{</span>
+	<span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
+	<span class="k">padding-bottom</span><span class="o">:</span> <span class="m">56.25%</span><span class="p">;</span>
+	<span class="k">padding-top</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
+	<span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">object</span><span class="o">,</span>
+<span class="nt">embed</span> <span class="p">{</span>
+	<span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+	<span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+	<span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+	<span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+	<span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;videoWrapper&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">&quot;...&quot;</span> <span class="na">type=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;embed</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span> <span class="na">type=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;/object&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+  </article>
+
+</div>
+
+	</div>
+
 	<aside class="sidebar-sidebar">
 		
 		<div class="sidebar-item">
@@ -71,7 +124,7 @@
 		</div>
 
 		<div class="sidebar-item">
-			<h3>Post Categories</h3>
+			<h3>Blog Categories</h3>
 
 			<ul id="category_list">
 				
@@ -150,58 +203,6 @@
 			</ul>
 		</div>
 	</aside>
-
-	<div class="sidebar-main">
-		<div class="post single">
-
-  <header class="post-header">
-  	<p class="quiet"><a href="/">&larr; Back to Posts</a></p>
-    <h1 class="post-title">Responsive Video Players</h1>
-    <p class="post-meta">Dec 12, 2014</p>
-
-    <p class="categories quiet">Posted in
-	
-	- <a href='/category/nerd-stuff'>nerd stuff</a>
-	
-    </p>
-  </header>
-
-  <article class="post-content">
-
-	
-
-    <p>I’m in the middle of rebuilding my blog using <a href="http://jekyllrb.com">Jekyll</a> (about which I’ll be writing a whole new post) but in doing so I came across this elegant CSS-only solution for responsive sizing of embedded video players.  It’s the best I’ve found so far, and I’ve looked at a lot of different solutions to this problem.</p>
-
-<p><a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">http://alistapart.com/article/creating-intrinsic-ratios-for-video</a></p>
-
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.videoWrapper</span> <span class="p">{</span>
-	<span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
-	<span class="k">padding-bottom</span><span class="o">:</span> <span class="m">56.25%</span><span class="p">;</span>
-	<span class="k">padding-top</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
-	<span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">object</span><span class="o">,</span>
-<span class="nt">embed</span> <span class="p">{</span>
-	<span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
-	<span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-	<span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-	<span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
-	<span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
-
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;videoWrapper&quot;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">&quot;...&quot;</span> <span class="na">type=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;embed</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span> <span class="na">type=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;/object&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
-
-
-  </article>
-
-</div>
-
-	</div>
 </div>
 
 <div class="clear"></div>
