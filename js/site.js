@@ -14409,25 +14409,47 @@ var customTransitionEnd = whichTransitionEvent();
 			var $packery = $(this);
 			var $imgs = $packery.find('img');
 			$imgs.css('opacity',0);
-			$packery.imagesLoaded(function(){
-
-				$packery.packery({
-					itemSelector: '.pack',
-					gutter: 5
-				});
-				$imgs.css('opacity',1);
-
+			$imgs.each(function(){
+				var $img = $(this);
+				var aspect = $img.attr('data-aspect');
+				if (aspect) {
+					var $item = $(this).closest('.pack');
+					var w = $item.innerWidth();
+					var h = w / aspect;
+					$img.height(h);
+				}
+				
 			});
+
+			$packery.packery({
+				itemSelector: '.pack',
+				gutter: 5
+			});
+			$imgs.css('opacity',1);
+
 
 		});
 		
 
 		$packPosts = $(".packery-posts");
-		$packPosts.imagesLoaded(function(){
+		if ($packPosts.length) {
+			var $postImgs = $packPosts.find('img');
+			$postImgs.each(function(){
+				var $img = $(this);
+				var aspect = $img.attr('data-aspect');
+				console.log(aspect);
+				if (aspect) {
+					var $inner = $img.closest('li.post').find('.inner');
+					var w = $inner.width();
+					var h = w / aspect;
+					$img.height(h);
+				}
+			});
+
 			$packPosts.packery({
 				itemSelector: 'li.post'
 			});
-		});
+		}
 
 	});
 
