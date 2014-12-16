@@ -3,6 +3,11 @@ layout: default
 ---
 
 <div class="has-sidebar">
+
+	<div class="sidebar-main">
+		{{content}}
+	</div>
+
 	<aside class="sidebar-sidebar">
 		
 		<div class="sidebar-item">
@@ -11,7 +16,7 @@ layout: default
 		</div>
 
 		<div class="sidebar-item">
-			<h3>Post Categories</h3>
+			<h3>Blog Categories</h3>
 
 			<ul id="category_list">
 				{% for category in site.categories %}
@@ -24,10 +29,6 @@ layout: default
 			</ul>
 		</div>
 	</aside>
-
-	<div class="sidebar-main">
-		{{content}}
-	</div>
 </div>
 
 <div class="clear"></div>

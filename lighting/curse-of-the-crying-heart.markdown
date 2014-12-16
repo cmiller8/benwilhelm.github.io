@@ -15,9 +15,11 @@ meta:
   Original Music: Kevin O'Donnell
 
 images:
+  - src: lighting/curse/DSC_0131.jpg
+    emphasize: true
+  - src: lighting/curse/DSCF0167.jpg
+    emphasize: true
   - src: lighting/curse/03-DSC_0097.jpg
   - src: lighting/curse/05-DSC_0221.jpg
-  - src: lighting/curse/DSCF0167.jpg
-  - src: lighting/curse/DSC_0131.jpg
 
 ---

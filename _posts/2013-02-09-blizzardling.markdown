@@ -17,6 +17,7 @@ comments: []
 
 images:
   - src: posts/ice-storm/wpid-IMG_20130209_135916.jpg
+    emphasize: true
   - src: posts/ice-storm/wpid-IMG_20130209_134758.jpg
   - src: posts/ice-storm/wpid-IMG_20130209_135406.jpg
   - src: posts/ice-storm/wpid-IMG_20130209_135126.jpg

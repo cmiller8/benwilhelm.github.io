@@ -1,9 +1,13 @@
 
 <div class="gallery packery">
   {% for image in page.images %}
-  	<div class='item pack {%if image.emphasize%}emphasize{% endif %}'>
+  	<div class='item pack {%if image.emphasize %}emphasize{% endif %}'>
 		<a href='{{ site.image_path }}/large/{{image.src}}' title='{{image.caption}}'>
-			<img src='{{ site.image_path }}/thumbs/{{image.src}}' />
+			{% if image.emphasize %}
+				<img src='{{ site.image_path }}/medium/{{image.src}}' />
+			{% else %}
+				<img src='{{ site.image_path }}/thumbs/{{image.src}}' />
+			{% endif %}
 		</a>
 	</div>
   {% endfor %}
