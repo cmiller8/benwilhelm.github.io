@@ -1,7 +1,6 @@
 ---
 layout: portfolio
-title: Wait for it....
+albumGroup: photography
 ---
 
-Coming soon.
 
