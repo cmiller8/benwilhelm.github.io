@@ -1,7 +1,13 @@
-var grunt = require('grunt');
+var grunt = require('grunt')
+  , fs = require('fs')
+  , glob = require('glob')
+  , sizeOf = require('image-size')
+  , YAML = require('yamljs')
+  ;
 
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-connect');
+grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-watch');
@@ -46,6 +52,17 @@ grunt.initConfig({
 		}
 	},
 
+
+	// ===============
+	// TASK: CONNECT
+    // ===============
+	copy: {
+		dist: {
+			files: [
+				{ expand: true, src: ['bower_components/fontawesome/fonts/*'], dest: 'fonts/', flatten: true }
+			]
+		}
+	},
 
 	// ====================
 	// TASK: image_resize
@@ -100,8 +117,6 @@ grunt.initConfig({
 			}]
 		}
 
-
-
 	},
 
 	// ====================
@@ -140,6 +155,10 @@ grunt.initConfig({
 	shell: {
 		deploy: {
 			command: "cd _site; git add -A; git commit -m 'Production build'; git push origin master;"
+		},
+
+		updatesite: {
+			command: "cd _site; git pull origin master;"
 		}
 	},
 
@@ -194,7 +213,10 @@ grunt.initConfig({
 
 		jshint: {
 			files: ['_js/*.js'],
-			tasks: ['jshint:beforeconcat']
+			tasks: ['jshint:dist', 'concat:dist', 'uglify:dev', 'jekyll:dev'],
+			options: {
+				livereload: true
+			}
 		}
 	}
 });
@@ -203,18 +225,65 @@ grunt.registerTask('default', [
 	'jshint:dist',
 	'concat:dist',
 	'uglify:dev',
+	'copy:dist',
 	'jekyll:dev', 
 	'connect:dev', 
-	'watch:jekyll'
+	'watch'
 ]);
 
-grunt.registerTask('build_deploy', [
+grunt.registerTask('build', [
 	'jshint:dist',
 	'concat:dist',
 	'uglify:prod',
+	'copy:dist',
+	'processimages',
 	'jekyll:prod',
-	'shell:deploy'
 ]);
+
+grunt.registerTask('deploy', [
+	'shell:deploy'
+])
+
+grunt.registerTask('builddeploy', [
+	'build',
+	'deploy'
+]);
+
+grunt.registerTask('buildserve', [
+	'build',
+	'connect:dev:keepalive'
+]);
+
+grunt.registerTask('updatesite', ['shell:updatesite']);
 
 
 grunt.registerTask('resize', ["image_resize:thumbs", "image_resize:medium", "image_resize:large"]);
+grunt.registerTask('imageinfo', function(){
+	var done = this.async();
+	glob('files/**/*.jpg', {}, function(err, files){
+		var existingYml = fs.readFileSync("./_data/images.yml").toString();
+		var a = existingYml.split("#!#!#!#!#");
+		existingYml = a[0].trim();
+
+		var data = {};
+		files.forEach(function(file){
+			var dimensions = sizeOf(file);
+			var image = {
+				width: dimensions.width,
+				height: dimensions.height,
+				aspect: dimensions.width / dimensions.height
+			}
+			data[file] = image;
+		})
+
+		var yamlString = YAML.stringify(data);
+		var yamlHeading = "\n\n\n#!#!#!#!# Do not edit below this line.\n";
+		yamlHeading += "# Generated automatically using `grunt imageinfo` on " + new Date() + "\n\n";
+		
+		fs.writeFileSync("./_data/images.yml", existingYml + yamlHeading + yamlString);
+		console.log('done');
+		done();
+	});
+	
+});
+grunt.registerTask('processimages', ['resize', 'imageinfo']);

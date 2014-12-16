@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
-<div class="post album {% if page.meta %}has-meta{% endif %} ">
+{% assign group = site.data.albums[{{page.albumGroup}}] %}
+{% assign album = group.albums[{{page.albumKey}}] %}
+  <div class="post album {% if album.meta %}has-meta{% endif %} ">
 
-  {% if page.type %}<p class='quiet'><a href='{{page.backto}}'>Lighting Design</a></p>{% endif %}
+  <p class='quiet'><a href='{{group.url}}'>{{group.title}}</a></p>
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.subtitle %}<h2>{{page.subtitle}}</h2>{% endif %}
+    <h1 class="post-title">{{ album.title }}</h1>
+    {% if album.subtitle %}<h2>{{album.subtitle}}</h2>{% endif %}
   </header>
 
   <aside class='meta'>
-  {% for item in page.meta %}
+  {% for item in album.meta %}
   <dl>
     <dt>{{item[0]}}</dt>
     <dd>{{item[1]}}</dd>
@@ -21,8 +23,9 @@ layout: default
   <hr class='clear' />
 
   <article class="post-content">
-    {{ content }}
+    {{ album.description }}
   </article>
 
+  {% assign images = album.images %}
   {% include gallery.html %}
 </div>

@@ -9,16 +9,22 @@
               {% if post.images[0].external %}
               <p>
                 <a href="{{ post.images[0].src }}">
-                  <img src='{{ post.images[0].src }}' />
+                  {% capture thumbIdx %}{{post.images[0].src}}{% endcapture %}
+                  {% assign thumbInfo = site.data.images[thumbIdx] %}                  
+                  <img src='{{ post.images[0].src }}' data-aspect='{{thumbInfo.aspect}}' />
                 </a>
               </p>
               {% else %}
               <p>
+                {% capture thumbIdx %}files/thumbs/{{post.images[0].src}}{% endcapture %}
+                {% assign thumbInfo = site.data.images[thumbIdx] %}
+                {% capture mediumIdx %}files/medium/{{post.images[0].src}}{% endcapture %}
+                {% assign mediumInfo = site.data.images[mediumIdx] %}
                 <a href="{{ site.image_path }}/large/{{ post.images[0].src }}">
                   {% if post.emphasize %}
-                    <img src='{{ site.image_path }}/medium/{{ post.images[0].src }}' />
+                    <img src='{{ site.image_path }}/medium/{{ post.images[0].src }}' data-aspect='{{mediumInfo.aspect}}' />
                   {% else %}
-                    <img src='{{ site.image_path }}/thumbs/{{ post.images[0].src }}' />
+                    <img src='{{ site.image_path }}/thumbs/{{ post.images[0].src }}' data-aspect='{{thumbInfo.aspect}}' />
                   {% endif %}
                 </a>
               </p>

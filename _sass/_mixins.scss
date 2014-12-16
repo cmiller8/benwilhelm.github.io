@@ -21,6 +21,18 @@
 	@include column-width(auto);
 }
 
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+  background:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+  background:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+  background:         linear-gradient(top, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
+
 @mixin bmw-spin() {
   -webkit-animation: bmw-spin 2s infinite linear;
           animation: bmw-spin 2s infinite linear;
