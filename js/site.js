@@ -14413,8 +14413,8 @@ var customTransitionEnd = whichTransitionEvent();
 				var $img = $(this);
 				var aspect = $img.attr('data-aspect');
 				if (aspect) {
-					var $item = $(this).closest('.pack');
-					var w = $item.innerWidth();
+					var $item = $(this).closest('a, div, li');
+					var w = $item.width();
 					var h = w / aspect;
 					$img.height(h);
 				}
@@ -14423,7 +14423,7 @@ var customTransitionEnd = whichTransitionEvent();
 
 			$packery.packery({
 				itemSelector: '.pack',
-				gutter: 5
+				gutter: 0
 			});
 			$imgs.css('opacity',1);
 
@@ -14447,7 +14447,8 @@ var customTransitionEnd = whichTransitionEvent();
 			});
 
 			$packPosts.packery({
-				itemSelector: 'li.post'
+				itemSelector: 'li.post',
+				gutter: 0
 			});
 		}
 
