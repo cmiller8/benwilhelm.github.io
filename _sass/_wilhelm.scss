@@ -206,6 +206,11 @@ body {
 		width: 33%;
 		max-width: 400px;
 
+		&.emphasize {
+			width: 67%;
+			max-width: 800px;
+		}
+
 		>a {
 			background-color: #f8f8f8;
 			border: 1px solid #eee;

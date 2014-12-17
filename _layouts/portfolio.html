@@ -17,12 +17,19 @@ layout: default
 
     <div class="portfolio-list packery">
     {% for album in section.albums %}
-  	<div class="item pack">
-      {% capture imageIdx %}files/thumbs/{{album[1].images[0].src}}{% endcapture %}
-      {% assign imageInfo = site.data.images[imageIdx] %}
+  	<div class="item pack {% if album[1].emphasize %}emphasize{% endif %}">
+        {% if album[1].emphasize %}
+        {% assign size = 'medium' %}
+        {% else %}
+        {% assign size='thumbs' %}
+        {% endif %}
+
+
+        {% capture imageIdx %}files/{{size}}/{{album[1].images[0].src}}{% endcapture %}
+        {% assign imageInfo = site.data.images[imageIdx] %}
 
   		<a href='{{ album[0] }}'>
-        <img src='{{ site.image_path }}/thumbs/{{album[1].images[0].src}}' data-aspect="{{imageInfo.aspect}}" />
+        <img src='{{ site.image_path }}/{{size}}/{{album[1].images[0].src}}' data-aspect="{{imageInfo.aspect}}" />
       </a>
 
       <div class="caption">
