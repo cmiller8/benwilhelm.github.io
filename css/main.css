@@ -2178,6 +2178,9 @@ body {
   position: relative;
   width: 33%;
   max-width: 400px; }
+  .portfolio-list .item.emphasize {
+    width: 67%;
+    max-width: 800px; }
   .portfolio-list .item > a {
     background-color: #f8f8f8;
     border: 1px solid #eee;
