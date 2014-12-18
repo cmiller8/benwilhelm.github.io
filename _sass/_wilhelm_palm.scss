@@ -14,8 +14,12 @@
 		}
 	}
 
-	.gallery .item {
-		width: auto;
+	.portfolio-list .item,
+	.gallery .item,
+	.post-list .post
+	{
+		float: none;
+		width: 100%;
 	}
 
 }

@@ -36,8 +36,15 @@
 		}
 	}
 
-	.portfolio-list {
-		@include column-count(2);
+	.portfolio-list .item,
+	.gallery .item,
+	.post-list .post
+	{
+		width: 33%;
+
+		&.emphasize {
+			width: 66%;
+		}
 	}
 
 	.post.album.has-meta {
