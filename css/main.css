@@ -1818,7 +1818,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 1200px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
@@ -1942,7 +1942,7 @@ pre {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -1989,7 +1989,7 @@ pre {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 1200px) {
     .post-title {
       font-size: 36px; } }
 
@@ -1997,17 +1997,17 @@ pre {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1200px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1200px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 1200px) {
       .post-content h4 {
         font-size: 18px; } }
 
@@ -2095,9 +2095,9 @@ body {
 .post-list .post {
   float: left;
   margin-bottom: 0;
-  width: 32%; }
+  width: 400px; }
   .post-list .post.emphasize {
-    width: 64%; }
+    width: 800px; }
   .post-list .post .inner {
     border-left: 1px solid #e3e3e3;
     padding: 1em 2em 3em 1em; }
@@ -2165,22 +2165,20 @@ body {
     display: inline-block;
     margin: 0;
     min-height: 100px;
-    width: 33%;
+    width: 400px;
     padding: 0; }
     .gallery .item a {
       display: block;
       padding: 5px; }
     .gallery .item.emphasize {
-      width: 66%; }
+      width: 800px; }
 
 .portfolio-list .item {
   float: left;
   position: relative;
-  width: 33%;
-  max-width: 400px; }
+  width: 400px; }
   .portfolio-list .item.emphasize {
-    width: 67%;
-    max-width: 800px; }
+    width: 800px; }
   .portfolio-list .item > a {
     background-color: #f8f8f8;
     border: 1px solid #eee;
@@ -2218,7 +2216,7 @@ body {
   .portfolio-list .item:hover .caption {
     display: block; }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   .has-sidebar {
     padding-left: 0; }
 
@@ -2243,10 +2241,14 @@ body {
     .sidebar-main .post.single {
       max-width: none; }
 
-  .portfolio-list {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2; }
+  .portfolio-list .item,
+  .gallery .item,
+  .post-list .post {
+    width: 33%; }
+    .portfolio-list .item.emphasize,
+    .gallery .item.emphasize,
+    .post-list .post.emphasize {
+      width: 66%; }
 
   .post.album.has-meta .post-header {
     width: auto;
@@ -2262,21 +2264,15 @@ body {
       .post.album.has-meta .meta dl:last-child {
         margin-right: 0; } }
 @media screen and (max-width: 700px) {
+  .portfolio-list .item,
+  .gallery .item,
   .post-list .post {
     width: 50%; }
+    .portfolio-list .item.emphasize,
+    .gallery .item.emphasize,
     .post-list .post.emphasize {
-      width: auto; }
-
-  .gallery .item {
-    width: 48%; }
-
-  .portfolio-list {
-    -webkit-column-count: auto;
-    -moz-column-count: auto;
-    column-count: auto;
-    -webkit-column-width: auto;
-    -moz-column-width: auto;
-    column-width: auto; } }
+      float: none;
+      width: 100%; } }
 @media screen and (max-width: 540px) {
   .post.album.has-meta .meta dl {
     width: 50%;
@@ -2286,8 +2282,11 @@ body {
     .post.album.has-meta .meta dl:nth-child(2n) {
       text-align: right; }
 
-  .gallery .item {
-    width: auto; } }
+  .portfolio-list .item,
+  .gallery .item,
+  .post-list .post {
+    float: none;
+    width: 100%; } }
 /**
  * Syntax highlighting styles
  */
@@ -2427,7 +2426,7 @@ body {
   .highlight .il {
     color: #099; }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1200px) {
   body.development .site-header {
     background-color: #ddd; } }
 @media screen and (max-width: 700px) {
