@@ -16,13 +16,24 @@ layout: default
 		</div>
 
 		<div class="sidebar-item">
+			<h3>Current Projects</h3>
+			<ul>
+				<li>
+					{% categorylink the-house %}
+					The House
+					{% endcategorylink %}
+				</li>
+			</ul>
+		</div>
+
+		<div class="sidebar-item">
 			<h3>Blog Categories</h3>
 
 			<ul id="category_list">
 				{% for category in site.categories %}
 				<li>
 					{% categorylink category[0] %}
-					{{ category | first | capitalize }}
+					{{ category | first | capitalize_all }}
 					{% endcategorylink %}
 				</li>
 				{% endfor %}
