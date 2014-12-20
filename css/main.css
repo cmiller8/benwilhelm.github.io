@@ -2095,9 +2095,11 @@ body {
 .post-list .post {
   float: left;
   margin-bottom: 0;
-  width: 400px; }
+  width: 33%;
+  max-width: 400px; }
   .post-list .post.emphasize {
-    width: 800px; }
+    width: 66%;
+    max-width: 800px; }
   .post-list .post .inner {
     border-left: 1px solid #e3e3e3;
     padding: 1em 2em 3em 1em; }
@@ -2165,20 +2167,24 @@ body {
     display: inline-block;
     margin: 0;
     min-height: 100px;
-    width: 400px;
+    width: 33%;
+    max-width: 400px;
     padding: 0; }
     .gallery .item a {
       display: block;
       padding: 5px; }
     .gallery .item.emphasize {
-      width: 800px; }
+      width: 66%;
+      max-width: 800px; }
 
 .portfolio-list .item {
   float: left;
   position: relative;
-  width: 400px; }
+  width: 33%;
+  max-width: 400px; }
   .portfolio-list .item.emphasize {
-    width: 800px; }
+    width: 66%;
+    max-width: 800px; }
   .portfolio-list .item > a {
     background-color: #f8f8f8;
     border: 1px solid #eee;
@@ -2217,6 +2223,17 @@ body {
     display: block; }
 
 @media screen and (max-width: 1200px) {
+  .post-list .post,
+  .sidebar-main .post.single .gallery .item {
+    width: 50%; }
+    .post-list .post.emphasize,
+    .sidebar-main .post.single .gallery .item.emphasize {
+      float: none;
+      width: 100%; }
+
+  .post.album.has-meta .meta dl {
+    width: 50%; } }
+@media screen and (max-width: 800px) {
   .has-sidebar {
     padding-left: 0; }
 
@@ -2241,15 +2258,6 @@ body {
     .sidebar-main .post.single {
       max-width: none; }
 
-  .portfolio-list .item,
-  .gallery .item,
-  .post-list .post {
-    width: 33%; }
-    .portfolio-list .item.emphasize,
-    .gallery .item.emphasize,
-    .post-list .post.emphasize {
-      width: 66%; }
-
   .post.album.has-meta .post-header {
     width: auto;
     float: none; }
@@ -2263,16 +2271,6 @@ body {
       margin-right: 2em; }
       .post.album.has-meta .meta dl:last-child {
         margin-right: 0; } }
-@media screen and (max-width: 700px) {
-  .portfolio-list .item,
-  .gallery .item,
-  .post-list .post {
-    width: 50%; }
-    .portfolio-list .item.emphasize,
-    .gallery .item.emphasize,
-    .post-list .post.emphasize {
-      float: none;
-      width: 100%; } }
 @media screen and (max-width: 540px) {
   .post.album.has-meta .meta dl {
     width: 50%;
@@ -2428,10 +2426,10 @@ body {
 
 @media screen and (max-width: 1200px) {
   body.development .site-header {
-    background-color: #ddd; } }
-@media screen and (max-width: 700px) {
+    border-color: #ddd; } }
+@media screen and (max-width: 800px) {
   body.development .site-header {
-    background-color: #bbb; } }
+    border-color: #bbb; } }
 @media screen and (max-width: 540px) {
   body.development .site-header {
-    background-color: #999; } }
+    border-color: #999; } }
