@@ -70,10 +70,12 @@ body {
 .post-list .post {
 	float: left;
 	margin-bottom: 0;
-	width: 400px;
+	width: 33%;
+	max-width: 400px;
 
 	&.emphasize {
-		width: 800px;
+		width: 66%;
+		max-width: 800px;
 	}
 
 	.inner {
@@ -184,7 +186,8 @@ body {
 		display: inline-block;
 		margin: 0;
 		min-height: 100px;
-		width: 400px;
+		width: 33%;
+		max-width: 400px;
 		padding: 0;
 
 		a {
@@ -193,7 +196,8 @@ body {
 		}
 
 		&.emphasize {
-			width: 800px;
+			width: 66%;
+			max-width: 800px;
 		}
 	}
 }
@@ -203,10 +207,12 @@ body {
 	.item {
 		float: left;
 		position: relative;
-		width: 400px;
+		width: 33%;
+		max-width: 400px;
 
 		&.emphasize {
-			width: 800px;
+			width: 66%;
+			max-width: 800px;
 		}
 
 		>a {

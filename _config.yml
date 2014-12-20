@@ -9,9 +9,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://benwilhelm.com" # the base hostname & protocol for your site
 github_username:  benwilhelm
 
-# Build settings
-env: development
 
+
+# Build settings
 markdown: kramdown
 
 permalink: pretty
@@ -24,3 +24,10 @@ category_archive:
   path: category
   layout: category_archive
   slugify: true
+
+
+
+# Environment-specific settings
+env: development
+limit_posts: 5
+drafts: true
