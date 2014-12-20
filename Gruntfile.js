@@ -9,6 +9,7 @@ grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-connect');
 grunt.loadNpmTasks('grunt-contrib-copy');
 grunt.loadNpmTasks('grunt-contrib-jshint');
+grunt.loadNpmTasks('grunt-contrib-sass');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-image-resize');
@@ -28,10 +29,10 @@ grunt.initConfig({
     			separator: ';'
     		},
     		src: [
-                'bower_components/jquery/dist/jquery.js',
-                'bower_components/packery/dist/packery.pkgd.js',
-                'bower_components/imagesloaded/imagesloaded.pkgd.js',
-                'bower_components/fluidbox/jquery.fluidbox.js',
+          'bower_components/jquery/dist/jquery.js',
+          'bower_components/packery/dist/packery.pkgd.js',
+          'bower_components/imagesloaded/imagesloaded.pkgd.js',
+          'bower_components/fluidbox/jquery.fluidbox.js',
     			'_js/site.js'
     		],
     		dest: 'js/site.js'
@@ -60,6 +61,12 @@ grunt.initConfig({
 		dist: {
 			files: [
 				{ expand: true, src: ['bower_components/fontawesome/fonts/*'], dest: 'fonts/', flatten: true }
+			]
+		},
+
+		jsdev: {
+			files: [
+				{ expand: true, src: ['js/*'], dest: '_site/js/', flatten: true }
 			]
 		}
 	},
@@ -150,6 +157,21 @@ grunt.initConfig({
 
 
 	// ====================
+	// TASK: sass
+    // ====================
+	sass: {
+		dev: {
+			options: {
+				loadPath: '_sass'
+			},
+			files: {
+				'_site/css/main.css': '_sass/main.scss'
+			}
+		}
+	},
+
+
+	// ====================
 	// TASK: shell
     // ====================
 	shell: {
@@ -199,7 +221,6 @@ grunt.initConfig({
 				'./**/*.html', 
 				'./**/*.markdown', 
 				'./**/*.yml', 
-				'./**/*.scss',
 
 				"!./node_modules/",
 				"!./_site/*",
@@ -211,9 +232,17 @@ grunt.initConfig({
 			}
 		},
 
-		jshint: {
+		js: {
 			files: ['_js/*.js'],
-			tasks: ['jshint:dist', 'concat:dist', 'uglify:dev', 'jekyll:dev'],
+			tasks: ['jshint:dist', 'concat:dist', 'uglify:dev', 'copy:jsdev'],
+			options: {
+				livereload: true
+			}
+		},
+
+		sass: {
+			files: ['./**/*.scss'],
+			tasks: ['sass:dev'],
 			options: {
 				livereload: true
 			}

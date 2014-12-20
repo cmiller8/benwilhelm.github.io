@@ -1,7 +1,6 @@
 (function($){
 
 	$(document).ready(function(){
-	
 		$('.gallery a, .post a')
 		.fluidbox({immediate:true})
 		.on('openstart', function(){
@@ -51,7 +50,6 @@
 			$postImgs.each(function(){
 				var $img = $(this);
 				var aspect = $img.attr('data-aspect');
-				console.log(aspect);
 				if (aspect) {
 					var $inner = $img.closest('li.post').find('.inner');
 					var w = $inner.width();
