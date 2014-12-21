@@ -2135,9 +2135,10 @@ body {
 .sidebar-main .post.single {
   max-width: 640px; }
   .sidebar-main .post.single .gallery .item {
-    width: 200px; }
+    width: 50%; }
     .sidebar-main .post.single .gallery .item.emphasize {
-      width: 400px; }
+      float: none;
+      width: 100%; }
 
 .limit-width {
   max-width: 640px; }
@@ -2241,11 +2242,9 @@ body {
     display: block; }
 
 @media screen and (max-width: 1200px) {
-  .post-list .post,
-  .sidebar-main .post.single .gallery .item {
+  .post-list .post {
     width: 50%; }
-    .post-list .post.emphasize,
-    .sidebar-main .post.single .gallery .item.emphasize {
+    .post-list .post.emphasize {
       float: none;
       width: 100%; }
 
