@@ -3,6 +3,7 @@ layout: post
 title: Responsive Video Players
 categories: 
 - Nerd Stuff
+- The Website
 ---
 
 I'm in the middle of rebuilding my blog using [Jekyll](http://jekyllrb.com) (about which I'll be writing a whole new post) but in doing so I came across this elegant CSS-only solution for responsive sizing of embedded video players.  It's the best I've found so far, and I've looked at a lot of different solutions to this problem.

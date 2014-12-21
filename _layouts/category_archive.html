@@ -7,7 +7,7 @@ layout: has_sidebar
   {% capture slug %}{{ page.category | slugify }}{% endcapture %}
   {% assign desc = site.data.category_descriptions[{{slug}}] %}
   {% if desc %}
-  {{ desc | markdownify }}
+  {{   desc | markdownify }}
   {% endif %}
 </div>
 

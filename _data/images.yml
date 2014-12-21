@@ -5,7 +5,7 @@
 
 
 #!#!#!#!# Do not edit below this line.
-# Generated automatically using `grunt imageinfo` on Sun Dec 21 2014 12:49:22 GMT-0600 (CST)
+# Generated automatically using `grunt imageinfo`
 
 files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 1200
@@ -915,6 +915,10 @@ files/large/posts/misc/gg75.jpg:
     width: 1200
     height: 472
     aspect: 2.542372881355932
+files/large/posts/misc/jekyll-logo-2x.png:
+    width: 498
+    height: 230
+    aspect: 2.1652173913043478
 files/large/posts/misc/wpid-20130121_233735.jpg:
     width: 500
     height: 375
@@ -2043,6 +2047,10 @@ files/medium/posts/misc/gg75.jpg:
     width: 800
     height: 315
     aspect: 2.5396825396825395
+files/medium/posts/misc/jekyll-logo-2x.png:
+    width: 498
+    height: 230
+    aspect: 2.1652173913043478
 files/medium/posts/misc/wpid-20130121_233735.jpg:
     width: 500
     height: 375
@@ -3171,6 +3179,10 @@ files/originals/posts/misc/gg75.jpg:
     width: 1608
     height: 633
     aspect: 2.5402843601895735
+files/originals/posts/misc/jekyll-logo-2x.png:
+    width: 498
+    height: 230
+    aspect: 2.1652173913043478
 files/originals/posts/misc/wpid-20130121_233735.jpg:
     width: 500
     height: 375
@@ -4299,6 +4311,10 @@ files/thumbs/posts/misc/gg75.jpg:
     width: 400
     height: 157
     aspect: 2.5477707006369426
+files/thumbs/posts/misc/jekyll-logo-2x.png:
+    width: 400
+    height: 185
+    aspect: 2.1621621621621623
 files/thumbs/posts/misc/wpid-20130121_233735.jpg:
     width: 400
     height: 300

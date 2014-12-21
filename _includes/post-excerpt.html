@@ -8,7 +8,7 @@
             {% if post.video %}
               {% oembed {{post.video}} %}
 
-            {% elsif post.images %}
+            {% elsif post.cover or post.images %}
 
               {% if post.cover %}
               {%   assign cover = post.cover %}
@@ -18,11 +18,19 @@
 
               {% if cover.external %}
               <p>
+              
+                {% unless cover.nolink %}
                 <a href="{{ cover.src }}">
+                {% endunless %}
+                
                   {% capture thumbIdx %}{{cover.src}}{% endcapture %}
                   {% assign thumbInfo = site.data.images[thumbIdx] %}                  
                   <img src='{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
+                
+                {% unless cover.nolink %}
                 </a>
+                {% endunless %}
+              
               </p>
               {% else %}
               <p>
@@ -30,13 +38,22 @@
                 {% assign thumbInfo = site.data.images[thumbIdx] %}
                 {% capture mediumIdx %}files/medium/{{cover.src}}{% endcapture %}
                 {% assign mediumInfo = site.data.images[mediumIdx] %}
+                
+                {% unless cover.nolink %}
                 <a href="{{ site.image_path }}/large/{{ cover.src }}">
+                {% endunless %}
+
                   {% if post.emphasize %}
                     <img src='{{ site.image_path }}/medium/{{ cover.src }}' data-aspect='{{mediumInfo.aspect}}' />
                   {% else %}
                     <img src='{{ site.image_path }}/thumbs/{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
                   {% endif %}
+                
+                {% unless cover.nolink %}
                 </a>
+                {% endunless %}
+              
+
               </p>
               {% endif %}
             {% endif %}

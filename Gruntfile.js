@@ -76,7 +76,7 @@ grunt.initConfig({
     // ====================
 	image_resize: {
 
-        thumbs: {
+    thumbs: {
 			options: {
 				width: 400,
                 overwrite: false
@@ -85,9 +85,8 @@ grunt.initConfig({
 			files: [{
 				expand: true,
 				cwd: "files/originals/",
-				src: "**/*.jpg",
+				src: ["**/*.jpg", "**/*.png"],
 				dest: "files/thumbs/",
-				ext: ".jpg",
 				extDot: "first"
 			}]
 		},
@@ -101,14 +100,13 @@ grunt.initConfig({
 			files: [{
 				expand: true,
 				cwd: "files/originals/",
-				src: "**/*.jpg",
+				src: ["**/*.jpg", "**/*.png"],
 				dest: "files/medium/",
-				ext: ".jpg",
 				extDot: "first"
 			}]
 		},
 
-        large: {
+    large: {
 			options: {
 				width: 1200, 
                 overwrite: false
@@ -117,9 +115,8 @@ grunt.initConfig({
 			files: [{
 				expand: true,
 				cwd: "files/originals/",
-				src: "**/*.jpg",
+				src: ["**/*.jpg", "**/*.png"],
 				dest: "files/large/",
-				ext: ".jpg",
 				extDot: "first"
 			}]
 		}
@@ -292,7 +289,7 @@ grunt.registerTask('serve', ['connect:dev:keepalive']);
 grunt.registerTask('resize', ["image_resize:thumbs", "image_resize:medium", "image_resize:large"]);
 grunt.registerTask('imageinfo', function(){
 	var done = this.async();
-	glob('files/**/*.jpg', {}, function(err, files){
+	glob('files/**/*.{jpg,gif,png}', {}, function(err, files){
 		var existingYml = fs.readFileSync("./_data/images.yml").toString();
 		var a = existingYml.split("#!#!#!#!#");
 		existingYml = a[0].trim();
@@ -310,7 +307,7 @@ grunt.registerTask('imageinfo', function(){
 
 		var yamlString = YAML.stringify(data);
 		var yamlHeading = "\n\n\n#!#!#!#!# Do not edit below this line.\n";
-		yamlHeading += "# Generated automatically using `grunt imageinfo` on " + new Date() + "\n\n";
+		yamlHeading += "# Generated automatically using `grunt imageinfo`\n\n";
 		
 		fs.writeFileSync("./_data/images.yml", existingYml + yamlHeading + yamlString);
 		console.log('done');
