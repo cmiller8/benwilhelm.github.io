@@ -5,7 +5,7 @@
 
 
 #!#!#!#!# Do not edit below this line.
-# Generated automatically using `grunt imageinfo` on Sat Dec 20 2014 15:59:47 GMT-0600 (CST)
+# Generated automatically using `grunt imageinfo` on Sun Dec 21 2014 11:07:27 GMT-0600 (CST)
 
 files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 1200
@@ -751,6 +751,50 @@ files/large/posts/christoph-intrepid/roosevelt.jpg:
     width: 1200
     height: 1463
     aspect: 0.8202323991797676
+files/large/posts/closet-shelves/20141201_082326.jpg:
+    width: 1200
+    height: 900
+    aspect: 1.3333333333333333
+files/large/posts/closet-shelves/before.jpg:
+    width: 1200
+    height: 900
+    aspect: 1.3333333333333333
+files/large/posts/closet-shelves/empty-room.jpg:
+    width: 1200
+    height: 1600
+    aspect: 0.75
+files/large/posts/closet-shelves/finished-empty.jpg:
+    width: 1200
+    height: 543
+    aspect: 2.2099447513812156
+files/large/posts/closet-shelves/finished.jpg:
+    width: 1200
+    height: 495
+    aspect: 2.4242424242424243
+files/large/posts/closet-shelves/groundplan.jpg:
+    width: 1200
+    height: 927
+    aspect: 1.2944983818770226
+files/large/posts/closet-shelves/router.jpg:
+    width: 1200
+    height: 900
+    aspect: 1.3333333333333333
+files/large/posts/closet-shelves/shelves-in-progress.jpg:
+    width: 1200
+    height: 900
+    aspect: 1.3333333333333333
+files/large/posts/closet-shelves/shelves.jpg:
+    width: 1200
+    height: 1600
+    aspect: 0.75
+files/large/posts/closet-shelves/sketch.jpg:
+    width: 1200
+    height: 1600
+    aspect: 0.75
+files/large/posts/closet-shelves/window-covered.jpg:
+    width: 1200
+    height: 1600
+    aspect: 0.75
 files/large/posts/eatwell-canning/DSC02737-1200x798.jpg:
     width: 1200
     height: 798
@@ -1831,6 +1875,50 @@ files/medium/posts/christoph-intrepid/roosevelt.jpg:
     width: 800
     height: 976
     aspect: 0.819672131147541
+files/medium/posts/closet-shelves/20141201_082326.jpg:
+    width: 800
+    height: 600
+    aspect: 1.3333333333333333
+files/medium/posts/closet-shelves/before.jpg:
+    width: 800
+    height: 600
+    aspect: 1.3333333333333333
+files/medium/posts/closet-shelves/empty-room.jpg:
+    width: 800
+    height: 1067
+    aspect: 0.7497656982193065
+files/medium/posts/closet-shelves/finished-empty.jpg:
+    width: 800
+    height: 362
+    aspect: 2.2099447513812156
+files/medium/posts/closet-shelves/finished.jpg:
+    width: 800
+    height: 330
+    aspect: 2.4242424242424243
+files/medium/posts/closet-shelves/groundplan.jpg:
+    width: 800
+    height: 618
+    aspect: 1.2944983818770226
+files/medium/posts/closet-shelves/router.jpg:
+    width: 800
+    height: 600
+    aspect: 1.3333333333333333
+files/medium/posts/closet-shelves/shelves-in-progress.jpg:
+    width: 800
+    height: 600
+    aspect: 1.3333333333333333
+files/medium/posts/closet-shelves/shelves.jpg:
+    width: 800
+    height: 1067
+    aspect: 0.7497656982193065
+files/medium/posts/closet-shelves/sketch.jpg:
+    width: 800
+    height: 1067
+    aspect: 0.7497656982193065
+files/medium/posts/closet-shelves/window-covered.jpg:
+    width: 800
+    height: 1067
+    aspect: 0.7497656982193065
 files/medium/posts/eatwell-canning/DSC02737-1200x798.jpg:
     width: 800
     height: 532
@@ -2911,6 +2999,50 @@ files/originals/posts/christoph-intrepid/roosevelt.jpg:
     width: 2849
     height: 3474
     aspect: 0.8200921128382268
+files/originals/posts/closet-shelves/20141201_082326.jpg:
+    width: 3264
+    height: 2448
+    aspect: 1.3333333333333333
+files/originals/posts/closet-shelves/before.jpg:
+    width: 3264
+    height: 2448
+    aspect: 1.3333333333333333
+files/originals/posts/closet-shelves/empty-room.jpg:
+    width: 2448
+    height: 3264
+    aspect: 0.75
+files/originals/posts/closet-shelves/finished-empty.jpg:
+    width: 5452
+    height: 2468
+    aspect: 2.2090761750405186
+files/originals/posts/closet-shelves/finished.jpg:
+    width: 5724
+    height: 2360
+    aspect: 2.425423728813559
+files/originals/posts/closet-shelves/groundplan.jpg:
+    width: 3300
+    height: 2550
+    aspect: 1.2941176470588236
+files/originals/posts/closet-shelves/router.jpg:
+    width: 3264
+    height: 2448
+    aspect: 1.3333333333333333
+files/originals/posts/closet-shelves/shelves-in-progress.jpg:
+    width: 3264
+    height: 2448
+    aspect: 1.3333333333333333
+files/originals/posts/closet-shelves/shelves.jpg:
+    width: 2448
+    height: 3264
+    aspect: 0.75
+files/originals/posts/closet-shelves/sketch.jpg:
+    width: 2448
+    height: 3264
+    aspect: 0.75
+files/originals/posts/closet-shelves/window-covered.jpg:
+    width: 2448
+    height: 3264
+    aspect: 0.75
 files/originals/posts/eatwell-canning/DSC02737-1200x798.jpg:
     width: 1200
     height: 798
@@ -3991,6 +4123,50 @@ files/thumbs/posts/christoph-intrepid/roosevelt.jpg:
     width: 400
     height: 488
     aspect: 0.819672131147541
+files/thumbs/posts/closet-shelves/20141201_082326.jpg:
+    width: 400
+    height: 300
+    aspect: 1.3333333333333333
+files/thumbs/posts/closet-shelves/before.jpg:
+    width: 400
+    height: 300
+    aspect: 1.3333333333333333
+files/thumbs/posts/closet-shelves/empty-room.jpg:
+    width: 400
+    height: 533
+    aspect: 0.7504690431519699
+files/thumbs/posts/closet-shelves/finished-empty.jpg:
+    width: 400
+    height: 181
+    aspect: 2.2099447513812156
+files/thumbs/posts/closet-shelves/finished.jpg:
+    width: 400
+    height: 165
+    aspect: 2.4242424242424243
+files/thumbs/posts/closet-shelves/groundplan.jpg:
+    width: 400
+    height: 309
+    aspect: 1.2944983818770226
+files/thumbs/posts/closet-shelves/router.jpg:
+    width: 400
+    height: 300
+    aspect: 1.3333333333333333
+files/thumbs/posts/closet-shelves/shelves-in-progress.jpg:
+    width: 400
+    height: 300
+    aspect: 1.3333333333333333
+files/thumbs/posts/closet-shelves/shelves.jpg:
+    width: 400
+    height: 533
+    aspect: 0.7504690431519699
+files/thumbs/posts/closet-shelves/sketch.jpg:
+    width: 400
+    height: 533
+    aspect: 0.7504690431519699
+files/thumbs/posts/closet-shelves/window-covered.jpg:
+    width: 400
+    height: 533
+    aspect: 0.7504690431519699
 files/thumbs/posts/eatwell-canning/DSC02737-1200x798.jpg:
     width: 400
     height: 266

@@ -133,6 +133,7 @@ grunt.initConfig({
 		dev: {
 			options: {
 				config: "_config.yml",
+				drafts: true,
 				verbose: true,
 				raw: "exclude: [Gemfile, Gemfile.lock, bower.json, package.json, Gruntfile.js, node_modules, bower_components]"
 			}
@@ -220,6 +221,7 @@ grunt.initConfig({
 			files: [
 				'./**/*.html', 
 				'./**/*.markdown', 
+				'./**/*.md', 
 				'./**/*.yml', 
 
 				"!./node_modules/",

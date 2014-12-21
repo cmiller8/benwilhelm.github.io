@@ -11,12 +11,12 @@
 		{% capture mediumIdx %}files/medium/{{image.src}}{% endcapture %}
 		{% assign mediumInfo = site.data.images[mediumIdx] %}
 	  	
-	  	<div class='item pack {%if image.emphasize %}emphasize{% endif %}'>
-		<a href='{{ site.image_path }}/large/{{image.src}}' title='{{image.caption}}'>
+	  	<div class="item pack {%if image.emphasize %}emphasize{% endif %}">
+		<a href="{{ site.image_path }}/large/{{image.src}}" title="{{image.caption | escape_once}}">
 			{% if image.emphasize %}
-				<img src='{{ site.image_path }}/medium/{{image.src}}' data-aspect='{{mediumInfo.aspect}}' />
+				<img src="{{ site.image_path }}/medium/{{image.src}}" data-aspect="{{mediumInfo.aspect}}" />
 			{% else %}
-				<img src='{{ site.image_path }}/thumbs/{{image.src}}' data-aspect='{{thumbInfo.aspect}}' />
+				<img src="{{ site.image_path }}/thumbs/{{image.src}}" data-aspect="{{thumbInfo.aspect}}" />
 			{% endif %}
 		</a>
 	</div>

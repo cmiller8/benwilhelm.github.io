@@ -5,32 +5,40 @@
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
 
-            {% if post.images %}
-              {% if post.images[0].external %}
+            {% if post.video %}
+              {% oembed {{post.video}} %}
+
+            {% elsif post.images %}
+
+              {% if post.cover %}
+              {%   assign cover = post.cover %}
+              {% else %}
+              {%   assign cover = post.images[0] %}
+              {% endif %}
+
+              {% if cover.external %}
               <p>
-                <a href="{{ post.images[0].src }}">
-                  {% capture thumbIdx %}{{post.images[0].src}}{% endcapture %}
+                <a href="{{ cover.src }}">
+                  {% capture thumbIdx %}{{cover.src}}{% endcapture %}
                   {% assign thumbInfo = site.data.images[thumbIdx] %}                  
-                  <img src='{{ post.images[0].src }}' data-aspect='{{thumbInfo.aspect}}' />
+                  <img src='{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
                 </a>
               </p>
               {% else %}
               <p>
-                {% capture thumbIdx %}files/thumbs/{{post.images[0].src}}{% endcapture %}
+                {% capture thumbIdx %}files/thumbs/{{cover.src}}{% endcapture %}
                 {% assign thumbInfo = site.data.images[thumbIdx] %}
-                {% capture mediumIdx %}files/medium/{{post.images[0].src}}{% endcapture %}
+                {% capture mediumIdx %}files/medium/{{cover.src}}{% endcapture %}
                 {% assign mediumInfo = site.data.images[mediumIdx] %}
-                <a href="{{ site.image_path }}/large/{{ post.images[0].src }}">
+                <a href="{{ site.image_path }}/large/{{ cover.src }}">
                   {% if post.emphasize %}
-                    <img src='{{ site.image_path }}/medium/{{ post.images[0].src }}' data-aspect='{{mediumInfo.aspect}}' />
+                    <img src='{{ site.image_path }}/medium/{{ cover.src }}' data-aspect='{{mediumInfo.aspect}}' />
                   {% else %}
-                    <img src='{{ site.image_path }}/thumbs/{{ post.images[0].src }}' data-aspect='{{thumbInfo.aspect}}' />
+                    <img src='{{ site.image_path }}/thumbs/{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
                   {% endif %}
                 </a>
               </p>
               {% endif %}
-            {% elsif post.video %}
-              {% oembed {{post.video}} %}
             {% endif %}
 
             {{ post.excerpt | strip_html | truncatewords:50 }}

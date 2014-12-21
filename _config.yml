@@ -30,4 +30,4 @@ category_archive:
 # Environment-specific settings
 env: development
 limit_posts: 5
-drafts: true
+drafts: true #this setting is overridden in the grunt-jekyll task

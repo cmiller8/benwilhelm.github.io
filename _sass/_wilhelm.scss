@@ -23,7 +23,7 @@ img { background-color:#eee; }
 	content: "Loading...";
 	font-size: xx-small;
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	right: 0;
 }
 
@@ -36,17 +36,20 @@ img { background-color:#eee; }
 }
 
 body > .caption {
-	position: fixed;
-	bottom: 0;
+	background-color: #fff;
+	font-family: monospace;
+	font-size: small;
+	font-weight: bold;
 	left: 0;
-	width: 100%;
-	text-align: center;
 	margin: 0;
-	background-color: rgba(255,255,255, 0.7);
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
 	z-index: 10000;
 
 	p {
-		margin: 1em 1em 3em;
+		margin: 1em;
 	}
 }
 
@@ -135,7 +138,9 @@ body {
 			padding: 0;
 
 			ul {
+				margin-top: 0;
 				padding-left: 1em;
+				font-size: small;
 			}
 		}
 
