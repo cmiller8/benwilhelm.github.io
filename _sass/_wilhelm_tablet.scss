@@ -16,12 +16,35 @@
 
 			margin-bottom: 1.5em;
 
-			li {
+			ul li {
 				display: inline;
 
 				&:after {
 					color: #999;
 					content: "\2022"
+				}
+
+				&:last-child:after {
+					content: "";
+				}
+
+				ul { 
+					display: inline;
+					font-size: medium;
+					padding-left: 0;
+					
+					li {
+						display: inline;
+
+						&:after {
+							content: "";
+						}
+
+						&:before {
+							color: #999;
+							content: "\2022"
+						}
+					}
 				}
 			}
 		}
