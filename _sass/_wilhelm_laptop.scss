@@ -1,8 +1,7 @@
 @include media-query($on-laptop) {
 
 	// these items have a sidebar
-	.post-list .post,
-	.sidebar-main .post.single .gallery .item {
+	.post-list .post {
 		width: 50%;
 
 		&.emphasize {

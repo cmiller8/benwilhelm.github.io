@@ -115,10 +115,11 @@ body {
 	max-width: 640px;
 
 	.gallery .item {
-		width: 200px;
+		width: 50%;
 
 		&.emphasize {
-			width: 400px;
+			float: none;
+			width: 100%;
 		}
 	}
 }
