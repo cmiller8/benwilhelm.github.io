@@ -5,7 +5,7 @@
 
 
 #!#!#!#!# Do not edit below this line.
-# Generated automatically using `grunt imageinfo` on Sun Dec 21 2014 11:07:27 GMT-0600 (CST)
+# Generated automatically using `grunt imageinfo` on Sun Dec 21 2014 12:35:40 GMT-0600 (CST)
 
 files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 1200
@@ -1131,6 +1131,10 @@ files/large/posts/wedding/ym1kgrznnl0q.jpg:
     width: 1200
     height: 1200
     aspect: 1
+files/large/projects/wimr.jpg:
+    width: 805
+    height: 671
+    aspect: 1.1997019374068554
 files/medium/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 800
     height: 533
@@ -2255,6 +2259,10 @@ files/medium/posts/wedding/ym1kgrznnl0q.jpg:
     width: 800
     height: 800
     aspect: 1
+files/medium/projects/wimr.jpg:
+    width: 800
+    height: 667
+    aspect: 1.199400299850075
 files/originals/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 1200
     height: 800
@@ -3379,6 +3387,10 @@ files/originals/posts/wedding/ym1kgrznnl0q.jpg:
     width: 1200
     height: 1200
     aspect: 1
+files/originals/projects/wimr.jpg:
+    width: 805
+    height: 671
+    aspect: 1.1997019374068554
 files/thumbs/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 400
     height: 267
@@ -4503,3 +4515,7 @@ files/thumbs/posts/wedding/ym1kgrznnl0q.jpg:
     width: 400
     height: 400
     aspect: 1
+files/thumbs/projects/wimr.jpg:
+    width: 400
+    height: 333
+    aspect: 1.2012012012012012

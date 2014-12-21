@@ -3,6 +3,10 @@
 hr { border: none; border-top: 1px solid #ddd; margin: 1em 0; }
 img { background-color:#eee; }
 
+blockquote { font-size: inherit; font-weight: lighter; letter-spacing: normal; margin: 2em 0; }
+blockquote p:before { content: "\""; display: inline}
+blockquote p:last-child:after { content: "\"";}
+
 .embed.video {
 	height: 0;
 	margin: 2em 0;
