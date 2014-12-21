@@ -286,6 +286,7 @@ grunt.registerTask('buildserve', [
 ]);
 
 grunt.registerTask('updatesite', ['shell:updatesite']);
+grunt.registerTask('serve', ['connect:dev:keepalive']);
 
 
 grunt.registerTask('resize', ["image_resize:thumbs", "image_resize:medium", "image_resize:large"]);
