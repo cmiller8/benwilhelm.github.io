@@ -40,8 +40,8 @@ images:
 
 When we bought the house, the largest bedroom was 9'x11'.  That's not very big, and as is common in turn-of-the-century buildings, there was very little closet space. We decided to combine the two back bedrooms into one larger bedroom, and carve out a pantry, linen closet, and walk-in closet from the combined space. Like so:
 
-<a href="/files/large/posts/closet-shelves/groundplan.jpg">
-  <img src="/files/medium/posts/closet-shelves/groundplan.jpg" alt="">
+<a href="{{site.image_path}}/large/posts/closet-shelves/groundplan.jpg">
+  <img src="{{site.image_path}}/medium/posts/closet-shelves/groundplan.jpg" alt="">
 </a>
 
 "We'll just build the shelves ourselves" we thought. No big thing. I'm sure we can knock them out in the first couple weeks after we move in. 
