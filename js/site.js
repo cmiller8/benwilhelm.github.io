@@ -14388,7 +14388,7 @@ var customTransitionEnd = whichTransitionEvent();
 
 	$(document).ready(function(){
 		$('.gallery a, .post a')
-		.fluidbox({immediate:true})
+		.fluidbox({immediate:true, viewportFill: 0.9})
 		.on('openstart', function(){
 			$(".site-header").fadeOut('fast');
 		})
