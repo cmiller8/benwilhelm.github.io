@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Building an Image-Heavy Jekyll Site</title>
+  <meta name="description" content="How to build an image-heavy blog using Jekyll and not bloat your Git repository with image files.">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://benwilhelm.com/the-website/nerd-stuff/2014/12/21/building-an-image-heavy-jekyll-site/">
+  <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
+
+  <script src='/js/site.min.js'></script>
+
+  <!-- production -->
+  
+
+</head>
+
+
+  <body class="production">
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Ben Wilhelm</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          <a class="page-link" href="/lighting/">
+            Lighting
+          </a>
+        
+          <a class="page-link" href="/photography/">
+            Photography
+          </a>
+        
+          <a class="page-link" href="/">
+            Bloggishness
+          </a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="has-sidebar">
+
+	<div class="sidebar-main">
+		<div class="post single">
+
+  <header class="post-header">
+  	<p class="quiet"><a href="/">&larr; Back to Posts</a></p>
+    <h1 class="post-title">Building an Image-Heavy Jekyll Site</h1>
+    <p class="post-meta">Dec 21, 2014</p>
+
+    <p class="categories quiet">Posted in
+	
+	- <a href='/category/the-website'>the website</a>
+	
+	- <a href='/category/nerd-stuff'>nerd stuff</a>
+	
+    </p>
+  </header>
+
+  <article class="post-content">
+
+	
+
+    <h3 id="the-setup">The Setup</h3>
+
+<p>I was introduced to <a href="http://jekyllrb.com" title="Jekyll | Simple, blog-aware static sites">Jekyll</a> as a platform by a colleague at the <a href="http://opengovhacknight.com" title="Chicago's weekly event to build, share, and learn about civic tech.">Open Government Hack Night</a>. Up until recently my blog was built on WordPress, and right away I was excited by the idea that I could write both content and code from the same place, that is, my text editor.  Also, keeping my content under version control and not having to deal with finicky web-based WYSIWYG editors was a big plus for me too. It was either that night or the next day that I started rebuilding my site with Jekyll and, at least for the moment, I am totally smitten with this platform.</p>
+
+<h3 id="the-problem">The Problem</h3>
+
+<p>One of Jekyll’s strengths (everything kept in Git) quickly turned out to be a stumbling block when I first tried to commit a bunch of my photography to the repository. As I waited 30+ seconds to even be prompted for the commit message, I realized that keeping all of my images checked directly into the repo was going to make it impractically large and unwieldy. </p>
+
+<h3 id="the-solution">The Solution</h3>
+
+<p>The solution is simple, and outlined in a few steps here:</p>
+
+<p><em>1) Store images in my Dropbox <code>Public</code> folder</em></p>
+
+<p>Dropbox accounts all have a folder called <code>Public</code>, a default directory which makes any file in it available publicly on the interwebs at a consistent root URL, following whatever directory structure is laid out within it.  For me that URL is <code>https://dl.dropboxusercontent.com/u/8637739</code>, into which I put a directory called <code>benwilhelm.com</code>, where I would put all of my photos organized into further subfolders as desired. </p>
+
+<p><em>2) Create a site variable that is the Dropbox public URL</em></p>
+
+<p>In my <code>_config.yml</code> file, I added the following line:</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">image_path</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com</span></code></pre></div>
+
+<p>which means that I can now embed the images from my public folder into my markup thusly:</p>
+
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{site.image_path}}/photos/photo.jpg&quot;</span> <span class="nt">/&gt;</span></code></pre></div>
+
+<p>Added bonus: if I ever decide to go with a different solution for file hosting/sharing, I can simply update the site variable and not have to worry about each individual path.</p>
+
+<p><em>3) Optional: Use Grunt.js for further image processing</em></p>
+
+<p>I use <a href="http://gruntjs.com">grunt.js</a> for managing development and deployment tasks. In order to create versions of my photos at different sizes (thumbnail, medium, large, etc), I created a grunt task using <a href="https://github.com/excellenteasy/grunt-image-resize">grunt-image-resize</a> which scans the <code>originals</code> folder and creates corresponding images at multiple resolutions in folders called <code>thumbs</code>, <code>medium</code>, and <code>large</code>. </p>
+
+<p>I also created a custom task which scans each of the directories and writes each image’s pixel size and aspect ratio to a data file, allowing me to use those values for some of the javascript effects on the site (notably <a href="http://terrymun.github.io/Fluidbox/">fluidbox</a> and <a href="http://packery.metafizzy.co/">packery</a>). Image properties are saved to a YAML hash, the keys of which are the respective paths of each image.  All of this is excerpted below; the full grunt file can be found on <a href="https://github.com/benwilhelm/benwilhelm.github.io/blob/jekyll/Gruntfile.js">GitHub</a></p>
+
+<h4 id="gruntfilejs-excerpt">Gruntfile.js (excerpt)</h4>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">grunt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;grunt&#39;</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">glob</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;glob&#39;</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">sizeOf</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;image-size&#39;</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">YAML</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;yamljs&#39;</span><span class="p">)</span>
+  <span class="p">;</span>
+
+  <span class="c1">//...</span>
+
+  <span class="c1">// ==========================</span>
+  <span class="c1">// TASK: image_resize</span>
+  <span class="c1">// excerpted from </span>
+  <span class="c1">// grunt.initConfig()</span>
+  <span class="c1">// ==========================</span>
+  <span class="nx">image_resize</span><span class="o">:</span> <span class="p">{</span>
+
+    <span class="nx">thumbs</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">width</span><span class="o">:</span> <span class="mi">400</span><span class="p">,</span>
+                <span class="nx">overwrite</span><span class="o">:</span> <span class="kc">false</span>
+      <span class="p">},</span>
+
+      <span class="nx">files</span><span class="o">:</span> <span class="p">[{</span>
+        <span class="nx">expand</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">cwd</span><span class="o">:</span> <span class="s2">&quot;files/originals/&quot;</span><span class="p">,</span>
+        <span class="nx">src</span><span class="o">:</span> <span class="s2">&quot;**/*.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">dest</span><span class="o">:</span> <span class="s2">&quot;files/thumbs/&quot;</span><span class="p">,</span>
+        <span class="nx">ext</span><span class="o">:</span> <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">extDot</span><span class="o">:</span> <span class="s2">&quot;first&quot;</span>
+      <span class="p">}]</span>
+    <span class="p">},</span>
+
+    <span class="nx">medium</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">width</span><span class="o">:</span> <span class="mi">800</span><span class="p">,</span>
+                <span class="nx">overwrite</span><span class="o">:</span> <span class="kc">false</span>
+      <span class="p">},</span>
+
+      <span class="nx">files</span><span class="o">:</span> <span class="p">[{</span>
+        <span class="nx">expand</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">cwd</span><span class="o">:</span> <span class="s2">&quot;files/originals/&quot;</span><span class="p">,</span>
+        <span class="nx">src</span><span class="o">:</span> <span class="s2">&quot;**/*.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">dest</span><span class="o">:</span> <span class="s2">&quot;files/medium/&quot;</span><span class="p">,</span>
+        <span class="nx">ext</span><span class="o">:</span> <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">extDot</span><span class="o">:</span> <span class="s2">&quot;first&quot;</span>
+      <span class="p">}]</span>
+    <span class="p">},</span>
+
+    <span class="nx">large</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">width</span><span class="o">:</span> <span class="mi">1200</span><span class="p">,</span> 
+                <span class="nx">overwrite</span><span class="o">:</span> <span class="kc">false</span>
+      <span class="p">},</span>
+
+      <span class="nx">files</span><span class="o">:</span> <span class="p">[{</span>
+        <span class="nx">expand</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">cwd</span><span class="o">:</span> <span class="s2">&quot;files/originals/&quot;</span><span class="p">,</span>
+        <span class="nx">src</span><span class="o">:</span> <span class="s2">&quot;**/*.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">dest</span><span class="o">:</span> <span class="s2">&quot;files/large/&quot;</span><span class="p">,</span>
+        <span class="nx">ext</span><span class="o">:</span> <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span>
+        <span class="nx">extDot</span><span class="o">:</span> <span class="s2">&quot;first&quot;</span>
+      <span class="p">}]</span>
+    <span class="p">}</span>
+
+  <span class="p">},</span>
+
+  <span class="c1">//...</span>
+
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="p">[</span>
+    <span class="s2">&quot;image_resize:thumbs&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;image_resize:medium&quot;</span><span class="p">,</span> 
+    <span class="s2">&quot;image_resize:large&quot;</span>
+  <span class="p">]);</span>
+
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;imageinfo&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">done</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">async</span><span class="p">();</span>
+    <span class="nx">glob</span><span class="p">(</span><span class="s1">&#39;files/**/*.jpg&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">files</span><span class="p">){</span>
+      <span class="kd">var</span> <span class="nx">existingYml</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s2">&quot;./_data/images.yml&quot;</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span>
+
+      <span class="c1">// this demarcates auto-generated values</span>
+      <span class="c1">// from manually added values for things like</span>
+      <span class="c1">// externally hosted images</span>
+      <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">existingYml</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot;#!#!#!#!#&quot;</span><span class="p">);</span>
+      <span class="nx">existingYml</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">trim</span><span class="p">();</span>
+
+      <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{};</span>
+      <span class="nx">files</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">file</span><span class="p">){</span>
+        <span class="kd">var</span> <span class="nx">dimensions</span> <span class="o">=</span> <span class="nx">sizeOf</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span>
+        <span class="kd">var</span> <span class="nx">image</span> <span class="o">=</span> <span class="p">{</span>
+          <span class="nx">width</span><span class="o">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+          <span class="nx">height</span><span class="o">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+          <span class="nx">aspect</span><span class="o">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">width</span> <span class="o">/</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">height</span>
+        <span class="p">}</span>
+        <span class="nx">data</span><span class="p">[</span><span class="nx">file</span><span class="p">]</span> <span class="o">=</span> <span class="nx">image</span><span class="p">;</span>
+      <span class="p">})</span>
+
+      <span class="kd">var</span> <span class="nx">yamlString</span> <span class="o">=</span> <span class="nx">YAML</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">yamlHeading</span> <span class="o">=</span> <span class="s2">&quot;\n\n\n#!#!#!#!# Do not edit below this line.\n&quot;</span><span class="p">;</span>
+      <span class="nx">yamlHeading</span> <span class="o">+=</span> <span class="s2">&quot;# Generated automatically using `grunt imageinfo` on &quot;</span> <span class="o">+</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;\n\n&quot;</span><span class="p">;</span>
+      
+      <span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s2">&quot;./_data/images.yml&quot;</span><span class="p">,</span> <span class="nx">existingYml</span> <span class="o">+</span> <span class="nx">yamlHeading</span> <span class="o">+</span> <span class="nx">yamlString</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;done&#39;</span><span class="p">);</span>
+      <span class="nx">done</span><span class="p">();</span>
+    <span class="p">});</span>
+    
+  <span class="p">});</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;processimages&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="s1">&#39;imageinfo&#39;</span><span class="p">]);</span></code></pre></div>
+
+<h4 id="dataimagesyml-excerpt">_data/images.yml (excerpt)</h4>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Manually add photos which will not be processed by `grunt imageinfo` here</span>
+
+<span class="s">&quot;http://imgs.xkcd.com/comics/computer_problems.png&quot;</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">587</span>
+    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">254</span>
+    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">2.311</span>
+
+
+<span class="c1">#!#!#!#!# Do not edit below this line.</span>
+<span class="c1"># Generated automatically using `grunt imageinfo`</span>
+
+<span class="s">&quot;files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg&quot;</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1200</span>
+    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">800</span>
+    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1.5</span>
+<span class="s">&quot;files/large/lighting/500-clown-xmas/IMG_9848-1200x800.jpg&quot;</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1200</span>
+    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">800</span>
+    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1.5</span>
+<span class="s">&quot;files/large/lighting/500-clown-xmas/IMG_9922-1200x800.jpg&quot;</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1200</span>
+    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">800</span>
+    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1.5</span></code></pre></div>
+
+
+  </article>
+
+</div>
+
+	</div>
+
+	<aside class="sidebar-sidebar">
+		
+		<div class="sidebar-item">
+			<h3><em>New site in progress...</em></h3>
+			<p>Whoa, check it out! A whole new site! I'm rebuilding benwilhelm.com in <a target='_blank' href='http://jekyllrb.com'>Jekyll</a>. I'll let you know how it goes...</p>
+		</div>
+
+		<div class="sidebar-item">
+			<h3>Current Projects</h3>
+			<ul>
+				<li>
+					<a href="/category/the-house/index.html">
+					The House
+					</a>
+				</li>
+
+				<li>
+					<a href="/category/the-website/index.html">
+					The Website
+					</a>
+				</li>
+
+				<li>
+					<a href="http://opengovhacknight.com" target='_blank'>
+						Open Government Hack Night
+					</a>
+
+					<ul>
+						<li>
+							<a href="/projects/my-building-doesnt-recycle/">
+								My Building Doesn't Recycle
+							</a>
+						</li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="sidebar-item">
+			<h3>Blog Categories</h3>
+
+			<ul id="category_list">
+				
+				<li>
+					<a href="/category/nerd-stuff/index.html">
+					Nerd Stuff
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/make-stuff/index.html">
+					Make Stuff
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/bay-area-adventures/index.html">
+					Bay Area Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/personal/index.html">
+					Personal
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/photos/index.html">
+					Photos
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/off-the-cuff/index.html">
+					Off The Cuff
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/chicago-adventures/index.html">
+					Chicago Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/travel/index.html">
+					Travel
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/food-and-drink/index.html">
+					Food And Drink
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/italian-adventures/index.html">
+					Italian Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/austrian-adventures/index.html">
+					Austrian Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/honeymoon-2013/index.html">
+					Honeymoon 2013
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/the-website/index.html">
+					The Website
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/the-house/index.html">
+					The House
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</aside>
+</div>
+
+<div class="clear"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Ben Wilhelm</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Ben Wilhelm</li>
+          <li><a href="mailto:benjamin.m.wilhelm@gmail.com">benjamin.m.wilhelm@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+
+          <li>
+            <a href="/feed.xml">
+              <span class='fa fa-rss'></span>
+              <span>Subscribe</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="https://github.com/benwilhelm">
+              <span class="fa fa-github"></span>
+              <span class="username">benwilhelm</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">I'm a web developer and sometime theatrical lighting designer living in Chicago, IL. At some point I'll probably write more here...
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
