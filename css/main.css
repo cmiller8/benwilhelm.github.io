@@ -2267,11 +2267,24 @@ body {
     width: auto; }
     .sidebar-sidebar .sidebar-item {
       margin-bottom: 1.5em; }
-      .sidebar-sidebar .sidebar-item li {
+      .sidebar-sidebar .sidebar-item ul li {
         display: inline; }
-        .sidebar-sidebar .sidebar-item li:after {
+        .sidebar-sidebar .sidebar-item ul li:after {
           color: #999;
           content: "•"; }
+        .sidebar-sidebar .sidebar-item ul li:last-child:after {
+          content: ""; }
+        .sidebar-sidebar .sidebar-item ul li ul {
+          display: inline;
+          font-size: medium;
+          padding-left: 0; }
+          .sidebar-sidebar .sidebar-item ul li ul li {
+            display: inline; }
+            .sidebar-sidebar .sidebar-item ul li ul li:after {
+              content: ""; }
+            .sidebar-sidebar .sidebar-item ul li ul li:before {
+              color: #999;
+              content: "•"; }
 
   .sidebar-main {
     float: none;
