@@ -919,6 +919,14 @@ files/large/posts/misc/jekyll-logo-2x.png:
     width: 498
     height: 230
     aspect: 2.1652173913043478
+files/large/posts/misc/trim-spreadsheet.jpg:
+    width: 1200
+    height: 900
+    aspect: 1.3333333333333333
+files/large/posts/misc/wells-street-bridge.jpg:
+    width: 1200
+    height: 992
+    aspect: 1.2096774193548387
 files/large/posts/misc/wpid-20130121_233735.jpg:
     width: 500
     height: 375
@@ -2051,6 +2059,14 @@ files/medium/posts/misc/jekyll-logo-2x.png:
     width: 498
     height: 230
     aspect: 2.1652173913043478
+files/medium/posts/misc/trim-spreadsheet.jpg:
+    width: 800
+    height: 600
+    aspect: 1.3333333333333333
+files/medium/posts/misc/wells-street-bridge.jpg:
+    width: 800
+    height: 661
+    aspect: 1.2102874432677762
 files/medium/posts/misc/wpid-20130121_233735.jpg:
     width: 500
     height: 375
@@ -3183,6 +3199,14 @@ files/originals/posts/misc/jekyll-logo-2x.png:
     width: 498
     height: 230
     aspect: 2.1652173913043478
+files/originals/posts/misc/trim-spreadsheet.jpg:
+    width: 3264
+    height: 2448
+    aspect: 1.3333333333333333
+files/originals/posts/misc/wells-street-bridge.jpg:
+    width: 2628
+    height: 2172
+    aspect: 1.2099447513812154
 files/originals/posts/misc/wpid-20130121_233735.jpg:
     width: 500
     height: 375
@@ -4315,6 +4339,14 @@ files/thumbs/posts/misc/jekyll-logo-2x.png:
     width: 400
     height: 185
     aspect: 2.1621621621621623
+files/thumbs/posts/misc/trim-spreadsheet.jpg:
+    width: 400
+    height: 300
+    aspect: 1.3333333333333333
+files/thumbs/posts/misc/wells-street-bridge.jpg:
+    width: 400
+    height: 331
+    aspect: 1.2084592145015105
 files/thumbs/posts/misc/wpid-20130121_233735.jpg:
     width: 400
     height: 300
