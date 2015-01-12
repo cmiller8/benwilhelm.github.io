@@ -57,11 +57,11 @@
 }
 
 
-@mixin throbber($t) {
-  -webkit-animation: throbber $t linear infinite;
-  -moz-animation:    throbber $t linear infinite;
-  -o-animation:      throbber $t linear infinite;
-  animation:         throbber $t linear infinite;
+@mixin throbber($t:1s, $reps:infinite) {
+  -webkit-animation: throbber $t $reps linear ;
+  -moz-animation:    throbber $t $reps linear ;
+  -o-animation:      throbber $t $reps linear ;
+  animation:         throbber $t $reps linear ;
 }
 
 @mixin bmw-spin() {

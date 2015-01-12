@@ -266,3 +266,38 @@ body {
 		}
 	}
 }
+
+
+#footer {
+	position: relative;
+
+	.footer-col-1.highlighted .arrow {
+		position: absolute;
+		top: -60px;
+		left: 25px;
+		width: 80px;
+		height: 80px;
+		@include throbber(.5s, 3);
+	
+		.body {
+			position: absolute;
+			top: 0;
+			left: 20px;
+			width: 40px;
+			height: 40px;
+			background-color: blue;
+		}
+
+		.head {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			height: 0;
+			width: 0;
+			border: 40px solid blue;
+			border-left:  40px solid transparent;
+			border-right: 40px solid transparent;
+			border-bottom: 0;
+		}
+	}
+}
