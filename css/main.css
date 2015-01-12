@@ -2098,10 +2098,10 @@ blockquote p:last-child:after {
   border-radius: 0 0 25px 0;
   width: 25px;
   height: 25px;
-  -webkit-animation: throbber 1s linear infinite;
-  -moz-animation: throbber 1s linear infinite;
-  -o-animation: throbber 1s linear infinite;
-  animation: throbber 1s linear infinite; }
+  -webkit-animation: throbber 1s infinite linear;
+  -moz-animation: throbber 1s infinite linear;
+  -o-animation: throbber 1s infinite linear;
+  animation: throbber 1s infinite linear; }
 
 .fluidbox-overlay {
   background-color: rgba(0, 0, 0, 0.85); }
@@ -2274,10 +2274,42 @@ body {
   .portfolio-list .item:hover .caption {
     display: block; }
 
+#footer {
+  position: relative; }
+  #footer .footer-col-1.highlighted .arrow {
+    position: absolute;
+    top: -60px;
+    left: 25px;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: throbber 0.5s 3 linear;
+    -moz-animation: throbber 0.5s 3 linear;
+    -o-animation: throbber 0.5s 3 linear;
+    animation: throbber 0.5s 3 linear; }
+    #footer .footer-col-1.highlighted .arrow .body {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: blue; }
+    #footer .footer-col-1.highlighted .arrow .head {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      height: 0;
+      width: 0;
+      border: 40px solid blue;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 0; }
+
 @media screen and (max-width: 1200px) {
-  .post-list .post {
+  .post-list .post,
+  .gallery .item {
     width: 50%; }
-    .post-list .post.emphasize {
+    .post-list .post.emphasize,
+    .gallery .item.emphasize {
       float: none;
       width: 100%; }
 
@@ -2333,7 +2365,13 @@ body {
       width: auto;
       margin-right: 2em; }
       .post.album.has-meta .meta dl:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+
+  .portfolio-list .item {
+    width: 50%; }
+    .portfolio-list .item.emphasize {
+      float: none;
+      width: 100%; } }
 @media screen and (max-width: 540px) {
   .post.album.has-meta .meta dl {
     width: 50%;

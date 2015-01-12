@@ -14450,6 +14450,13 @@ var customTransitionEnd = whichTransitionEvent();
 			});
 		}
 
+
+		$(window).on('hashchange', function(e) {
+			if (window.location.hash === '#footer') {
+				$('#footer .footer-col-1').addClass('highlighted');
+			}
+		});
+
 	});
 
 })(jQuery);
