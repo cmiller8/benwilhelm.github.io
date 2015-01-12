@@ -21,13 +21,16 @@ blockquote p:last-child:after { content: "\"";}
 	}
 }
 
-.fluidbox-loading:after {
-	background-color: rgba(255,255,255, 0.85);
-	content: "Loading...";
-	font-size: xx-small;
-	position: absolute;
-	bottom: 0;
-	right: 0;
+.fluidbox-loading .fluidbox-status {
+    position: absolute;
+    top:  0px;
+    left: 0px;
+    background-color: #fff;
+    border-radius: 0 0 25px 0;
+    width:  25px;
+    height: 25px;
+
+		@include throbber(1s); 
 }
 
 .fluidbox-overlay {

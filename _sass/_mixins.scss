@@ -33,6 +33,37 @@
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 }
 
+
+@mixin throbber-keyframes {
+  0%   { opacity: 1;  }
+  75%  { opacity: .5; }
+  100% { opacity: 1;  }
+}
+
+@-webkit-keyframes throbber {
+  @include throbber-keyframes();
+}
+
+@-moz-keyframes throbber {
+  @include throbber-keyframes();
+}
+
+@-o-keyframes throbber {
+  @include throbber-keyframes();
+}
+
+@keyframes throbber {
+  @include throbber-keyframes();
+}
+
+
+@mixin throbber($t) {
+  -webkit-animation: throbber $t linear infinite;
+  -moz-animation:    throbber $t linear infinite;
+  -o-animation:      throbber $t linear infinite;
+  animation:         throbber $t linear infinite;
+}
+
 @mixin bmw-spin() {
   -webkit-animation: bmw-spin 2s infinite linear;
           animation: bmw-spin 2s infinite linear;
