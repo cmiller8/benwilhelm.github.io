@@ -83,6 +83,13 @@
 		}
 	}
 
+  .portfolio-list .item {
+  	width: 50%;
 
+  	&.emphasize {
+  		float: none;
+  		width: 100%;
+  	}
+  }
 
 }
