@@ -21,13 +21,16 @@ blockquote p:last-child:after { content: "\"";}
 	}
 }
 
-.fluidbox-loading:after {
-	background-color: rgba(255,255,255, 0.85);
-	content: "Loading...";
-	font-size: xx-small;
-	position: absolute;
-	bottom: 0;
-	right: 0;
+.fluidbox-loading .fluidbox-status {
+    position: absolute;
+    top:  0px;
+    left: 0px;
+    background-color: #fff;
+    border-radius: 0 0 25px 0;
+    width:  25px;
+    height: 25px;
+
+		@include throbber(1s); 
 }
 
 .fluidbox-overlay {
@@ -260,6 +263,41 @@ body {
 
 		&:hover .caption {
 			display: block;
+		}
+	}
+}
+
+
+#footer {
+	position: relative;
+
+	.footer-col-1.highlighted .arrow {
+		position: absolute;
+		top: -60px;
+		left: 25px;
+		width: 80px;
+		height: 80px;
+		@include throbber(.5s, 3);
+	
+		.body {
+			position: absolute;
+			top: 0;
+			left: 20px;
+			width: 40px;
+			height: 40px;
+			background-color: blue;
+		}
+
+		.head {
+			position: absolute;
+			top: 40px;
+			left: 0;
+			height: 0;
+			width: 0;
+			border: 40px solid blue;
+			border-left:  40px solid transparent;
+			border-right: 40px solid transparent;
+			border-bottom: 0;
 		}
 	}
 }

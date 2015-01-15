@@ -8,11 +8,13 @@ layout: has_sidebar
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 
+    {% if page.categories %}
     <p class="categories quiet">Posted in
 	{% for category in page.categories %}
 	- <a href='/category/{{ category | slugify }}'>{{ category }}</a>
 	{% endfor %}
     </p>
+    {% endif %}
   </header>
 
   <article class="post-content">
