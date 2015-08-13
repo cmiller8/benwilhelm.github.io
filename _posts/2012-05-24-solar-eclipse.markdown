@@ -13,9 +13,9 @@ tags:
 - video
 comments: []
 
-video: http://www.flickr.com/photos/ben624/7238968950
+video: https://www.flickr.com/video_download.gne?id=7238968950
 
-images: 
+images:
   - src: posts/eclipse/DSC04346.jpg
   - src: posts/eclipse/photo-4.jpg
   - src: posts/eclipse/photo-5.jpg
@@ -39,4 +39,3 @@ Unfortunately, Jen had to work that day.&nbsp; I built her a paper-towel-roll-si
 
 
 There will be a <em>total</em> eclipse that passes through most of the US in 2017.&nbsp; Anyone who wants to join me for a viewing party is welcome.&nbsp; I'll bring the camera obscura.
-

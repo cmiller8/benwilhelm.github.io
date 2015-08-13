@@ -12,7 +12,7 @@ blockquote p:last-child:after { content: "\"";}
 	padding-bottom: 56.25%;
 	position: relative;
 
-	object, embed {
+	object, embed, video {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -30,7 +30,7 @@ blockquote p:last-child:after { content: "\"";}
     width:  25px;
     height: 25px;
 
-		@include throbber(1s); 
+		@include throbber(1s);
 }
 
 .fluidbox-overlay {
@@ -139,7 +139,7 @@ body {
 	.sidebar-item {
 		padding-right: 2em;
 		margin-bottom: 3em;
-		
+
 		ul {
 			margin: 1em 0;
 			padding: 0;
@@ -278,7 +278,7 @@ body {
 		width: 80px;
 		height: 80px;
 		@include throbber(.5s, 3);
-	
+
 		.body {
 			position: absolute;
 			top: 0;

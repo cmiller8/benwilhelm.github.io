@@ -14,7 +14,7 @@ tags:
 - video
 comments: []
 
-video: http://www.flickr.com/photos/ben624/6872169694/
+video: https://www.flickr.com/video_download.gne?id=6872169694/
 ---
 
 
@@ -25,4 +25,3 @@ This is my first stab at developing a large(ish) curriculum, and the kids, thoug
 
 
 And a very special thank you to <a title="Cece Gadda" href="http://www.dbdgartistwebsites.com/cecegadda/">Tiny Carlsen</a> for the donation of the Legos.
-

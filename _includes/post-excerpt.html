@@ -6,7 +6,8 @@
             </h2>
 
             {% if post.video %}
-              {% oembed {{post.video}} %}
+            {% assign video = post.video %}
+          	{% include video-player.html %}
 
             {% elsif post.cover or post.images %}
 
@@ -18,19 +19,19 @@
 
               {% if cover.external %}
               <p>
-              
+
                 {% unless cover.nolink %}
                 <a href="{{ cover.src }}">
                 {% endunless %}
-                
+
                   {% capture thumbIdx %}{{cover.src}}{% endcapture %}
-                  {% assign thumbInfo = site.data.images[thumbIdx] %}                  
+                  {% assign thumbInfo = site.data.images[thumbIdx] %}
                   <img src='{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
-                
+
                 {% unless cover.nolink %}
                 </a>
                 {% endunless %}
-              
+
               </p>
               {% else %}
               <p>
@@ -38,7 +39,7 @@
                 {% assign thumbInfo = site.data.images[thumbIdx] %}
                 {% capture mediumIdx %}files/medium/{{cover.src}}{% endcapture %}
                 {% assign mediumInfo = site.data.images[mediumIdx] %}
-                
+
                 {% unless cover.nolink %}
                 <a href="{{ site.image_path }}/large/{{ cover.src }}">
                 {% endunless %}
@@ -48,18 +49,18 @@
                   {% else %}
                     <img src='{{ site.image_path }}/thumbs/{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
                   {% endif %}
-                
+
                 {% unless cover.nolink %}
                 </a>
                 {% endunless %}
-              
+
 
               </p>
               {% endif %}
             {% endif %}
 
             {{ post.excerpt | strip_html | truncatewords:50 }}
-            
+
             <a class='read-more' href="{{ post.url | prepend: site.baseurl }}">Read More &rarr;</a>
           </div>
         </li>

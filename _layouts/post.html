@@ -35,7 +35,8 @@ layout: has_sidebar
 		{% endif %}
 
 	{% elsif page.video %}
-	{% oembed {{page.video}} %}
+  {% assign video = page.video %}
+	{% include video-player.html %}
 	{% endif %}
 
     {{ content }}

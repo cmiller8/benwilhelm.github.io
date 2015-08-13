@@ -9,7 +9,7 @@ tags:
 - led
 comments: []
 
-video: http://www.flickr.com/photos/ben624/5632664465/
+video: https://www.flickr.com/video_download.gne?id=5632664465/
 ---
 
 This was a prototype that I built a while back to create a firefly effect for a show that I was designing.&nbsp; Ultimately we went with a storebought solution, but it did expose me to the wonder of the [Arduino Board][1] and the many things you can build with it.

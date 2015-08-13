@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Building Doesn't Recycle
-subtitle: A software project with Chicago's Open Government Hack Night
+subtitle: A software project with Chi Hack Night
 ---
 
 <h3>
@@ -23,6 +23,6 @@ We're still testing the app and haven't yet released it to the public, but I wil
   <img src="{{ site.image_path }}/medium/projects/wimr.jpg">
 </a>
 
-[bho]: https://docs.google.com/document/d/1WiQrL8nlmBOdywuFgqFrPDokTRhIdFifeo-oCuLIcxc/edit?usp=sharing 
+[bho]: https://docs.google.com/document/d/1WiQrL8nlmBOdywuFgqFrPDokTRhIdFifeo-oCuLIcxc/edit?usp=sharing
 
 [opengov]: http://opengovhacknight.com
