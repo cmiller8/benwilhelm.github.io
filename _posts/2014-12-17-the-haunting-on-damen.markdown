@@ -2,7 +2,7 @@
 layout: post
 title: The Haunting on Damen
 emphasize: true
-video: https://www.flickr.com/video_download.gne?id=15861078349
+video: haunting.mp4
 
 categories:
   - The House

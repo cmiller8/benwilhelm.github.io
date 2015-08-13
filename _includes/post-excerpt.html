@@ -6,8 +6,7 @@
             </h2>
 
             {% if post.video %}
-            {% assign video = post.video %}
-          	{% include video-player.html %}
+              {% bmw_video_player post.video %}
 
             {% elsif post.cover or post.images %}
 
@@ -41,13 +40,13 @@
                 {% assign mediumInfo = site.data.images[mediumIdx] %}
 
                 {% unless cover.nolink %}
-                <a href="{{ site.image_path }}/large/{{ cover.src }}">
+                <a href="{{ site.cdn_path }}/large/{{ cover.src }}">
                 {% endunless %}
 
                   {% if post.emphasize %}
-                    <img src='{{ site.image_path }}/medium/{{ cover.src }}' data-aspect='{{mediumInfo.aspect}}' />
+                    <img src='{{ site.cdn_path }}/medium/{{ cover.src }}' data-aspect='{{mediumInfo.aspect}}' />
                   {% else %}
-                    <img src='{{ site.image_path }}/thumbs/{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
+                    <img src='{{ site.cdn_path }}/thumbs/{{ cover.src }}' data-aspect='{{thumbInfo.aspect}}' />
                   {% endif %}
 
                 {% unless cover.nolink %}

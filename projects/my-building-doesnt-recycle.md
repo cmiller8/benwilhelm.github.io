@@ -19,8 +19,8 @@ I've teamed up with Claire Micklin and a few others at Chicago's [Open Governmen
 
 We're still testing the app and haven't yet released it to the public, but I will announce here when we do. In the meantime, here's a screenshot (ooh, sexy...)
 
-<a href='{{ site.image_path }}/large/projects/wimr.jpg'>
-  <img src="{{ site.image_path }}/medium/projects/wimr.jpg">
+<a href='{{ site.cdn_path }}/large/projects/wimr.jpg'>
+  <img src="{{ site.cdn_path }}/medium/projects/wimr.jpg">
 </a>
 
 [bho]: https://docs.google.com/document/d/1WiQrL8nlmBOdywuFgqFrPDokTRhIdFifeo-oCuLIcxc/edit?usp=sharing

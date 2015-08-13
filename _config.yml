@@ -4,7 +4,7 @@ email: benjamin.m.wilhelm@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I'm a web developer and sometime theatrical lighting designer living in Chicago, IL.
   At some point I'll probably write more here...
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://benwilhelm.com" # the base hostname & protocol for your site
 github_username:  benwilhelm
@@ -18,9 +18,9 @@ permalink: pretty
 
 highligher: pygments
 
-image_path: https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com
+cdn_path: https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com
 
-category_archive: 
+category_archive:
   path: category
   layout: category_archive
   slugify: true
@@ -29,5 +29,5 @@ category_archive:
 
 # Environment-specific settings
 env: development
-limit_posts: 5
 drafts: true #this setting is overridden in the grunt-jekyll task
+# limit_posts: 5

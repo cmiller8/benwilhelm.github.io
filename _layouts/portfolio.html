@@ -29,7 +29,7 @@ layout: default
         {% assign imageInfo = site.data.images[imageIdx] %}
 
   		<a href='{{ album[0] }}'>
-        <img src='{{ site.image_path }}/{{size}}/{{album[1].images[0].src}}' data-aspect="{{imageInfo.aspect}}" />
+        <img src='{{ site.cdn_path }}/{{size}}/{{album[1].images[0].src}}' data-aspect="{{imageInfo.aspect}}" />
       </a>
 
       <div class="caption">

@@ -36,19 +36,19 @@ So. We went hiking through the Austrian Alps for four days and three nights, sle
 
 And holy cow, here are some cows! The wind-chimey sound is because <em>every</em> cow had a bell.
 
-{% oembed http://flickr.com/photos/ben624/9337917568/ %}
+{% bmw_video_player cows.mp4 %}
 
 ----
 
 A full panorama of the meadow
 
-{% oembed http://flickr.com/photos/ben624/9335928457/ %}
+{% bmw_video_player meadow.mp4 %}
 
 ----
 
 And here's video from the peak of a mountain that we set out to walk around, but decided to climb instead. It's 2,100m high (about 7,000 feet). It's no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.
 
-{% oembed http://flickr.com/photos/ben624/9335837375/ %}
+{% bmw_video_player mahnkopf.mp4 %}
 
 ----
 
@@ -56,4 +56,3 @@ And here's dinner
 
 
 <a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130715_180239.jpg"><img class="alignnone size-full" title="20130715_180239.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130715_180239.jpg" /></a>
-

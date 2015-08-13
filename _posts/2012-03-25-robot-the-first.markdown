@@ -14,7 +14,7 @@ tags:
 - video
 comments: []
 
-video: https://www.flickr.com/video_download.gne?id=6872169694/
+video: robot.mp4
 ---
 
 

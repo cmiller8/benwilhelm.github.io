@@ -13,7 +13,7 @@ tags:
 - video
 comments: []
 
-video: https://www.flickr.com/video_download.gne?id=7238968950
+video: eclipse.mp4
 
 images:
   - src: posts/eclipse/DSC04346.jpg
