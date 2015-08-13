@@ -15,15 +15,13 @@
 
   <script src='/js/site.min.js'></script>
 
-  <!-- development -->
-  
-  <script src="//localhost:35729/livereload.js"></script>
+  <!-- production -->
   
 
 </head>
 
 
-  <body class="development">
+  <body class="production">
 
     <header class="site-header">
 
@@ -113,11 +111,11 @@
 
 <p>In my <code>_config.yml</code> file, I added the following line:</p>
 
-<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">image_path</span><span class="pi">:</span> <span class="s">https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">cdn_path</span><span class="pi">:</span> <span class="s">https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com</span></code></pre></figure>
 
 <p>which means that I can now embed the images from my public folder into my markup thusly:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{site.image_path}}/photos/photo.jpg"</span> <span class="nt">/&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{site.cdn_path}}/photos/photo.jpg"</span> <span class="nt">/&gt;</span></code></pre></figure>
 
 <p>Added bonus: if I ever decide to go with a different solution for file hosting/sharing, I can simply update the site variable and not have to worry about each individual path.</p>
 
@@ -316,20 +314,26 @@
 				</li>
 				
 				<li>
-					<a href="/category/the-website/index.html">
-					The Website
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/the-house/index.html">
-					The House
-					</a>
-				</li>
-				
-				<li>
 					<a href="/category/make-stuff/index.html">
 					Make Stuff
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/bay-area-adventures/index.html">
+					Bay Area Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/personal/index.html">
+					Personal
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/photos/index.html">
+					Photos
 					</a>
 				</li>
 				
@@ -342,6 +346,54 @@
 				<li>
 					<a href="/category/chicago-adventures/index.html">
 					Chicago Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/travel/index.html">
+					Travel
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/food-and-drink/index.html">
+					Food And Drink
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/italian-adventures/index.html">
+					Italian Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/austrian-adventures/index.html">
+					Austrian Adventures
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/honeymoon-2013/index.html">
+					Honeymoon 2013
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/the-website/index.html">
+					The Website
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/the-house/index.html">
+					The House
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/off-the-cuff/index.html">
+					Off The Cuff
 					</a>
 				</li>
 				
