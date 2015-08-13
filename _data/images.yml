@@ -63,11 +63,11 @@ files/large/lighting/curse/05-DSC_0221.jpg:
     width: 782
     height: 1200
     aspect: 0.6516666666666666
-files/large/lighting/curse/DSCF0167.jpg:
+files/large/lighting/curse/DSC_0131.jpg:
     width: 1200
     height: 672
     aspect: 1.7857142857142858
-files/large/lighting/curse/DSC_0131.jpg:
+files/large/lighting/curse/DSCF0167.jpg:
     width: 1200
     height: 672
     aspect: 1.7857142857142858
@@ -283,18 +283,18 @@ files/large/lighting/magnificents/3906593643_e49fb3f7cb_b.jpg:
     width: 1200
     height: 672
     aspect: 1.7857142857142858
-files/large/lighting/magnificents/MagnificentsOutsideBox.jpg:
-    width: 972
-    height: 764
-    aspect: 1.2722513089005236
-files/large/lighting/magnificents/funeral.jpg:
-    width: 800
-    height: 533
-    aspect: 1.5009380863039399
 files/large/lighting/magnificents/funeral_edited.jpg:
     width: 800
     height: 533
     aspect: 1.5009380863039399
+files/large/lighting/magnificents/funeral.jpg:
+    width: 800
+    height: 533
+    aspect: 1.5009380863039399
+files/large/lighting/magnificents/MagnificentsOutsideBox.jpg:
+    width: 972
+    height: 764
+    aspect: 1.2722513089005236
 files/large/lighting/sparrow/bedroom.jpg:
     width: 1024
     height: 685
@@ -731,11 +731,11 @@ files/large/photography/zeke/evilzeke2_small.jpg:
     width: 640
     height: 495
     aspect: 1.292929292929293
-files/large/posts/christoph-intrepid/DSC_0050.jpg:
+files/large/posts/christoph-intrepid/christoph_the_intrepid.jpg:
     width: 1200
     height: 797
     aspect: 1.5056461731493098
-files/large/posts/christoph-intrepid/christoph_the_intrepid.jpg:
+files/large/posts/christoph-intrepid/DSC_0050.jpg:
     width: 1200
     height: 797
     aspect: 1.5056461731493098
@@ -875,6 +875,10 @@ files/large/posts/misc/20130624_114109.jpg:
     width: 1200
     height: 900
     aspect: 1.3333333333333333
+files/large/posts/misc/chomp.jpg:
+    width: 715
+    height: 612
+    aspect: 1.1683006535947713
 files/large/posts/misc/DSC03329.jpg:
     width: 1200
     height: 799
@@ -883,6 +887,10 @@ files/large/posts/misc/DSC03574.jpg:
     width: 1200
     height: 799
     aspect: 1.5018773466833542
+files/large/posts/misc/gg75.jpg:
+    width: 1200
+    height: 472
+    aspect: 2.542372881355932
 files/large/posts/misc/IMG_20131103_120403.jpg:
     width: 1200
     height: 1600
@@ -907,14 +915,6 @@ files/large/posts/misc/IMG_20131109_022453.jpg:
     width: 1200
     height: 900
     aspect: 1.3333333333333333
-files/large/posts/misc/chomp.jpg:
-    width: 715
-    height: 612
-    aspect: 1.1683006535947713
-files/large/posts/misc/gg75.jpg:
-    width: 1200
-    height: 472
-    aspect: 2.542372881355932
 files/large/posts/misc/jekyll-logo-2x.png:
     width: 498
     height: 230
@@ -1079,10 +1079,6 @@ files/large/posts/wedding/72ioay1afu76.jpg:
     width: 1200
     height: 1200
     aspect: 1
-files/large/posts/wedding/JB-094-M.jpg:
-    width: 600
-    height: 400
-    aspect: 1.5
 files/large/posts/wedding/a5g4mp2bj9x9.jpg:
     width: 1200
     height: 1200
@@ -1102,6 +1098,10 @@ files/large/posts/wedding/f121hds36sev.jpg:
 files/large/posts/wedding/goats.jpg:
     width: 960
     height: 640
+    aspect: 1.5
+files/large/posts/wedding/JB-094-M.jpg:
+    width: 600
+    height: 400
     aspect: 1.5
 files/large/posts/wedding/kiss.jpg:
     width: 636
@@ -1143,6 +1143,10 @@ files/large/posts/wedding/ym1kgrznnl0q.jpg:
     width: 1200
     height: 1200
     aspect: 1
+files/large/projects/mbdr.jpg:
+    width: 964
+    height: 687
+    aspect: 1.4032023289665212
 files/large/projects/wimr.jpg:
     width: 805
     height: 671
@@ -1203,11 +1207,11 @@ files/medium/lighting/curse/05-DSC_0221.jpg:
     width: 782
     height: 1200
     aspect: 0.6516666666666666
-files/medium/lighting/curse/DSCF0167.jpg:
+files/medium/lighting/curse/DSC_0131.jpg:
     width: 800
     height: 448
     aspect: 1.7857142857142858
-files/medium/lighting/curse/DSC_0131.jpg:
+files/medium/lighting/curse/DSCF0167.jpg:
     width: 800
     height: 448
     aspect: 1.7857142857142858
@@ -1423,18 +1427,18 @@ files/medium/lighting/magnificents/3906593643_e49fb3f7cb_b.jpg:
     width: 800
     height: 448
     aspect: 1.7857142857142858
-files/medium/lighting/magnificents/MagnificentsOutsideBox.jpg:
-    width: 800
-    height: 629
-    aspect: 1.2718600953895072
-files/medium/lighting/magnificents/funeral.jpg:
-    width: 800
-    height: 533
-    aspect: 1.5009380863039399
 files/medium/lighting/magnificents/funeral_edited.jpg:
     width: 800
     height: 533
     aspect: 1.5009380863039399
+files/medium/lighting/magnificents/funeral.jpg:
+    width: 800
+    height: 533
+    aspect: 1.5009380863039399
+files/medium/lighting/magnificents/MagnificentsOutsideBox.jpg:
+    width: 800
+    height: 629
+    aspect: 1.2718600953895072
 files/medium/lighting/sparrow/bedroom.jpg:
     width: 800
     height: 535
@@ -1871,11 +1875,11 @@ files/medium/photography/zeke/evilzeke2_small.jpg:
     width: 640
     height: 495
     aspect: 1.292929292929293
-files/medium/posts/christoph-intrepid/DSC_0050.jpg:
+files/medium/posts/christoph-intrepid/christoph_the_intrepid.jpg:
     width: 800
     height: 531
     aspect: 1.5065913370998116
-files/medium/posts/christoph-intrepid/christoph_the_intrepid.jpg:
+files/medium/posts/christoph-intrepid/DSC_0050.jpg:
     width: 800
     height: 531
     aspect: 1.5065913370998116
@@ -2015,6 +2019,10 @@ files/medium/posts/misc/20130624_114109.jpg:
     width: 800
     height: 600
     aspect: 1.3333333333333333
+files/medium/posts/misc/chomp.jpg:
+    width: 715
+    height: 612
+    aspect: 1.1683006535947713
 files/medium/posts/misc/DSC03329.jpg:
     width: 800
     height: 532
@@ -2023,6 +2031,10 @@ files/medium/posts/misc/DSC03574.jpg:
     width: 800
     height: 532
     aspect: 1.5037593984962405
+files/medium/posts/misc/gg75.jpg:
+    width: 800
+    height: 315
+    aspect: 2.5396825396825395
 files/medium/posts/misc/IMG_20131103_120403.jpg:
     width: 800
     height: 1067
@@ -2047,14 +2059,6 @@ files/medium/posts/misc/IMG_20131109_022453.jpg:
     width: 800
     height: 600
     aspect: 1.3333333333333333
-files/medium/posts/misc/chomp.jpg:
-    width: 715
-    height: 612
-    aspect: 1.1683006535947713
-files/medium/posts/misc/gg75.jpg:
-    width: 800
-    height: 315
-    aspect: 2.5396825396825395
 files/medium/posts/misc/jekyll-logo-2x.png:
     width: 498
     height: 230
@@ -2219,10 +2223,6 @@ files/medium/posts/wedding/72ioay1afu76.jpg:
     width: 800
     height: 800
     aspect: 1
-files/medium/posts/wedding/JB-094-M.jpg:
-    width: 600
-    height: 400
-    aspect: 1.5
 files/medium/posts/wedding/a5g4mp2bj9x9.jpg:
     width: 800
     height: 800
@@ -2243,6 +2243,10 @@ files/medium/posts/wedding/goats.jpg:
     width: 800
     height: 533
     aspect: 1.5009380863039399
+files/medium/posts/wedding/JB-094-M.jpg:
+    width: 600
+    height: 400
+    aspect: 1.5
 files/medium/posts/wedding/kiss.jpg:
     width: 636
     height: 960
@@ -2283,6 +2287,10 @@ files/medium/posts/wedding/ym1kgrznnl0q.jpg:
     width: 800
     height: 800
     aspect: 1
+files/medium/projects/mbdr.jpg:
+    width: 800
+    height: 570
+    aspect: 1.4035087719298245
 files/medium/projects/wimr.jpg:
     width: 800
     height: 667
@@ -2343,11 +2351,11 @@ files/originals/lighting/curse/05-DSC_0221.jpg:
     width: 782
     height: 1200
     aspect: 0.6516666666666666
-files/originals/lighting/curse/DSCF0167.jpg:
+files/originals/lighting/curse/DSC_0131.jpg:
     width: 1200
     height: 672
     aspect: 1.7857142857142858
-files/originals/lighting/curse/DSC_0131.jpg:
+files/originals/lighting/curse/DSCF0167.jpg:
     width: 1200
     height: 672
     aspect: 1.7857142857142858
@@ -2563,18 +2571,18 @@ files/originals/lighting/magnificents/3906593643_e49fb3f7cb_b.jpg:
     width: 1200
     height: 672
     aspect: 1.7857142857142858
-files/originals/lighting/magnificents/MagnificentsOutsideBox.jpg:
-    width: 972
-    height: 764
-    aspect: 1.2722513089005236
-files/originals/lighting/magnificents/funeral.jpg:
-    width: 800
-    height: 533
-    aspect: 1.5009380863039399
 files/originals/lighting/magnificents/funeral_edited.jpg:
     width: 800
     height: 533
     aspect: 1.5009380863039399
+files/originals/lighting/magnificents/funeral.jpg:
+    width: 800
+    height: 533
+    aspect: 1.5009380863039399
+files/originals/lighting/magnificents/MagnificentsOutsideBox.jpg:
+    width: 972
+    height: 764
+    aspect: 1.2722513089005236
 files/originals/lighting/sparrow/bedroom.jpg:
     width: 1024
     height: 685
@@ -3011,11 +3019,11 @@ files/originals/photography/zeke/evilzeke2_small.jpg:
     width: 640
     height: 495
     aspect: 1.292929292929293
-files/originals/posts/christoph-intrepid/DSC_0050.jpg:
+files/originals/posts/christoph-intrepid/christoph_the_intrepid.jpg:
     width: 1600
     height: 1062
     aspect: 1.5065913370998116
-files/originals/posts/christoph-intrepid/christoph_the_intrepid.jpg:
+files/originals/posts/christoph-intrepid/DSC_0050.jpg:
     width: 1600
     height: 1062
     aspect: 1.5065913370998116
@@ -3155,6 +3163,10 @@ files/originals/posts/misc/20130624_114109.jpg:
     width: 3264
     height: 2448
     aspect: 1.3333333333333333
+files/originals/posts/misc/chomp.jpg:
+    width: 715
+    height: 612
+    aspect: 1.1683006535947713
 files/originals/posts/misc/DSC03329.jpg:
     width: 4592
     height: 3056
@@ -3163,6 +3175,10 @@ files/originals/posts/misc/DSC03574.jpg:
     width: 4592
     height: 3056
     aspect: 1.5026178010471205
+files/originals/posts/misc/gg75.jpg:
+    width: 1608
+    height: 633
+    aspect: 2.5402843601895735
 files/originals/posts/misc/IMG_20131103_120403.jpg:
     width: 1717
     height: 2289
@@ -3187,14 +3203,6 @@ files/originals/posts/misc/IMG_20131109_022453.jpg:
     width: 2582
     height: 1937
     aspect: 1.3329891584925142
-files/originals/posts/misc/chomp.jpg:
-    width: 715
-    height: 612
-    aspect: 1.1683006535947713
-files/originals/posts/misc/gg75.jpg:
-    width: 1608
-    height: 633
-    aspect: 2.5402843601895735
 files/originals/posts/misc/jekyll-logo-2x.png:
     width: 498
     height: 230
@@ -3359,10 +3367,6 @@ files/originals/posts/wedding/72ioay1afu76.jpg:
     width: 1200
     height: 1200
     aspect: 1
-files/originals/posts/wedding/JB-094-M.jpg:
-    width: 600
-    height: 400
-    aspect: 1.5
 files/originals/posts/wedding/a5g4mp2bj9x9.jpg:
     width: 1200
     height: 1200
@@ -3382,6 +3386,10 @@ files/originals/posts/wedding/f121hds36sev.jpg:
 files/originals/posts/wedding/goats.jpg:
     width: 960
     height: 640
+    aspect: 1.5
+files/originals/posts/wedding/JB-094-M.jpg:
+    width: 600
+    height: 400
     aspect: 1.5
 files/originals/posts/wedding/kiss.jpg:
     width: 636
@@ -3423,10 +3431,10 @@ files/originals/posts/wedding/ym1kgrznnl0q.jpg:
     width: 1200
     height: 1200
     aspect: 1
-files/originals/projects/wimr.jpg:
-    width: 805
-    height: 671
-    aspect: 1.1997019374068554
+files/originals/projects/mbdr.jpg:
+    width: 964
+    height: 687
+    aspect: 1.4032023289665212
 files/thumbs/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 400
     height: 267
@@ -3483,11 +3491,11 @@ files/thumbs/lighting/curse/05-DSC_0221.jpg:
     width: 400
     height: 614
     aspect: 0.6514657980456026
-files/thumbs/lighting/curse/DSCF0167.jpg:
+files/thumbs/lighting/curse/DSC_0131.jpg:
     width: 400
     height: 224
     aspect: 1.7857142857142858
-files/thumbs/lighting/curse/DSC_0131.jpg:
+files/thumbs/lighting/curse/DSCF0167.jpg:
     width: 400
     height: 224
     aspect: 1.7857142857142858
@@ -3703,18 +3711,18 @@ files/thumbs/lighting/magnificents/3906593643_e49fb3f7cb_b.jpg:
     width: 400
     height: 224
     aspect: 1.7857142857142858
-files/thumbs/lighting/magnificents/MagnificentsOutsideBox.jpg:
-    width: 400
-    height: 314
-    aspect: 1.2738853503184713
-files/thumbs/lighting/magnificents/funeral.jpg:
-    width: 400
-    height: 267
-    aspect: 1.4981273408239701
 files/thumbs/lighting/magnificents/funeral_edited.jpg:
     width: 400
     height: 267
     aspect: 1.4981273408239701
+files/thumbs/lighting/magnificents/funeral.jpg:
+    width: 400
+    height: 267
+    aspect: 1.4981273408239701
+files/thumbs/lighting/magnificents/MagnificentsOutsideBox.jpg:
+    width: 400
+    height: 314
+    aspect: 1.2738853503184713
 files/thumbs/lighting/sparrow/bedroom.jpg:
     width: 400
     height: 268
@@ -4151,11 +4159,11 @@ files/thumbs/photography/zeke/evilzeke2_small.jpg:
     width: 400
     height: 309
     aspect: 1.2944983818770226
-files/thumbs/posts/christoph-intrepid/DSC_0050.jpg:
+files/thumbs/posts/christoph-intrepid/christoph_the_intrepid.jpg:
     width: 400
     height: 266
     aspect: 1.5037593984962405
-files/thumbs/posts/christoph-intrepid/christoph_the_intrepid.jpg:
+files/thumbs/posts/christoph-intrepid/DSC_0050.jpg:
     width: 400
     height: 266
     aspect: 1.5037593984962405
@@ -4295,6 +4303,10 @@ files/thumbs/posts/misc/20130624_114109.jpg:
     width: 400
     height: 300
     aspect: 1.3333333333333333
+files/thumbs/posts/misc/chomp.jpg:
+    width: 400
+    height: 342
+    aspect: 1.1695906432748537
 files/thumbs/posts/misc/DSC03329.jpg:
     width: 400
     height: 266
@@ -4303,6 +4315,10 @@ files/thumbs/posts/misc/DSC03574.jpg:
     width: 400
     height: 266
     aspect: 1.5037593984962405
+files/thumbs/posts/misc/gg75.jpg:
+    width: 400
+    height: 157
+    aspect: 2.5477707006369426
 files/thumbs/posts/misc/IMG_20131103_120403.jpg:
     width: 400
     height: 533
@@ -4327,14 +4343,6 @@ files/thumbs/posts/misc/IMG_20131109_022453.jpg:
     width: 400
     height: 300
     aspect: 1.3333333333333333
-files/thumbs/posts/misc/chomp.jpg:
-    width: 400
-    height: 342
-    aspect: 1.1695906432748537
-files/thumbs/posts/misc/gg75.jpg:
-    width: 400
-    height: 157
-    aspect: 2.5477707006369426
 files/thumbs/posts/misc/jekyll-logo-2x.png:
     width: 400
     height: 185
@@ -4499,10 +4507,6 @@ files/thumbs/posts/wedding/72ioay1afu76.jpg:
     width: 400
     height: 400
     aspect: 1
-files/thumbs/posts/wedding/JB-094-M.jpg:
-    width: 400
-    height: 267
-    aspect: 1.4981273408239701
 files/thumbs/posts/wedding/a5g4mp2bj9x9.jpg:
     width: 400
     height: 400
@@ -4520,6 +4524,10 @@ files/thumbs/posts/wedding/f121hds36sev.jpg:
     height: 299
     aspect: 1.3377926421404682
 files/thumbs/posts/wedding/goats.jpg:
+    width: 400
+    height: 267
+    aspect: 1.4981273408239701
+files/thumbs/posts/wedding/JB-094-M.jpg:
     width: 400
     height: 267
     aspect: 1.4981273408239701
@@ -4563,6 +4571,10 @@ files/thumbs/posts/wedding/ym1kgrznnl0q.jpg:
     width: 400
     height: 400
     aspect: 1
+files/thumbs/projects/mbdr.jpg:
+    width: 400
+    height: 285
+    aspect: 1.4035087719298245
 files/thumbs/projects/wimr.jpg:
     width: 400
     height: 333
