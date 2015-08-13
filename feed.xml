@@ -6,9 +6,9 @@
 </description>
     <link>http://benwilhelm.com/</link>
     <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Jan 2015 22:55:20 -0600</pubDate>
-    <lastBuildDate>Thu, 15 Jan 2015 22:55:20 -0600</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Wed, 12 Aug 2015 21:27:28 -0500</pubDate>
+    <lastBuildDate>Wed, 12 Aug 2015 21:27:28 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.0.pre.beta8</generator>
     
       <item>
         <title>Wells Street Bridge</title>
@@ -19,9 +19,9 @@
         <guid isPermaLink="true">http://benwilhelm.com/off-the-cuff/chicago-adventures/2014/12/29/wells-street-bridge/</guid>
         
         
-        <category>off the cuff</category>
+        <category>Off the Cuff</category>
         
-        <category>chicago adventures</category>
+        <category>Chicago Adventures</category>
         
       </item>
     
@@ -37,7 +37,7 @@
   &lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/medium/posts/closet-shelves/groundplan.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;“We’ll just build the shelves ourselves” we thought. No big thing. I’m sure we can knock them out in the first couple weeks after we move in. &lt;/p&gt;
+&lt;p&gt;“We’ll just build the shelves ourselves” we thought. No big thing. I’m sure we can knock them out in the first couple weeks after we move in.&lt;/p&gt;
 
 &lt;p&gt;hah!&lt;/p&gt;
 
@@ -66,7 +66,7 @@
 		
 	  	
 	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/sketch.jpg&quot; title=&quot;Jen&#39;s original concept drawing.&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/sketch.jpg&quot; title=&quot;Jen&amp;#39;s original concept drawing.&quot;&gt;
 			
 				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/closet-shelves/sketch.jpg&quot; data-aspect=&quot;0.7504690431519699&quot; /&gt;
 			
@@ -94,7 +94,7 @@
 		
 	  	
 	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/window-covered.jpg&quot; title=&quot;This window was the only one we didn&#39;t replace in the renovation.  It&#39;s very drafty and so needed to be insulated and covered.
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/window-covered.jpg&quot; title=&quot;This window was the only one we didn&amp;#39;t replace in the renovation.  It&amp;#39;s very drafty and so needed to be insulated and covered.
 &quot;&gt;
 			
 				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/closet-shelves/window-covered.jpg&quot; data-aspect=&quot;0.7504690431519699&quot; /&gt;
@@ -123,7 +123,7 @@
 		
 	  	
 	  	&lt;div class=&quot;item pack emphasize&quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/finished-empty.jpg&quot; title=&quot;Finished and painted, thanks to Jen&#39;s painstaking work.&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/finished-empty.jpg&quot; title=&quot;Finished and painted, thanks to Jen&amp;#39;s painstaking work.&quot;&gt;
 			
 				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/medium/posts/closet-shelves/finished-empty.jpg&quot; data-aspect=&quot;2.2099447513812156&quot; /&gt;
 			
@@ -137,7 +137,7 @@
 		
 	  	
 	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/router.jpg&quot; title=&quot;My router&#39;s maiden voyage.&quot;&gt;
+		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/closet-shelves/router.jpg&quot; title=&quot;My router&amp;#39;s maiden voyage.&quot;&gt;
 			
 				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/closet-shelves/router.jpg&quot; data-aspect=&quot;1.3333333333333333&quot; /&gt;
 			
@@ -165,9 +165,9 @@
         <guid isPermaLink="true">http://benwilhelm.com/the-house/make-stuff/2014/12/21/closet-shelves/</guid>
         
         
-        <category>the house</category>
+        <category>The House</category>
         
-        <category>make stuff</category>
+        <category>Make Stuff</category>
         
       </item>
     
@@ -179,7 +179,7 @@
 
 &lt;h3 id=&quot;the-problem&quot;&gt;The Problem&lt;/h3&gt;
 
-&lt;p&gt;One of Jekyll’s strengths (everything kept in Git) quickly turned out to be a stumbling block when I first tried to commit a bunch of my photography to the repository. As I waited 30+ seconds to even be prompted for the commit message, I realized that keeping all of my images checked directly into the repo was going to make it impractically large and unwieldy. &lt;/p&gt;
+&lt;p&gt;One of Jekyll’s strengths (everything kept in Git) quickly turned out to be a stumbling block when I first tried to commit a bunch of my photography to the repository. As I waited 30+ seconds to even be prompted for the commit message, I realized that keeping all of my images checked directly into the repo was going to make it impractically large and unwieldy.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-solution&quot;&gt;The Solution&lt;/h3&gt;
 
@@ -187,33 +187,33 @@
 
 &lt;p&gt;&lt;em&gt;1) Store images in my Dropbox &lt;code&gt;Public&lt;/code&gt; folder&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Dropbox accounts all have a folder called &lt;code&gt;Public&lt;/code&gt;, a default directory which makes any file in it available publicly on the interwebs at a consistent root URL, following whatever directory structure is laid out within it.  For me that URL is &lt;code&gt;https://dl.dropboxusercontent.com/u/8637739&lt;/code&gt;, into which I put a directory called &lt;code&gt;benwilhelm.com&lt;/code&gt;, where I would put all of my photos organized into further subfolders as desired. &lt;/p&gt;
+&lt;p&gt;Dropbox accounts all have a folder called &lt;code&gt;Public&lt;/code&gt;, a default directory which makes any file in it available publicly on the interwebs at a consistent root URL, following whatever directory structure is laid out within it.  For me that URL is &lt;code&gt;https://dl.dropboxusercontent.com/u/8637739&lt;/code&gt;, into which I put a directory called &lt;code&gt;benwilhelm.com&lt;/code&gt;, where I would put all of my photos organized into further subfolders as desired.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;2) Create a site variable that is the Dropbox public URL&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;In my &lt;code&gt;_config.yml&lt;/code&gt; file, I added the following line:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;which means that I can now embed the images from my public folder into my markup thusly:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{site.image_path}}/photos/photo.jpg&amp;quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{site.image_path}}/photos/photo.jpg&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Added bonus: if I ever decide to go with a different solution for file hosting/sharing, I can simply update the site variable and not have to worry about each individual path.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;3) Optional: Use Grunt.js for further image processing&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;I use &lt;a href=&quot;http://gruntjs.com&quot;&gt;grunt.js&lt;/a&gt; for managing development and deployment tasks. In order to create versions of my photos at different sizes (thumbnail, medium, large, etc), I created a grunt task using &lt;a href=&quot;https://github.com/excellenteasy/grunt-image-resize&quot;&gt;grunt-image-resize&lt;/a&gt; which scans the &lt;code&gt;originals&lt;/code&gt; folder and creates corresponding images at multiple resolutions in folders called &lt;code&gt;thumbs&lt;/code&gt;, &lt;code&gt;medium&lt;/code&gt;, and &lt;code&gt;large&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;I use &lt;a href=&quot;http://gruntjs.com&quot;&gt;grunt.js&lt;/a&gt; for managing development and deployment tasks. In order to create versions of my photos at different sizes (thumbnail, medium, large, etc), I created a grunt task using &lt;a href=&quot;https://github.com/excellenteasy/grunt-image-resize&quot;&gt;grunt-image-resize&lt;/a&gt; which scans the &lt;code&gt;originals&lt;/code&gt; folder and creates corresponding images at multiple resolutions in folders called &lt;code&gt;thumbs&lt;/code&gt;, &lt;code&gt;medium&lt;/code&gt;, and &lt;code&gt;large&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I also created a custom task which scans each of the directories and writes each image’s pixel size and aspect ratio to a data file, allowing me to use those values for some of the javascript effects on the site (notably &lt;a href=&quot;http://terrymun.github.io/Fluidbox/&quot;&gt;fluidbox&lt;/a&gt; and &lt;a href=&quot;http://packery.metafizzy.co/&quot;&gt;packery&lt;/a&gt;). Image properties are saved to a YAML hash, the keys of which are the respective paths of each image.  All of this is excerpted below; the full grunt file can be found on &lt;a href=&quot;https://github.com/benwilhelm/benwilhelm.github.io/blob/jekyll/Gruntfile.js&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;gruntfilejs-excerpt&quot;&gt;Gruntfile.js (excerpt)&lt;/h4&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;grunt&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;fs&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;glob&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sizeOf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;image-size&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;YAML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;yamljs&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;grunt&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;fs&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;glob&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sizeOf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;image-size&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;YAML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;yamljs&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
@@ -223,53 +223,53 @@
   &lt;span class=&quot;c1&quot;&gt;// excerpted from &lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// grunt.initConfig()&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// ==========================&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;image_resize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;image_resize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
-    &lt;span class=&quot;nx&quot;&gt;thumbs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;thumbs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-      &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;files/originals/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;**/*.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;files/thumbs/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;extDot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;first&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;files/originals/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;**/*.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;files/thumbs/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;extDot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;first&quot;&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-    &lt;span class=&quot;nx&quot;&gt;medium&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;medium&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-      &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;files/originals/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;**/*.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;files/medium/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;extDot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;first&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;files/originals/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;**/*.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;files/medium/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;extDot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;first&quot;&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-    &lt;span class=&quot;nx&quot;&gt;large&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-                &lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;large&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+                &lt;span class=&quot;nx&quot;&gt;overwrite&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
 
-      &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;files/originals/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;**/*.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;files/large/&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;extDot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;first&amp;quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;files/originals/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;**/*.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;files/large/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;ext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;extDot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;first&quot;&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
@@ -277,71 +277,71 @@
 
   &lt;span class=&quot;c1&quot;&gt;//...&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;resize&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;image_resize:thumbs&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;image_resize:medium&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-    &lt;span class=&quot;s2&quot;&gt;&amp;quot;image_resize:large&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;resize&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;s2&quot;&gt;&quot;image_resize:thumbs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;s2&quot;&gt;&quot;image_resize:medium&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+    &lt;span class=&quot;s2&quot;&gt;&quot;image_resize:large&quot;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
 
-  &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;imageinfo&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;imageinfo&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
     &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;async&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;files/**/*.jpg&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;existingYml&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFileSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;./_data/images.yml&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;glob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;files/**/*.jpg&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;existingYml&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFileSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./_data/images.yml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 
       &lt;span class=&quot;c1&quot;&gt;// this demarcates auto-generated values&lt;/span&gt;
       &lt;span class=&quot;c1&quot;&gt;// from manually added values for things like&lt;/span&gt;
       &lt;span class=&quot;c1&quot;&gt;// externally hosted images&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;existingYml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;#!#!#!#!#&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;existingYml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#!#!#!#!#&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
       &lt;span class=&quot;nx&quot;&gt;existingYml&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
 
       &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{};&lt;/span&gt;
       &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
         &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sizeOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
         &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;image&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;na&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dimensions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
         &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
       &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
 
       &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yamlString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;YAML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yamlHeading&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;\n\n\n#!#!#!#!# Do not edit below this line.\n&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;yamlHeading&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;# Generated automatically using `grunt imageinfo` on &amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;\n\n&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yamlHeading&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;\n\n\n#!#!#!#!# Do not edit below this line.\n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;yamlHeading&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;# Generated automatically using `grunt imageinfo` on &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;\n\n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
       
-      &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFileSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;./_data/images.yml&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;existingYml&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yamlHeading&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yamlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;done&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFileSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./_data/images.yml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;existingYml&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yamlHeading&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;yamlString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;done&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
       &lt;span class=&quot;nx&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
     
   &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;processimages&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;resize&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;imageinfo&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;processimages&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;resize&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;imageinfo&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h4 id=&quot;dataimagesyml-excerpt&quot;&gt;_data/images.yml (excerpt)&lt;/h4&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Manually add photos which will not be processed by `grunt imageinfo` here&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Manually add photos which will not be processed by `grunt imageinfo` here&lt;/span&gt;
 
-&lt;span class=&quot;s&quot;&gt;&amp;quot;http://imgs.xkcd.com/comics/computer_problems.png&amp;quot;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;587&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;254&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;2.311&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;http://imgs.xkcd.com/comics/computer_problems.png&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;587&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;254&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2.311&lt;/span&gt;
 
 
 &lt;span class=&quot;c1&quot;&gt;#!#!#!#!# Do not edit below this line.&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# Generated automatically using `grunt imageinfo`&lt;/span&gt;
 
-&lt;span class=&quot;s&quot;&gt;&amp;quot;files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1200&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;800&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1.5&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&amp;quot;files/large/lighting/500-clown-xmas/IMG_9848-1200x800.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1200&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;800&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1.5&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&amp;quot;files/large/lighting/500-clown-xmas/IMG_9922-1200x800.jpg&amp;quot;&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1200&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;800&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;1.5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1200&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;800&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1.5&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;files/large/lighting/500-clown-xmas/IMG_9848-1200x800.jpg&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1200&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;800&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1.5&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;files/large/lighting/500-clown-xmas/IMG_9922-1200x800.jpg&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1200&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;800&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;aspect&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1.5&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
         <pubDate>Sun, 21 Dec 2014 00:00:00 -0600</pubDate>
@@ -349,9 +349,9 @@
         <guid isPermaLink="true">http://benwilhelm.com/the-website/nerd-stuff/2014/12/21/building-an-image-heavy-jekyll-site/</guid>
         
         
-        <category>the website</category>
+        <category>The Website</category>
         
-        <category>nerd stuff</category>
+        <category>Nerd Stuff</category>
         
       </item>
     
@@ -359,7 +359,7 @@
         <title>The Haunting on Damen</title>
         <description>&lt;p&gt;A little late to post it, but here’s the trick-or-treating experience we put together for our first Halloween as homeowners. Sadly, it was 30° with snow and 25mph winds, but the few kids we got seemed to have fun.&lt;/p&gt;
 
-&lt;p&gt;See if you can spot: &lt;/p&gt;
+&lt;p&gt;See if you can spot:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Ben’s creepy eyes peering out of the top floor windows&lt;/li&gt;
@@ -376,9 +376,9 @@
         <guid isPermaLink="true">http://benwilhelm.com/the-house/make-stuff/2014/12/17/the-haunting-on-damen/</guid>
         
         
-        <category>the house</category>
+        <category>The House</category>
         
-        <category>make stuff</category>
+        <category>Make Stuff</category>
         
       </item>
     
@@ -388,27 +388,27 @@
 
 &lt;p&gt;&lt;a href=&quot;http://alistapart.com/article/creating-intrinsic-ratios-for-video&quot;&gt;http://alistapart.com/article/creating-intrinsic-ratios-for-video&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.videoWrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;56.25%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.videoWrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;padding-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;56.25%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;padding-top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
 &lt;span class=&quot;nt&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;embed&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+	&lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;videoWrapper&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;object&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-		&lt;span class=&quot;nt&quot;&gt;&amp;lt;embed&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;...&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;videoWrapper&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;object&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;nt&quot;&gt;&amp;lt;embed&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;...&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/object&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
         <pubDate>Fri, 12 Dec 2014 00:00:00 -0600</pubDate>
@@ -416,482 +416,9 @@
         <guid isPermaLink="true">http://benwilhelm.com/nerd-stuff/the-website/2014/12/12/responsive-videos/</guid>
         
         
-        <category>nerd stuff</category>
+        <category>Nerd Stuff</category>
         
-        <category>the website</category>
-        
-      </item>
-    
-      <item>
-        <title>2-Column Float Around Image</title>
-        <description>&lt;p&gt;&lt;strong&gt;TL;DR? &lt;a href=&quot;http://jsbin.com/urIWofuY&quot;&gt;Grab the code&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This week I was presented with an interesting CSS challenge. An image in the middle of a page, with text flowing around both sides of it.&lt;/p&gt;
-
-&lt;p&gt;When I first looked at the design comp (not pictured), the two columns around the text jumped out at me right away as one of those &lt;em&gt;well-I’m-sure-that-can-be-solved-but-I-have-no-idea-how-yet&lt;/em&gt; kind of problems. I set to work slicing up the comp and building the site, all the while letting this challenge ruminate in the back of my head. After a couple of hours, the build was done save for this element. And I still only had a few rough ideas of how to attack it, because there are a few details that make it extra challenging. The obvious problem of course is how to get that float to span both columns, but the extra tricky bit, if you look closely, is that the image has to float a set distance from the top of the column, rather than being anchored to the top of an element such as a paragraph.  The site is being built in Drupal, so I wanted to make sure that the client was able to edit the text of both columns without worrying about how it would affect the placement of the image.  Brainstorming with a co-worker, we found a few solutions that came close:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Close…&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.sampsonresume.com/labs/img-in-middle/&quot; target=&quot;_blank&quot;&gt;http://www.sampsonresume.com/labs/img-in-middle/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This one has the basic idea right, but it requires that the image be aligned to the top of the two columns. It set us down the right path, though.  Essentially, you’re showing half of the image in each column by floating a div of half the image width, and using the background-image and background-position properties to show the appropriate half of the image in each column.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Closer…&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a title=&quot;A List Apart - Cross-Column Pull-Outs&quot; href=&quot;http://alistapart.com/article/crosscolumn&quot; target=&quot;_blank&quot;&gt;http://alistapart.com/article/crosscolumn&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This one gets a little closer to the solution in that it allows you to arbitrarily place the image in the text without having to anchor to the top of an element. However, this article is ten years old&lt;a href=&quot;#ann_one&quot; name=&quot;source_one&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;, from before the widespread use of content management systems, and advocates simply sticking the image into the text of the paragraph wherever you’d like it. That’s fine, but you also have to match the placement of the other half of the image with a trial-and-error method in the other column.  As I said above, I want the client to be able to edit the text of both columns without worrying about the image placement.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Bingo!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The second solution was so close, but still not quite viable. So I did what I often do when presented with a difficult problem: I made my lunch and chewed on the problem while I chewed on a pastrami sandwich&lt;sup&gt;&lt;a href=&quot;#ann_two&quot; name=&quot;source_two&quot;&gt;[2]&lt;/a&gt;&lt;/sup&gt;. I came back to my computer and looked at it for just a second longer, and the solution became clear. What I needed was a prop of constant dimension to anchor to the top of each column, then push the two halves of the image down the appropriate distance. Using a combination of floating and clearing, I was able to put a one-pixel-wide prop before the image in each column, putting each image at the top of its respective column and therefore separating the image from the text content. Relevant bits of code are below, full working example can be found on &lt;a href=&quot;http://jsbin.com/urIWofuY/2/edit&quot; target=&quot;_blank&quot;&gt;JSBin&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The Markup:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col left&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;Left Column&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;spacer&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;img&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-  
-Lorem ipsum...
-
-  
-Lorem ipsum...
-
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col right&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;h3&amp;gt;&lt;/span&gt;Right Column&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;spacer&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;img&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  
-  
-Lorem ipsum...
-
-  
-Lorem ipsum...
-
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;The CSS:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;relative&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.col&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;365px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.spacer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(http://placehold.it/300x300)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;no-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;150px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.col.right&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;background-position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.col.left&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.spacer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.col.left&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.col.right&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.spacer&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nc&quot;&gt;.col.right&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;.img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;clear&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;margin-left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Hopefully this post will help someone else facing the same problem, but who may not have the aid of a pastrami sandwich.&lt;/p&gt;
-
-&lt;p&gt;–
-Notes&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&quot;ann_one&quot;&gt;&lt;/a&gt;1) Kudos to ALA for promoting the type of content on their blog that is still mostly relevant after ten years. Taken out of a CMS context, this method is still a totally viable, semantically correct solution to the problem. Three cheers for web standards!&lt;br /&gt;
-&lt;a href=&quot;#source_one&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&quot;ann_two&quot;&gt;&lt;/a&gt;2) I’m a big fan of stepping back from a problem when I feel stuck. Another developer whose blog I enjoy &lt;a href=&quot;http://www.garann.com/dev/2013/the-step-back/&quot; target=&quot;_blank&quot;&gt;agrees with me&lt;/a&gt;.&lt;br /&gt;
-&lt;a href=&quot;#source_two&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 07 Dec 2013 00:00:00 -0600</pubDate>
-        <link>http://benwilhelm.com/nerd-stuff/2013/12/07/2-column-float-around-image/</link>
-        <guid isPermaLink="true">http://benwilhelm.com/nerd-stuff/2013/12/07/2-column-float-around-image/</guid>
-        
-        <category>CSS</category>
-        
-        <category>image float</category>
-        
-        <category>columns</category>
-        
-        
-        <category>nerd stuff</category>
-        
-      </item>
-    
-      <item>
-        <title>Hot Caraway Cider Toddy</title>
-        <description>&lt;p&gt;Our friends Lee and Chelsea hosted Thanksgiving dinner this year as usual, and we were tasked with supplying a beverage to share. Last year I made a cider toddy from a recipe provided by a co-worker which was well received, and this year we had some &lt;a href=&quot;http://www.koval-distillery.com/newsite/other-liqueurs/caraway&quot; target=&quot;_blank&quot;&gt;caraway liqueur&lt;/a&gt; on hand which I have used to make some excellent &lt;a title=&quot;Grapefruit on Rye&quot; href=&quot;http://benwilhelm.com/uncategorized/grapefruit-on-rye/&quot;&gt;whiskey cocktails&lt;/a&gt;.  I decided to riff on the recipe a bit to make use of the caraway, and the result was a fragrant&lt;a href=&quot;#one_962&quot; name=&quot;source_one_962&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt;, delicious hit. The recipe is easily scaled to whatever number of people you are planning to serve, so I give it to you here measured simply in parts. For large batches, heat on the stove until just before it simmers (boiling will boil off the alcohol) and then transfer to a crock pot to keep warm.  For making single servings, a microwave works just fine.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;4p Apple Cider&lt;/strong&gt; - Any cider will do, but I prefer it on the less sweet side&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;1p lemon juice&lt;/strong&gt; - If you want to garnish each drink with a lemon peel, you&#39;re welcome to squeeze a actual lemons. &amp;nbsp;For large batches, I say just use a store-bought bottle of lemon juice&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;1p 50/50simple syrup&lt;/strong&gt; - simmer equal parts water and sugar until clear, then let cool.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;2p 100 proof rye&lt;/strong&gt; - Nothing fancy, but high proof will stand up to the sweetness of the cider. Rittenhouse 100 is great.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;1p caraway liqueur&lt;/strong&gt; - This one is optional, but definitely adds a little something. I used &lt;a title=&quot;Koval Caraway Liqueur&quot; href=&quot;http://www.koval-distillery.com/newsite/other-liqueurs/caraway&quot; target=&quot;_blank&quot;&gt;Koval&lt;/a&gt; (because they&#39;re down the street). If you forego the caraway, you might want to cut the lemon and simple syrup in half.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Whole Cloves&lt;/strong&gt; - Obviously, the quantity will depend on how much you&#39;re making. I made a big batch in a crock pot and put about a teaspoon of cloves into a tea bag while it heated.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Dash of Angostura Bitters&lt;/strong&gt;&amp;nbsp;(top each serving) - Angostura is of course the easiest of bitters to find. Feel free to riff here.&lt;strong&gt;&lt;br /&gt;
-&lt;/strong&gt;&lt;/li&gt;&lt;br /&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;–
-Notes&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&quot;one_962&quot;&gt;&lt;/a&gt; 1) Seriously fragrant. We tipped some over in the trunk of our hatchback on the way to dinner and the car still smells like boozy apple cider &lt;em&gt;#noreallyofficer&lt;/em&gt;&lt;br /&gt;
-&lt;a href=&quot;#source_one_962&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 28 Nov 2013 18:22:32 -0600</pubDate>
-        <link>http://benwilhelm.com/make-stuff/food-and-drink/2013/11/28/hot-caraway-cider-toddy/</link>
-        <guid isPermaLink="true">http://benwilhelm.com/make-stuff/food-and-drink/2013/11/28/hot-caraway-cider-toddy/</guid>
-        
-        
-        <category>make stuff</category>
-        
-        <category>food and drink</category>
-        
-      </item>
-    
-      <item>
-        <title>Grapefruit on Rye</title>
-        <description>&lt;p&gt;A while back we went to a whiskey tasting at &lt;a title=&quot;Koval Caraway Liqueur&quot; href=&quot;http://www.koval-distillery.com/&quot; target=&quot;_blank&quot;&gt;Koval Distillery&lt;/a&gt; in our neighborhood, and came home with a bottle of their caraway liqueur.  I do love a whiskey cocktail and after Swedish Chefing&lt;a href=&quot;#one_969&quot; name=&quot;one_969_source&quot;&gt;&lt;sup&gt;[1]&lt;/sup&gt;&lt;/a&gt; around in the kitchen a little bit, I came up with the following.  Serve in a rocks glass over one big-ass cube. (I’m sure there’s a name for those big-ass cubes, but I’m not that fancy)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2p Bulleit Rye&lt;/li&gt;
-  &lt;li&gt;1p Caraway Liqueur&lt;/li&gt;
-  &lt;li&gt;1p Grapefruit juice&lt;/li&gt;
-  &lt;li&gt;Dash of Angostura&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;–&lt;/p&gt;
-
-&lt;p&gt;&lt;a name=&quot;one_969&quot;&gt;&lt;/a&gt;1) &lt;em&gt;Swedish Chefing&lt;/em&gt; is a common phenomenon in our kitchen.&lt;br /&gt;
-&lt;a href=&quot;#one_969_source&quot;&gt;back&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;embed video YouTube&quot;&gt;&lt;iframe width=&quot;459&quot; height=&quot;344&quot; src=&quot;http://www.youtube.com/embed/9OfsABOGw3c?feature=oembed&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Fri, 15 Nov 2013 20:38:21 -0600</pubDate>
-        <link>http://benwilhelm.com/make-stuff/food-and-drink/2013/11/15/grapefruit-on-rye/</link>
-        <guid isPermaLink="true">http://benwilhelm.com/make-stuff/food-and-drink/2013/11/15/grapefruit-on-rye/</guid>
-        
-        
-        <category>make stuff</category>
-        
-        <category>food and drink</category>
-        
-      </item>
-    
-      <item>
-        <title>Miscellany</title>
-        <description>&lt;p&gt;It’s been a while since I’ve posted anything to the ol’ blog, so here are some photos from the last few weeks.&lt;/p&gt;
-
-&lt;div class=&quot;gallery packery&quot;&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_121322.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_121322.jpg&quot; data-aspect=&quot;1.25&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/architecture/IMG_20131103_124211.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/architecture/IMG_20131103_124211.jpg&quot; data-aspect=&quot;1.3333333333333333&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_120403.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_120403.jpg&quot; data-aspect=&quot;0.7504690431519699&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_121001.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_121001.jpg&quot; data-aspect=&quot;0.7504690431519699&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_123916.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_123916.jpg&quot; data-aspect=&quot;1.3333333333333333&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_124817.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_124817.jpg&quot; data-aspect=&quot;0.8438818565400844&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131109_022453.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131109_022453.jpg&quot; data-aspect=&quot;1.3333333333333333&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 04 Nov 2013 03:23:31 -0600</pubDate>
-        <link>http://benwilhelm.com/photos/chicago-adventures/travel/2013/11/04/miscellany/</link>
-        <guid isPermaLink="true">http://benwilhelm.com/photos/chicago-adventures/travel/2013/11/04/miscellany/</guid>
-        
-        
-        <category>photos</category>
-        
-        <category>chicago adventures</category>
-        
-        <category>travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Die Alpenh&amp;uuml;tten</title>
-        <description>&lt;p&gt;So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as &lt;em&gt;hütten&lt;/em&gt; (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying little more than your clothing and some snacks for the trail. Jen has already &lt;a href=&quot;http://www.slithy-tove.net/archives/1544&quot; target=&quot;blank&quot;&gt;detailed the trip&lt;/a&gt; in her blog far better than I could here, so I offer some photos and video. The alps really are like nothing I’ve ever seen. Huge, majestic, imposing, rugged. They seem to go on forever in every direction, including up. The photos and video really don’t do them justice, but it’s the best I can do without dragging you up to the tops of these mountains so you can see them for yourself.&lt;/p&gt;
-
-&lt;div class=&quot;gallery packery&quot;&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05585.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05585.jpg&quot; data-aspect=&quot;4.395604395604396&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05439.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05439.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05463.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05463.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05467.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05467.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05481.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05481.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05489.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05489.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05509.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05509.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-		
-		
-		
-		
-		
-	  	
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05524.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05524.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And holy cow, here are some cows! The wind-chimey sound is because &lt;em&gt;every&lt;/em&gt; cow had a bell.&lt;/p&gt;
-
-&lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=296e8dc7db&amp;amp;photo_id=9337917568&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=296e8dc7db&amp;amp;photo_id=9337917568&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A full panorama of the meadow&lt;/p&gt;
-
-&lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=25be0fca47&amp;amp;photo_id=9335928457&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=25be0fca47&amp;amp;photo_id=9335928457&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And here’s video from the peak of a mountain that we set out to walk around, but decided to climb instead. It’s 2,100m high (about 7,000 feet). It’s no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.&lt;/p&gt;
-
-&lt;div class=&quot;embed video Flickr&quot;&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;500&quot; height=&quot;281&quot; data=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot;&gt; &lt;param name=&quot;flashvars&quot; value=&quot;intl_lang=en-us&amp;amp;photo_secret=5858ac1b36&amp;amp;photo_id=9335837375&amp;amp;flickr_show_info_box=true&quot; /&gt; &lt;param name=&quot;movie&quot; value=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; /&gt; &lt;param name=&quot;bgcolor&quot; value=&quot;#000000&quot; /&gt; &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; src=&quot;https://www.flickr.com/apps/video/stewart.swf?v=1535363810&quot; bgcolor=&quot;#000000&quot; allowfullscreen=&quot;true&quot; flashvars=&quot;intl_lang=en-us&amp;amp;photo_secret=5858ac1b36&amp;amp;photo_id=9335837375&amp;amp;flickr_show_info_box=true&quot; height=&quot;281&quot; width=&quot;500&quot; /&gt;&lt;/object&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And here’s dinner&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/large/posts/misc/wpid-20130715_180239.jpg&quot;&gt;&lt;img class=&quot;alignnone size-full&quot; title=&quot;20130715_180239.jpg&quot; alt=&quot;image&quot; src=&quot;/thumbs/posts/misc/wpid-20130715_180239.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 21 Jul 2013 00:00:00 -0500</pubDate>
-        <link>http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/2013/07/21/die-alpenhutten/</link>
-        <guid isPermaLink="true">http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/2013/07/21/die-alpenhutten/</guid>
-        
-        <category>backpacking</category>
-        
-        <category>Austria</category>
-        
-        <category>Alps</category>
-        
-        
-        <category>photos</category>
-        
-        <category>travel</category>
-        
-        <category>austrian adventures</category>
-        
-        <category>honeymoon 2013</category>
+        <category>The Website</category>
         
       </item>
     

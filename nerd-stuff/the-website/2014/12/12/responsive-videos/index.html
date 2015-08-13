@@ -15,13 +15,15 @@
 
   <script src='/js/site.min.js'></script>
 
-  <!-- production -->
+  <!-- development -->
+  
+  <script src="//localhost:35729/livereload.js"></script>
   
 
 </head>
 
 
-  <body class="production">
+  <body class="development">
 
     <header class="site-header">
 
@@ -79,9 +81,9 @@
     
     <p class="categories quiet">Posted in
 	
-	- <a href='/category/nerd-stuff'>nerd stuff</a>
+	- <a href='/category/nerd-stuff'>Nerd Stuff</a>
 	
-	- <a href='/category/the-website'>the website</a>
+	- <a href='/category/the-website'>The Website</a>
 	
     </p>
     
@@ -95,27 +97,27 @@
 
 <p><a href="http://alistapart.com/article/creating-intrinsic-ratios-for-video">http://alistapart.com/article/creating-intrinsic-ratios-for-video</a></p>
 
-<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.videoWrapper</span> <span class="p">{</span>
-	<span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span>
-	<span class="k">padding-bottom</span><span class="o">:</span> <span class="m">56.25%</span><span class="p">;</span>
-	<span class="k">padding-top</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
-	<span class="k">height</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.videoWrapper</span> <span class="p">{</span>
+	<span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+	<span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">56.25%</span><span class="p">;</span>
+	<span class="nl">padding-top</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nt">object</span><span class="o">,</span>
 <span class="nt">embed</span> <span class="p">{</span>
-	<span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
-	<span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-	<span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
-	<span class="k">width</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
-	<span class="k">height</span><span class="o">:</span> <span class="m">100%</span><span class="p">;</span>
-<span class="p">}</span></code></pre></div>
+	<span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+	<span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+	<span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+	<span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;videoWrapper&quot;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">&quot;...&quot;</span> <span class="na">type=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
-		<span class="nt">&lt;embed</span> <span class="na">src=</span><span class="s">&quot;...&quot;</span> <span class="na">type=</span><span class="s">&quot;...&quot;</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"videoWrapper"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;object</span> <span class="na">data=</span><span class="s">"..."</span> <span class="na">type=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;embed</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">type=</span><span class="s">"..."</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;/object&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 
   </article>
@@ -125,11 +127,6 @@
 	</div>
 
 	<aside class="sidebar-sidebar">
-		
-		<div class="sidebar-item">
-			<h3><em>New site in progress...</em></h3>
-			<p>Whoa, check it out! A whole new site! I'm rebuilding benwilhelm.com in <a target='_blank' href='http://jekyllrb.com'>Jekyll</a>. I'll let you know how it goes...</p>
-		</div>
 
 		<div class="sidebar-item">
 			<h3>Current Projects</h3>
@@ -175,26 +172,20 @@
 				</li>
 				
 				<li>
+					<a href="/category/the-website/index.html">
+					The Website
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/the-house/index.html">
+					The House
+					</a>
+				</li>
+				
+				<li>
 					<a href="/category/make-stuff/index.html">
 					Make Stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay Area Adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
 					</a>
 				</li>
 				
@@ -210,54 +201,13 @@
 					</a>
 				</li>
 				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food And Drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian Adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian Adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/the-website/index.html">
-					The Website
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/the-house/index.html">
-					The House
-					</a>
-				</li>
-				
 			</ul>
 		</div>
 	</aside>
 </div>
 
 <div class="clear"></div>
+
       </div>
     </div>
 

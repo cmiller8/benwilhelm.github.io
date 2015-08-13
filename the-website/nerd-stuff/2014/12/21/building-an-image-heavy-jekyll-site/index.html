@@ -15,13 +15,15 @@
 
   <script src='/js/site.min.js'></script>
 
-  <!-- production -->
+  <!-- development -->
+  
+  <script src="//localhost:35729/livereload.js"></script>
   
 
 </head>
 
 
-  <body class="production">
+  <body class="development">
 
     <header class="site-header">
 
@@ -79,9 +81,9 @@
     
     <p class="categories quiet">Posted in
 	
-	- <a href='/category/the-website'>the website</a>
+	- <a href='/category/the-website'>The Website</a>
 	
-	- <a href='/category/nerd-stuff'>nerd stuff</a>
+	- <a href='/category/nerd-stuff'>Nerd Stuff</a>
 	
     </p>
     
@@ -97,7 +99,7 @@
 
 <h3 id="the-problem">The Problem</h3>
 
-<p>One of Jekyll’s strengths (everything kept in Git) quickly turned out to be a stumbling block when I first tried to commit a bunch of my photography to the repository. As I waited 30+ seconds to even be prompted for the commit message, I realized that keeping all of my images checked directly into the repo was going to make it impractically large and unwieldy. </p>
+<p>One of Jekyll’s strengths (everything kept in Git) quickly turned out to be a stumbling block when I first tried to commit a bunch of my photography to the repository. As I waited 30+ seconds to even be prompted for the commit message, I realized that keeping all of my images checked directly into the repo was going to make it impractically large and unwieldy.</p>
 
 <h3 id="the-solution">The Solution</h3>
 
@@ -105,33 +107,33 @@
 
 <p><em>1) Store images in my Dropbox <code>Public</code> folder</em></p>
 
-<p>Dropbox accounts all have a folder called <code>Public</code>, a default directory which makes any file in it available publicly on the interwebs at a consistent root URL, following whatever directory structure is laid out within it.  For me that URL is <code>https://dl.dropboxusercontent.com/u/8637739</code>, into which I put a directory called <code>benwilhelm.com</code>, where I would put all of my photos organized into further subfolders as desired. </p>
+<p>Dropbox accounts all have a folder called <code>Public</code>, a default directory which makes any file in it available publicly on the interwebs at a consistent root URL, following whatever directory structure is laid out within it.  For me that URL is <code>https://dl.dropboxusercontent.com/u/8637739</code>, into which I put a directory called <code>benwilhelm.com</code>, where I would put all of my photos organized into further subfolders as desired.</p>
 
 <p><em>2) Create a site variable that is the Dropbox public URL</em></p>
 
 <p>In my <code>_config.yml</code> file, I added the following line:</p>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">image_path</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="s">image_path</span><span class="pi">:</span> <span class="s">https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com</span></code></pre></figure>
 
 <p>which means that I can now embed the images from my public folder into my markup thusly:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;{{site.image_path}}/photos/photo.jpg&quot;</span> <span class="nt">/&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{{site.image_path}}/photos/photo.jpg"</span> <span class="nt">/&gt;</span></code></pre></figure>
 
 <p>Added bonus: if I ever decide to go with a different solution for file hosting/sharing, I can simply update the site variable and not have to worry about each individual path.</p>
 
 <p><em>3) Optional: Use Grunt.js for further image processing</em></p>
 
-<p>I use <a href="http://gruntjs.com">grunt.js</a> for managing development and deployment tasks. In order to create versions of my photos at different sizes (thumbnail, medium, large, etc), I created a grunt task using <a href="https://github.com/excellenteasy/grunt-image-resize">grunt-image-resize</a> which scans the <code>originals</code> folder and creates corresponding images at multiple resolutions in folders called <code>thumbs</code>, <code>medium</code>, and <code>large</code>. </p>
+<p>I use <a href="http://gruntjs.com">grunt.js</a> for managing development and deployment tasks. In order to create versions of my photos at different sizes (thumbnail, medium, large, etc), I created a grunt task using <a href="https://github.com/excellenteasy/grunt-image-resize">grunt-image-resize</a> which scans the <code>originals</code> folder and creates corresponding images at multiple resolutions in folders called <code>thumbs</code>, <code>medium</code>, and <code>large</code>.</p>
 
 <p>I also created a custom task which scans each of the directories and writes each image’s pixel size and aspect ratio to a data file, allowing me to use those values for some of the javascript effects on the site (notably <a href="http://terrymun.github.io/Fluidbox/">fluidbox</a> and <a href="http://packery.metafizzy.co/">packery</a>). Image properties are saved to a YAML hash, the keys of which are the respective paths of each image.  All of this is excerpted below; the full grunt file can be found on <a href="https://github.com/benwilhelm/benwilhelm.github.io/blob/jekyll/Gruntfile.js">GitHub</a></p>
 
 <h4 id="gruntfilejs-excerpt">Gruntfile.js (excerpt)</h4>
 
-<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">grunt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;grunt&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fs&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">glob</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;glob&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">sizeOf</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;image-size&#39;</span><span class="p">)</span>
-  <span class="p">,</span> <span class="nx">YAML</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;yamljs&#39;</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">grunt</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'grunt'</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">glob</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'glob'</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">sizeOf</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'image-size'</span><span class="p">)</span>
+  <span class="p">,</span> <span class="nx">YAML</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'yamljs'</span><span class="p">)</span>
   <span class="p">;</span>
 
   <span class="c1">//...</span>
@@ -141,53 +143,53 @@
   <span class="c1">// excerpted from </span>
   <span class="c1">// grunt.initConfig()</span>
   <span class="c1">// ==========================</span>
-  <span class="nx">image_resize</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nl">image_resize</span><span class="p">:</span> <span class="p">{</span>
 
-    <span class="nx">thumbs</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-        <span class="nx">width</span><span class="o">:</span> <span class="mi">400</span><span class="p">,</span>
-                <span class="nx">overwrite</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="nl">thumbs</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nl">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="mi">400</span><span class="p">,</span>
+                <span class="nx">overwrite</span><span class="err">:</span> <span class="kc">false</span>
       <span class="p">},</span>
 
-      <span class="nx">files</span><span class="o">:</span> <span class="p">[{</span>
-        <span class="nx">expand</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nx">cwd</span><span class="o">:</span> <span class="s2">&quot;files/originals/&quot;</span><span class="p">,</span>
-        <span class="nx">src</span><span class="o">:</span> <span class="s2">&quot;**/*.jpg&quot;</span><span class="p">,</span>
-        <span class="nx">dest</span><span class="o">:</span> <span class="s2">&quot;files/thumbs/&quot;</span><span class="p">,</span>
-        <span class="nx">ext</span><span class="o">:</span> <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span>
-        <span class="nx">extDot</span><span class="o">:</span> <span class="s2">&quot;first&quot;</span>
+      <span class="nx">files</span><span class="err">:</span> <span class="p">[{</span>
+        <span class="na">expand</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="na">cwd</span><span class="p">:</span> <span class="s2">"files/originals/"</span><span class="p">,</span>
+        <span class="na">src</span><span class="p">:</span> <span class="s2">"**/*.jpg"</span><span class="p">,</span>
+        <span class="na">dest</span><span class="p">:</span> <span class="s2">"files/thumbs/"</span><span class="p">,</span>
+        <span class="na">ext</span><span class="p">:</span> <span class="s2">".jpg"</span><span class="p">,</span>
+        <span class="na">extDot</span><span class="p">:</span> <span class="s2">"first"</span>
       <span class="p">}]</span>
     <span class="p">},</span>
 
-    <span class="nx">medium</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-        <span class="nx">width</span><span class="o">:</span> <span class="mi">800</span><span class="p">,</span>
-                <span class="nx">overwrite</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="nx">medium</span><span class="err">:</span> <span class="p">{</span>
+      <span class="nl">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="mi">800</span><span class="p">,</span>
+                <span class="nx">overwrite</span><span class="err">:</span> <span class="kc">false</span>
       <span class="p">},</span>
 
-      <span class="nx">files</span><span class="o">:</span> <span class="p">[{</span>
-        <span class="nx">expand</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nx">cwd</span><span class="o">:</span> <span class="s2">&quot;files/originals/&quot;</span><span class="p">,</span>
-        <span class="nx">src</span><span class="o">:</span> <span class="s2">&quot;**/*.jpg&quot;</span><span class="p">,</span>
-        <span class="nx">dest</span><span class="o">:</span> <span class="s2">&quot;files/medium/&quot;</span><span class="p">,</span>
-        <span class="nx">ext</span><span class="o">:</span> <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span>
-        <span class="nx">extDot</span><span class="o">:</span> <span class="s2">&quot;first&quot;</span>
+      <span class="nx">files</span><span class="err">:</span> <span class="p">[{</span>
+        <span class="na">expand</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="na">cwd</span><span class="p">:</span> <span class="s2">"files/originals/"</span><span class="p">,</span>
+        <span class="na">src</span><span class="p">:</span> <span class="s2">"**/*.jpg"</span><span class="p">,</span>
+        <span class="na">dest</span><span class="p">:</span> <span class="s2">"files/medium/"</span><span class="p">,</span>
+        <span class="na">ext</span><span class="p">:</span> <span class="s2">".jpg"</span><span class="p">,</span>
+        <span class="na">extDot</span><span class="p">:</span> <span class="s2">"first"</span>
       <span class="p">}]</span>
     <span class="p">},</span>
 
-    <span class="nx">large</span><span class="o">:</span> <span class="p">{</span>
-      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
-        <span class="nx">width</span><span class="o">:</span> <span class="mi">1200</span><span class="p">,</span> 
-                <span class="nx">overwrite</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="nx">large</span><span class="err">:</span> <span class="p">{</span>
+      <span class="nl">options</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nl">width</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> 
+                <span class="nx">overwrite</span><span class="err">:</span> <span class="kc">false</span>
       <span class="p">},</span>
 
-      <span class="nx">files</span><span class="o">:</span> <span class="p">[{</span>
-        <span class="nx">expand</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-        <span class="nx">cwd</span><span class="o">:</span> <span class="s2">&quot;files/originals/&quot;</span><span class="p">,</span>
-        <span class="nx">src</span><span class="o">:</span> <span class="s2">&quot;**/*.jpg&quot;</span><span class="p">,</span>
-        <span class="nx">dest</span><span class="o">:</span> <span class="s2">&quot;files/large/&quot;</span><span class="p">,</span>
-        <span class="nx">ext</span><span class="o">:</span> <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span>
-        <span class="nx">extDot</span><span class="o">:</span> <span class="s2">&quot;first&quot;</span>
+      <span class="nx">files</span><span class="err">:</span> <span class="p">[{</span>
+        <span class="na">expand</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="na">cwd</span><span class="p">:</span> <span class="s2">"files/originals/"</span><span class="p">,</span>
+        <span class="na">src</span><span class="p">:</span> <span class="s2">"**/*.jpg"</span><span class="p">,</span>
+        <span class="na">dest</span><span class="p">:</span> <span class="s2">"files/large/"</span><span class="p">,</span>
+        <span class="na">ext</span><span class="p">:</span> <span class="s2">".jpg"</span><span class="p">,</span>
+        <span class="na">extDot</span><span class="p">:</span> <span class="s2">"first"</span>
       <span class="p">}]</span>
     <span class="p">}</span>
 
@@ -195,71 +197,71 @@
 
   <span class="c1">//...</span>
 
-  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="p">[</span>
-    <span class="s2">&quot;image_resize:thumbs&quot;</span><span class="p">,</span> 
-    <span class="s2">&quot;image_resize:medium&quot;</span><span class="p">,</span> 
-    <span class="s2">&quot;image_resize:large&quot;</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">'resize'</span><span class="p">,</span> <span class="p">[</span>
+    <span class="s2">"image_resize:thumbs"</span><span class="p">,</span> 
+    <span class="s2">"image_resize:medium"</span><span class="p">,</span> 
+    <span class="s2">"image_resize:large"</span>
   <span class="p">]);</span>
 
-  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;imageinfo&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">'imageinfo'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
     <span class="kd">var</span> <span class="nx">done</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">async</span><span class="p">();</span>
-    <span class="nx">glob</span><span class="p">(</span><span class="s1">&#39;files/**/*.jpg&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">files</span><span class="p">){</span>
-      <span class="kd">var</span> <span class="nx">existingYml</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s2">&quot;./_data/images.yml&quot;</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span>
+    <span class="nx">glob</span><span class="p">(</span><span class="s1">'files/**/*.jpg'</span><span class="p">,</span> <span class="p">{},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">files</span><span class="p">){</span>
+      <span class="kd">var</span> <span class="nx">existingYml</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s2">"./_data/images.yml"</span><span class="p">).</span><span class="nx">toString</span><span class="p">();</span>
 
       <span class="c1">// this demarcates auto-generated values</span>
       <span class="c1">// from manually added values for things like</span>
       <span class="c1">// externally hosted images</span>
-      <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">existingYml</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">&quot;#!#!#!#!#&quot;</span><span class="p">);</span>
+      <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">existingYml</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"#!#!#!#!#"</span><span class="p">);</span>
       <span class="nx">existingYml</span> <span class="o">=</span> <span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">trim</span><span class="p">();</span>
 
       <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{};</span>
       <span class="nx">files</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">file</span><span class="p">){</span>
         <span class="kd">var</span> <span class="nx">dimensions</span> <span class="o">=</span> <span class="nx">sizeOf</span><span class="p">(</span><span class="nx">file</span><span class="p">);</span>
         <span class="kd">var</span> <span class="nx">image</span> <span class="o">=</span> <span class="p">{</span>
-          <span class="nx">width</span><span class="o">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
-          <span class="nx">height</span><span class="o">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
-          <span class="nx">aspect</span><span class="o">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">width</span> <span class="o">/</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">height</span>
+          <span class="na">width</span><span class="p">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span>
+          <span class="na">height</span><span class="p">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">height</span><span class="p">,</span>
+          <span class="na">aspect</span><span class="p">:</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">width</span> <span class="o">/</span> <span class="nx">dimensions</span><span class="p">.</span><span class="nx">height</span>
         <span class="p">}</span>
         <span class="nx">data</span><span class="p">[</span><span class="nx">file</span><span class="p">]</span> <span class="o">=</span> <span class="nx">image</span><span class="p">;</span>
       <span class="p">})</span>
 
       <span class="kd">var</span> <span class="nx">yamlString</span> <span class="o">=</span> <span class="nx">YAML</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-      <span class="kd">var</span> <span class="nx">yamlHeading</span> <span class="o">=</span> <span class="s2">&quot;\n\n\n#!#!#!#!# Do not edit below this line.\n&quot;</span><span class="p">;</span>
-      <span class="nx">yamlHeading</span> <span class="o">+=</span> <span class="s2">&quot;# Generated automatically using `grunt imageinfo` on &quot;</span> <span class="o">+</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot;\n\n&quot;</span><span class="p">;</span>
+      <span class="kd">var</span> <span class="nx">yamlHeading</span> <span class="o">=</span> <span class="s2">"\n\n\n#!#!#!#!# Do not edit below this line.\n"</span><span class="p">;</span>
+      <span class="nx">yamlHeading</span> <span class="o">+=</span> <span class="s2">"# Generated automatically using `grunt imageinfo` on "</span> <span class="o">+</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">()</span> <span class="o">+</span> <span class="s2">"\n\n"</span><span class="p">;</span>
       
-      <span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s2">&quot;./_data/images.yml&quot;</span><span class="p">,</span> <span class="nx">existingYml</span> <span class="o">+</span> <span class="nx">yamlHeading</span> <span class="o">+</span> <span class="nx">yamlString</span><span class="p">);</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;done&#39;</span><span class="p">);</span>
+      <span class="nx">fs</span><span class="p">.</span><span class="nx">writeFileSync</span><span class="p">(</span><span class="s2">"./_data/images.yml"</span><span class="p">,</span> <span class="nx">existingYml</span> <span class="o">+</span> <span class="nx">yamlHeading</span> <span class="o">+</span> <span class="nx">yamlString</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'done'</span><span class="p">);</span>
       <span class="nx">done</span><span class="p">();</span>
     <span class="p">});</span>
     
   <span class="p">});</span>
-  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">&#39;processimages&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="s1">&#39;imageinfo&#39;</span><span class="p">]);</span></code></pre></div>
+  <span class="nx">grunt</span><span class="p">.</span><span class="nx">registerTask</span><span class="p">(</span><span class="s1">'processimages'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'resize'</span><span class="p">,</span> <span class="s1">'imageinfo'</span><span class="p">]);</span></code></pre></figure>
 
 <h4 id="dataimagesyml-excerpt">_data/images.yml (excerpt)</h4>
 
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Manually add photos which will not be processed by `grunt imageinfo` here</span>
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="c1"># Manually add photos which will not be processed by `grunt imageinfo` here</span>
 
-<span class="s">&quot;http://imgs.xkcd.com/comics/computer_problems.png&quot;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">587</span>
-    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">254</span>
-    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">2.311</span>
+<span class="s2">"</span><span class="s">http://imgs.xkcd.com/comics/computer_problems.png"</span><span class="pi">:</span>
+    <span class="s">width</span><span class="pi">:</span> <span class="s">587</span>
+    <span class="s">height</span><span class="pi">:</span> <span class="s">254</span>
+    <span class="s">aspect</span><span class="pi">:</span> <span class="s">2.311</span>
 
 
 <span class="c1">#!#!#!#!# Do not edit below this line.</span>
 <span class="c1"># Generated automatically using `grunt imageinfo`</span>
 
-<span class="s">&quot;files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg&quot;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1200</span>
-    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">800</span>
-    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1.5</span>
-<span class="s">&quot;files/large/lighting/500-clown-xmas/IMG_9848-1200x800.jpg&quot;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1200</span>
-    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">800</span>
-    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1.5</span>
-<span class="s">&quot;files/large/lighting/500-clown-xmas/IMG_9922-1200x800.jpg&quot;</span><span class="p-Indicator">:</span>
-    <span class="l-Scalar-Plain">width</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1200</span>
-    <span class="l-Scalar-Plain">height</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">800</span>
-    <span class="l-Scalar-Plain">aspect</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">1.5</span></code></pre></div>
+<span class="s2">"</span><span class="s">files/large/lighting/500-clown-xmas/IMG_0008-1200x800.jpg"</span><span class="pi">:</span>
+    <span class="s">width</span><span class="pi">:</span> <span class="s">1200</span>
+    <span class="s">height</span><span class="pi">:</span> <span class="s">800</span>
+    <span class="s">aspect</span><span class="pi">:</span> <span class="s">1.5</span>
+<span class="s2">"</span><span class="s">files/large/lighting/500-clown-xmas/IMG_9848-1200x800.jpg"</span><span class="pi">:</span>
+    <span class="s">width</span><span class="pi">:</span> <span class="s">1200</span>
+    <span class="s">height</span><span class="pi">:</span> <span class="s">800</span>
+    <span class="s">aspect</span><span class="pi">:</span> <span class="s">1.5</span>
+<span class="s2">"</span><span class="s">files/large/lighting/500-clown-xmas/IMG_9922-1200x800.jpg"</span><span class="pi">:</span>
+    <span class="s">width</span><span class="pi">:</span> <span class="s">1200</span>
+    <span class="s">height</span><span class="pi">:</span> <span class="s">800</span>
+    <span class="s">aspect</span><span class="pi">:</span> <span class="s">1.5</span></code></pre></figure>
 
 
   </article>
@@ -269,11 +271,6 @@
 	</div>
 
 	<aside class="sidebar-sidebar">
-		
-		<div class="sidebar-item">
-			<h3><em>New site in progress...</em></h3>
-			<p>Whoa, check it out! A whole new site! I'm rebuilding benwilhelm.com in <a target='_blank' href='http://jekyllrb.com'>Jekyll</a>. I'll let you know how it goes...</p>
-		</div>
 
 		<div class="sidebar-item">
 			<h3>Current Projects</h3>
@@ -319,26 +316,20 @@
 				</li>
 				
 				<li>
+					<a href="/category/the-website/index.html">
+					The Website
+					</a>
+				</li>
+				
+				<li>
+					<a href="/category/the-house/index.html">
+					The House
+					</a>
+				</li>
+				
+				<li>
 					<a href="/category/make-stuff/index.html">
 					Make Stuff
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/bay-area-adventures/index.html">
-					Bay Area Adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/personal/index.html">
-					Personal
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/photos/index.html">
-					Photos
 					</a>
 				</li>
 				
@@ -354,54 +345,13 @@
 					</a>
 				</li>
 				
-				<li>
-					<a href="/category/travel/index.html">
-					Travel
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/food-and-drink/index.html">
-					Food And Drink
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/italian-adventures/index.html">
-					Italian Adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/austrian-adventures/index.html">
-					Austrian Adventures
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/honeymoon-2013/index.html">
-					Honeymoon 2013
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/the-website/index.html">
-					The Website
-					</a>
-				</li>
-				
-				<li>
-					<a href="/category/the-house/index.html">
-					The House
-					</a>
-				</li>
-				
 			</ul>
 		</div>
 	</aside>
 </div>
 
 <div class="clear"></div>
+
       </div>
     </div>
 
