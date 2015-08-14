@@ -15,13 +15,15 @@
 
   <script src='/js/site.min.js'></script>
 
-  <!-- production -->
+  <!-- development -->
+  
+  <script src="//localhost:35729/livereload.js"></script>
   
 
 </head>
 
 
-  <body class="production">
+  <body class="development">
 
     <header class="site-header">
 
@@ -92,12 +94,21 @@
   <article class="post-content">
 
 	
-	  <div class='embed video'>
-        <video controls='controls' >
-          <source src='https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/eclipse.mp4' type='video/mp4' />
-          <source src='eclipse.mp4' type='video/mp4' />
-        </video>
-      </div>
+    
+    <div class="embed video">
+
+  <video controls="controls" preload="meta">
+    
+    <source src="eclipse.mp4" mime="video/mp4" />
+    <source src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/eclipse.mp4" mime="video/mp4" />
+    
+    <source src="eclipse.webm" mime="video/webm" />
+    <source src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/eclipse.webm" mime="video/webm" />
+    
+  </video>
+
+</div>
+
 	
 
     <p>The video above is a time lapse of the annular solar eclipse that occurred in the western US on May 20.  An annular eclipse, often called a “Ring of Fire” eclipse, occurs when the moon is far enough from the earth on its elliptical orbit that it does not completely cover the sun.  As you can see, I was not far enough north for the moon to pass directly through the center of the sun, but it was still pretty dang cool.  Literally.  It got very cold at the height of the eclipse.</p>

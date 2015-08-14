@@ -6,8 +6,8 @@
 </description>
     <link>http://benwilhelm.com/</link>
     <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Aug 2015 00:07:52 -0500</pubDate>
-    <lastBuildDate>Thu, 13 Aug 2015 00:07:52 -0500</lastBuildDate>
+    <pubDate>Thu, 13 Aug 2015 22:48:41 -0500</pubDate>
+    <lastBuildDate>Thu, 13 Aug 2015 22:48:41 -0500</lastBuildDate>
     <generator>Jekyll v3.0.0.pre.beta8</generator>
     
       <item>
@@ -741,10 +741,10 @@ Notes&lt;/p&gt;
 		
 		
 
-	  	&lt;div class=&quot;item pack &quot;&gt;
+	  	&lt;div class=&quot;item pack emphasize&quot;&gt;
 		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05585.jpg&quot; title=&quot;&quot;&gt;
 			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05585.jpg&quot; data-aspect=&quot;4.395604395604396&quot; /&gt;
+				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/medium/photography/alps/DSC05585.jpg&quot; data-aspect=&quot;4.419889502762431&quot; /&gt;
 			
 		&lt;/a&gt;
 	&lt;/div&gt;
@@ -854,33 +854,36 @@ Notes&lt;/p&gt;
 &lt;p&gt;And holy cow, here are some cows! The wind-chimey sound is because &lt;em&gt;every&lt;/em&gt; cow had a bell.&lt;/p&gt;
 
 &lt;div class=&quot;embed video&quot;&gt;
-        &lt;video controls=&quot;controls&quot;&gt;
-          &lt;source src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/cows.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
-          &lt;source src=&quot;cows.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
-        &lt;/video&gt;
-      &lt;/div&gt;
+
+  &lt;video controls=&quot;controls&quot; preload=&quot;meta&quot;&gt;
+    
+  &lt;/video&gt;
+
+&lt;/div&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;A full panorama of the meadow&lt;/p&gt;
 
 &lt;div class=&quot;embed video&quot;&gt;
-        &lt;video controls=&quot;controls&quot;&gt;
-          &lt;source src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/meadow.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
-          &lt;source src=&quot;meadow.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
-        &lt;/video&gt;
-      &lt;/div&gt;
+
+  &lt;video controls=&quot;controls&quot; preload=&quot;meta&quot;&gt;
+    
+  &lt;/video&gt;
+
+&lt;/div&gt;
 
 &lt;hr /&gt;
 
 &lt;p&gt;And here’s video from the peak of a mountain that we set out to walk around, but decided to climb instead. It’s 2,100m high (about 7,000 feet). It’s no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.&lt;/p&gt;
 
 &lt;div class=&quot;embed video&quot;&gt;
-        &lt;video controls=&quot;controls&quot;&gt;
-          &lt;source src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/mahnkopf.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
-          &lt;source src=&quot;mahnkopf.mp4 &quot; type=&quot;video/mp4&quot; /&gt;
-        &lt;/video&gt;
-      &lt;/div&gt;
+
+  &lt;video controls=&quot;controls&quot; preload=&quot;meta&quot;&gt;
+    
+  &lt;/video&gt;
+
+&lt;/div&gt;
 
 &lt;hr /&gt;
 

@@ -15,13 +15,15 @@
 
   <script src='/js/site.min.js'></script>
 
-  <!-- production -->
+  <!-- development -->
+  
+  <script src="//localhost:35729/livereload.js"></script>
   
 
 </head>
 
 
-  <body class="production">
+  <body class="development">
 
     <header class="site-header">
 
@@ -90,12 +92,21 @@
   <article class="post-content">
 
 	
-	  <div class='embed video'>
-        <video controls='controls' >
-          <source src='https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/fireflies.mp4' type='video/mp4' />
-          <source src='fireflies.mp4' type='video/mp4' />
-        </video>
-      </div>
+    
+    <div class="embed video">
+
+  <video controls="controls" preload="meta">
+    
+    <source src="fireflies.mp4" mime="video/mp4" />
+    <source src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/fireflies.mp4" mime="video/mp4" />
+    
+    <source src="fireflies.webm" mime="video/webm" />
+    <source src="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/fireflies.webm" mime="video/webm" />
+    
+  </video>
+
+</div>
+
 	
 
     <p>This was a prototype that I built a while back to create a firefly effect for a show that I was designing.  Ultimately we went with a storebought solution, but it did expose me to the wonder of the <a href="http://arduino.cc/" title="Arduino Home Page">Arduino Board</a> and the many things you can build with it.</p>
