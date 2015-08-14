@@ -9,7 +9,9 @@ tags:
 - led
 comments: []
 
-video: fireflies.mp4
+video:
+  mp4: fireflies.mp4
+  webm: fireflies.webm
 ---
 
 This was a prototype that I built a while back to create a firefly effect for a show that I was designing.&nbsp; Ultimately we went with a storebought solution, but it did expose me to the wonder of the [Arduino Board][1] and the many things you can build with it.

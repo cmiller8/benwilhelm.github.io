@@ -16,6 +16,7 @@ tags:
 emphasize: true
 images:
   - src: photography/alps/DSC05585.jpg
+    emphasize: true
   - src: photography/alps/DSC05439.jpg
   - src: photography/alps/DSC05463.jpg
   - src: photography/alps/DSC05467.jpg
@@ -23,6 +24,17 @@ images:
   - src: photography/alps/DSC05489.jpg
   - src: photography/alps/DSC05509.jpg
   - src: photography/alps/DSC05524.jpg
+
+internal_video:
+  cows:
+    mp4: cows.mp4
+    webm: cows.webm
+  meadow:
+    mp4: meadow.mp4
+    webm: meadow.webm
+  mahnkopf:
+    mp4: mahnkopf.mp4
+    webm: mahnkopf.webm
 
 ---
 
@@ -36,23 +48,26 @@ So. We went hiking through the Austrian Alps for four days and three nights, sle
 
 And holy cow, here are some cows! The wind-chimey sound is because <em>every</em> cow had a bell.
 
-{% bmw_video_player cows.mp4 %}
+{% assign videoFormats = page.internal_video.cows %}
+{% include video-player.html %}
 
 ----
 
 A full panorama of the meadow
 
-{% bmw_video_player meadow.mp4 %}
+{% assign videoFormats = page.internal_video.meadow %}
+{% include video-player.html %}
 
 ----
 
 And here's video from the peak of a mountain that we set out to walk around, but decided to climb instead. It's 2,100m high (about 7,000 feet). It's no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.
 
-{% bmw_video_player mahnkopf.mp4 %}
+{% assign videoFormats = page.internal_video.mahnkopf %}
+{% include video-player.html %}
 
 ----
 
 And here's dinner
 
 
-<a href="{{ site.dropbox_path }}/large/posts/misc/wpid-20130715_180239.jpg"><img class="alignnone size-full" title="20130715_180239.jpg" alt="image" src="{{ site.dropbox_path }}/thumbs/posts/misc/wpid-20130715_180239.jpg" /></a>
+<a href="{{ site.cdn_path }}/large/posts/misc/wpid-20130715_180239.jpg"><img class="alignnone size-full" title="20130715_180239.jpg" alt="image" src="{{ site.cdn_path }}/thumbs/posts/misc/wpid-20130715_180239.jpg" /></a>

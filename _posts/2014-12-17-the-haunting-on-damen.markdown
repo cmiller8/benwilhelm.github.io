@@ -2,7 +2,9 @@
 layout: post
 title: The Haunting on Damen
 emphasize: true
-video: haunting.mp4
+video:
+  mp4: haunting.mp4
+  webm: haunting.webm
 
 categories:
   - The House

@@ -13,7 +13,9 @@ tags:
 - video
 comments: []
 
-video: eclipse.mp4
+video:
+  mp4: eclipse.mp4
+  webm: eclipse.webm
 
 images:
   - src: posts/eclipse/DSC04346.jpg

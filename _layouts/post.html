@@ -35,7 +35,8 @@ layout: has_sidebar
 		{% endif %}
 
 	{% elsif page.video %}
-	  {% bmw_video_player page.video %}
+    {% assign videoFormats = page.video %}
+    {% include video-player.html %}
 	{% endif %}
 
     {{ content }}

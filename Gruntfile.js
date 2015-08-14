@@ -108,7 +108,7 @@ grunt.initConfig({
 
     large: {
 			options: {
-				width: 1200, 
+				width: 1200,
                 overwrite: false
 			},
 
@@ -174,7 +174,7 @@ grunt.initConfig({
     // ====================
 	shell: {
 		deploy: {
-			command: "cd _site; git add -A; git commit -m 'Production build'; git push origin master;"
+			command: "rm .jekyll-metadata; cd _site; git add -A; git commit -m 'Production build'; git push origin master;"
 		},
 
 		updatesite: {
@@ -216,10 +216,10 @@ grunt.initConfig({
 	watch: {
 		jekyll: {
 			files: [
-				'./**/*.html', 
-				'./**/*.markdown', 
-				'./**/*.md', 
-				'./**/*.yml', 
+				'./**/*.html',
+				'./**/*.markdown',
+				'./**/*.md',
+				'./**/*.yml',
 
 				"!./node_modules/",
 				"!./_site/*",
@@ -254,8 +254,8 @@ grunt.registerTask('default', [
 	'concat:dist',
 	'uglify:dev',
 	'copy:dist',
-	'jekyll:dev', 
-	'connect:dev', 
+	'jekyll:dev',
+	'connect:dev',
 	'watch'
 ]);
 
@@ -308,11 +308,11 @@ grunt.registerTask('imageinfo', function(){
 		var yamlString = YAML.stringify(data);
 		var yamlHeading = "\n\n\n#!#!#!#!# Do not edit below this line.\n";
 		yamlHeading += "# Generated automatically using `grunt imageinfo`\n\n";
-		
+
 		fs.writeFileSync("./_data/images.yml", existingYml + yamlHeading + yamlString);
 		console.log('done');
 		done();
 	});
-	
+
 });
 grunt.registerTask('processimages', ['resize', 'imageinfo']);
