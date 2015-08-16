@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{% assign group = site.data.albums[{{page.albumGroup}}] %}
-{% assign album = group.albums[{{page.albumKey}}] %}
+{% assign group = site.data.albums[page.albumGroup] %}
+{% assign album = group.albums[page.albumKey] %}
   <div class="post album {% if album.meta %}has-meta{% endif %} ">
 
   <p class='quiet'><a href='{{group.url}}'>{{group.title}}</a></p>

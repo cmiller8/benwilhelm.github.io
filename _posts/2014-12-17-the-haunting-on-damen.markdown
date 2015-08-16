@@ -2,7 +2,9 @@
 layout: post
 title: The Haunting on Damen
 emphasize: true
-video: http://www.flickr.com/photos/ben624/15861078349/
+video:
+  mp4: haunting.mp4
+  webm: haunting.webm
 
 categories:
   - The House
@@ -11,8 +13,8 @@ categories:
 
 A little late to post it, but here's the trick-or-treating experience we put together for our first Halloween as homeowners. Sadly, it was 30&deg; with snow and 25mph winds, but the few kids we got seemed to have fun.
 
-See if you can spot: 
-  
+See if you can spot:
+
   * Ben's creepy eyes peering out of the top floor windows
   * Chris sitting on the roof of the porch fishing for children
   * Scotty as Creepy Uncle Deadly, Skyping with trick-or-treaters from the second floor apartment. He had the warmest seat in the house.

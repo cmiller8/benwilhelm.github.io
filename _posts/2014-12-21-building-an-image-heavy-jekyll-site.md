@@ -37,14 +37,14 @@ Dropbox accounts all have a folder called `Public`, a default directory which ma
 In my `_config.yml` file, I added the following line:
 
 {% highlight yaml %}
-image_path: https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com
+cdn_path: https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com
 {% endhighlight %}
 
 which means that I can now embed the images from my public folder into my markup thusly:
 
 {% highlight html %}
 {% raw %}
-<img src="{{site.image_path}}/photos/photo.jpg" />
+<img src="{{site.cdn_path}}/photos/photo.jpg" />
 {% endraw %}
 {% endhighlight %}
 

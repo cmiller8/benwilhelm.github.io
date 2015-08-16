@@ -28,14 +28,15 @@ layout: has_sidebar
 		</p>
 		{% else %}
 		<p>
-			<a href="{{ site.image_path }}/large/{{ page.images[0].src }}">
-				<img src='{{ site.image_path }}/large/{{ page.images[0].src }}' />
+			<a href="{{ site.cdn_path }}/large/{{ page.images[0].src }}">
+				<img src='{{ site.cdn_path }}/large/{{ page.images[0].src }}' />
 			</a>
 		</p>
 		{% endif %}
 
 	{% elsif page.video %}
-	{% oembed {{page.video}} %}
+    {% assign videoFormats = page.video %}
+    {% include video-player.html %}
 	{% endif %}
 
     {{ content }}
