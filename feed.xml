@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ben Wilhelm</title>
-    <description>I&#39;m a web developer and sometime theatrical lighting designer living in Chicago, IL. At some point I&#39;ll probably write more here...
+    <description>Web developer and sometime theatrical lighting designer living in Chicago, IL.
 </description>
     <link>http://benwilhelm.com/</link>
     <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Sep 2015 22:28:43 -0500</pubDate>
-    <lastBuildDate>Sun, 20 Sep 2015 22:28:43 -0500</lastBuildDate>
+    <pubDate>Sun, 20 Sep 2015 22:39:28 -0500</pubDate>
+    <lastBuildDate>Sun, 20 Sep 2015 22:39:28 -0500</lastBuildDate>
     <generator>Jekyll v3.0.0.pre.beta8</generator>
     
       <item>
