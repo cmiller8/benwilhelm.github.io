@@ -2,8 +2,7 @@
 title: Ben Wilhelm
 email: benjamin.m.wilhelm@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm a web developer and sometime theatrical lighting designer living in Chicago, IL.
-  At some point I'll probably write more here...
+  Web developer and sometime theatrical lighting designer living in Chicago, IL.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://benwilhelm.com" # the base hostname & protocol for your site
