@@ -6,9 +6,103 @@
 </description>
     <link>http://benwilhelm.com/</link>
     <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Aug 2015 22:48:41 -0500</pubDate>
-    <lastBuildDate>Thu, 13 Aug 2015 22:48:41 -0500</lastBuildDate>
+    <pubDate>Sun, 20 Sep 2015 22:28:43 -0500</pubDate>
+    <lastBuildDate>Sun, 20 Sep 2015 22:28:43 -0500</lastBuildDate>
     <generator>Jekyll v3.0.0.pre.beta8</generator>
+    
+      <item>
+        <title>The Synesthesia Project - Part I</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://github.com/benwilhelm/flux-capacitor&quot;&gt;
+  &lt;span class=&quot;fa fa-github&quot;&gt;&lt;/span&gt;
+  View the software on Github
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a project that’s been kicking around in my head for about 8 years now, mostly just in theoretical form. Recently, The House Theatre and the University of Chicago provided me and my friend/collaborator Kevin O’Donnell some money and facilities to workshop an early version of the software that I’ve written to facilitate sound and light interactions in a theatrical context. &lt;strong&gt;This post is about the &lt;em&gt;What&lt;/em&gt; and the &lt;em&gt;Why&lt;/em&gt; of it all. I’ll be detailing the &lt;em&gt;How&lt;/em&gt; in a future post.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;syne-what&quot;&gt;Syne-what?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Synesthesia&quot;&gt;Synesthesia&lt;/a&gt; is a &lt;em&gt;“neurological phenomenon in which stimulation of one sensory or cognitive pathway leads to automatic, involuntary experiences in a second sensory or cognitive pathway.”&lt;/em&gt; It can manifest in any number of ways, where a synesthete might inherently associate different colors with specific letters and numbers, or specific shapes with different musical chords. My wife and I are both synesthetes, as are her two brothers and my mother. My wife sees even and odd numbers as cool and warm colors, respectively. She even sometimes refers to warm or cool numbers without realizing it. My synesthesia takes a more obscure form, where I associate the months of the year on a counterclockwise loop, with January at 12 o’clock, February at 11 o’clock, etc. The loop is twisted 90 degrees in the middle so that the months on the bottom progress near to far. Kind of like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/projects/syn-calendar.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I hadn’t even thought of this as synesthesia until it was called out in one of the books I was reading as a less common form. I mentioned this to my brother in law and he immediately drew for me &lt;em&gt;his&lt;/em&gt; calendar loop, which follows a much more meandering path.&lt;/p&gt;
+
+&lt;h2 id=&quot;ok-cool--so-what&quot;&gt;Ok, cool.  So what?&lt;/h2&gt;
+
+&lt;p&gt;Well, as I read about synesthesia, I recognized that this is how I approach lighting design. Lighting should so seamlessly integrate with the action on stage and the other design elements (in my case, I am especially drawn to sound) that it should feel as though you are sensing a single event with multiple modes, rather than an assembly of storytelling devices. It sounds obvious, but designers often forget this consideration while crafting their individual works. I’ve been lucky enough to play with a few sound designers who were game to collaborate on the experiences that I was after, creating long strings of cues timed down to the tenth of a second in order to sync up with audio events, with the sequences kicked off by a midi trigger from the sound computer. Kinda like this:&lt;/p&gt;
+
+&lt;div class=&quot;embed video&quot;&gt;
+
+  &lt;video controls=&quot;controls&quot; preload=&quot;meta&quot;&gt;
+    
+    &lt;source src=&quot;sparrow-bullet.mp4&quot; mime=&quot;video/mp4&quot; /&gt;
+    &lt;source src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/sparrow-bullet.mp4&quot; mime=&quot;video/mp4&quot; /&gt;
+    
+    &lt;source src=&quot;sparrow-bullet.webm&quot; mime=&quot;video/webm&quot; /&gt;
+    &lt;source src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/video/sparrow-bullet.webm&quot; mime=&quot;video/webm&quot; /&gt;
+    
+  &lt;/video&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;But working this way is &lt;strong&gt;tedious&lt;/strong&gt; and limiting. If anything changes in the sound timings, you have to restructure everything. You could trigger all of the internal cues off the sound computer, rather than just the first one, but then you’re beholden to the sound designer if you want to change the placements. Also, you can only work in fairly broad strokes, and there’s no possibility of reacting to live sounds where the timings or sequences are not exactly the same every night. When the timings are off by even a fraction of a second, the illusion is broken and you begin to process and analyze the two effects as products of different sources. I envisioned the ability to create intricate, on-the-fly reactions and interactions between light and sound, both live and recorded, where the light was the &lt;em&gt;visual embodiment&lt;/em&gt; of the sound.&lt;/p&gt;
+
+&lt;p&gt;I began to understand my obsession with these perfect timings, and why it bothered me so much if a cue was misaligned by even a tenth of a second, when I read the following passage in Richard Cytowic’s book &lt;em&gt;Wednesday is Indigo Blue&lt;/em&gt;, about his research into the phenomenon of synesthesia.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Recently, new techniques have been applied to cross-sensory perception.
+Electrode recordings from single cells in the brain show that when a bang
+and a ﬂash occur at the same time and location, the activity level of the
+cells can increase to a level exceeding that predicted by adding up the
+responses to the single-sense inputs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;cite&gt;Cytowic M.D., Richard E.; David M., Ph.D. Eagleman. Wednesday Is Indigo Blue: Discovering the Brain of Synesthesia (Page 106). The MIT Press.&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In other words, the magnitude of the reaction you experience from an event perceived with multiple senses simultaneously is greater than the sum of the reactions if you perceived each sensory input separately.&lt;/p&gt;
+
+&lt;p&gt;Or…&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt;      bang  = 1 
+&amp;gt;      flash = 1 
+----------------    
+bang + flash = 3 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;ok-but-isnt-there-already-software-to-do-that&quot;&gt;Ok, but isn’t there already software to do that?&lt;/h2&gt;
+
+&lt;p&gt;Well yes.  There are actually dozens of softwares that process audio to control lighting. But there were a couple of reasons that I wanted to make my own. First and foremost, I’m a maker. I make stuff. It’s just what I do. What’s more, I’m a software developer. I had to see if I could do this, because I had very specific ideas for how exactly I wanted the audio analysis to work, and how I wanted that analysis to translate into lighting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/projects/flux-capacitor.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ll go into the details of how it works in a future post, but the brief explanation is that it analyzes the incoming audio signal and displays it as an EQ, similar to what you’ve seen on any car stereo display. The designer can then zoom in on arbitrary ranges of the signal and apply different effects to the output channels based on what’s happening in the selected range.&lt;/p&gt;
+
+&lt;p&gt;But getting back to &lt;em&gt;why&lt;/em&gt; I built it myself; I come from the non-profit theatre world where, as you might guess, there is usually not a lot of money to spend on specialty equipment and software. More than that, theatre companies and designers are working hard and fast to get a show up on its feet and selling tickets, so there is generally not a lot of time to fiddle with and troubleshoot new technologies when you have dozens of actors, technicians and other artists and artisans waiting on you.&lt;/p&gt;
+
+&lt;p&gt;For all of these reasons, I open-sourced the software, and designed it to sit as a middleware between the existing lighting control console and the fixtures themselves. The control console (AKA the light board) connects to a plain old consumer-grade computer via Ethernet (&lt;a href=&quot;https://en.wikipedia.org/wiki/Art-Net&quot;&gt;Artnet&lt;/a&gt;, to be specific), running my as-yet-unnamed software. This computer can be anything. Windows, Mac, Linux, whatever. We’ll call it the “effects machine” for clarity. The effects machine receives the output from the lighting console, modifies the control signal on the fly based on an audio input and parameters set by the user, then outputs DMX-512 (the industry standard control protocol) via a homemade USB widget which can be built for less than $60. (eventually I hope to support off-the-shelf USB-DMX widgets). The effects machine can actually run as a standalone controller, but the real strength of it is that once connected to the console via ArtNet, all of the software parameters on the effects machine can be controlled directly from the lighting console, which means that all of the cuing remains in the console that the operator is already familiar with. The keystrokes for writing cues live in muscle memory for any decent operator, and when teching a show you need to be able to write cues &lt;em&gt;fast&lt;/em&gt;. Delegating control of the software to the light board means that the operator does not need to learn a new user interface, and the software doesn’t need to concern itself with a cue stack. The software behaves sort of like a meta-fixture in the board, controlled over DMX like any other fixture, but altering the DMX values that are sent to other fixtures on the fly based on the audio input it is receiving and the parameters sent from the light board.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/projects/syn-diagram.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The icing on the cake here is the flexibility that this setup affords. The software could conceivably be adapted to serve as an interface between all kinds of inputs. A choreographer friend who attended the showcase of the the piece was immediately interested in whether it could be adapted to interface with accelerometers attached to dancers. It absolutely could, and this is a key reason that I wanted to build the software open-source. As we get beyond the prototype phase, I envision a standard API for creating plugins, where designers, technicians, and software developers in the wild could come up with their own ways to apply the physical world to their lighting designs. Another key is the flexibility surrounding the hardware platform. In the first video above I ran the software on a 2010 MacBook Pro. For smaller-scale effects, it could conceivably be run on something like a &lt;a href=&quot;https://www.raspberrypi.org/help/what-is-a-raspberry-pi/&quot;&gt;Raspberry Pi&lt;/a&gt;, the feasibility of which I’m currently exploring for another show.&lt;/p&gt;
+
+&lt;p&gt;Stay tuned for an in-depth explanation of the practical application and the technologies involved.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Sep 2015 00:00:00 -0500</pubDate>
+        <link>http://benwilhelm.com/nerd-stuff/make-stuff/lighting/synesthesia/2015/09/20/synesthesia-1/</link>
+        <guid isPermaLink="true">http://benwilhelm.com/nerd-stuff/make-stuff/lighting/synesthesia/2015/09/20/synesthesia-1/</guid>
+        
+        
+        <category>Nerd Stuff</category>
+        
+        <category>Make Stuff</category>
+        
+        <category>Lighting</category>
+        
+        <category>Synesthesia</category>
+        
+      </item>
     
       <item>
         <title>Wells Street Bridge</title>
@@ -726,189 +820,6 @@ Notes&lt;/p&gt;
         <category>Chicago Adventures</category>
         
         <category>Travel</category>
-        
-      </item>
-    
-      <item>
-        <title>Die Alpenh&amp;uuml;tten</title>
-        <description>&lt;p&gt;So. We went hiking through the Austrian Alps for four days and three nights, sleeping each night in what are simply known as &lt;em&gt;hütten&lt;/em&gt; (“huts”). They’re basically hostels up in the mountains that cater to hikers, climbers, mountaineers, and such, and allow you to go hiking for multiple days carrying little more than your clothing and some snacks for the trail. Jen has already &lt;a href=&quot;http://www.slithy-tove.net/archives/1544&quot; target=&quot;blank&quot;&gt;detailed the trip&lt;/a&gt; in her blog far better than I could here, so I offer some photos and video. The alps really are like nothing I’ve ever seen. Huge, majestic, imposing, rugged. They seem to go on forever in every direction, including up. The photos and video really don’t do them justice, but it’s the best I can do without dragging you up to the tops of these mountains so you can see them for yourself.&lt;/p&gt;
-
-&lt;div class=&quot;gallery packery&quot;&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack emphasize&quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05585.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/medium/photography/alps/DSC05585.jpg&quot; data-aspect=&quot;4.419889502762431&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05439.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05439.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05463.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05463.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05467.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05467.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05481.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05481.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05489.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05489.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05509.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05509.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/alps/DSC05524.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/alps/DSC05524.jpg&quot; data-aspect=&quot;1.5037593984962405&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And holy cow, here are some cows! The wind-chimey sound is because &lt;em&gt;every&lt;/em&gt; cow had a bell.&lt;/p&gt;
-
-&lt;div class=&quot;embed video&quot;&gt;
-
-  &lt;video controls=&quot;controls&quot; preload=&quot;meta&quot;&gt;
-    
-  &lt;/video&gt;
-
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;A full panorama of the meadow&lt;/p&gt;
-
-&lt;div class=&quot;embed video&quot;&gt;
-
-  &lt;video controls=&quot;controls&quot; preload=&quot;meta&quot;&gt;
-    
-  &lt;/video&gt;
-
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And here’s video from the peak of a mountain that we set out to walk around, but decided to climb instead. It’s 2,100m high (about 7,000 feet). It’s no fourteener, as the Coloradans say, but it certainly worked up an appetite for dinner.&lt;/p&gt;
-
-&lt;div class=&quot;embed video&quot;&gt;
-
-  &lt;video controls=&quot;controls&quot; preload=&quot;meta&quot;&gt;
-    
-  &lt;/video&gt;
-
-&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;And here’s dinner&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/large/posts/misc/wpid-20130715_180239.jpg&quot;&gt;&lt;img class=&quot;alignnone size-full&quot; title=&quot;20130715_180239.jpg&quot; alt=&quot;image&quot; src=&quot;/thumbs/posts/misc/wpid-20130715_180239.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 21 Jul 2013 00:00:00 -0500</pubDate>
-        <link>http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/2013/07/21/die-alpenhutten/</link>
-        <guid isPermaLink="true">http://benwilhelm.com/photos/travel/austrian-adventures/honeymoon-2013/2013/07/21/die-alpenhutten/</guid>
-        
-        <category>backpacking</category>
-        
-        <category>Austria</category>
-        
-        <category>Alps</category>
-        
-        
-        <category>Photos</category>
-        
-        <category>Travel</category>
-        
-        <category>Austrian Adventures</category>
-        
-        <category>Honeymoon 2013</category>
         
       </item>
     
