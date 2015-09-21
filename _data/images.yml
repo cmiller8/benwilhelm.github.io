@@ -1143,10 +1143,22 @@ files/large/posts/wedding/ym1kgrznnl0q.jpg:
     width: 1200
     height: 1200
     aspect: 1
+files/large/projects/flux-capacitor.jpg:
+    width: 651
+    height: 181
+    aspect: 3.596685082872928
 files/large/projects/mbdr.jpg:
     width: 964
     height: 687
     aspect: 1.4032023289665212
+files/large/projects/syn-calendar.jpg:
+    width: 1200
+    height: 972
+    aspect: 1.2345679012345678
+files/large/projects/syn-diagram.jpg:
+    width: 843
+    height: 415
+    aspect: 2.031325301204819
 files/large/projects/wimr.jpg:
     width: 805
     height: 671
@@ -2287,10 +2299,22 @@ files/medium/posts/wedding/ym1kgrznnl0q.jpg:
     width: 800
     height: 800
     aspect: 1
+files/medium/projects/flux-capacitor.jpg:
+    width: 651
+    height: 181
+    aspect: 3.596685082872928
 files/medium/projects/mbdr.jpg:
     width: 800
     height: 570
     aspect: 1.4035087719298245
+files/medium/projects/syn-calendar.jpg:
+    width: 800
+    height: 648
+    aspect: 1.2345679012345678
+files/medium/projects/syn-diagram.jpg:
+    width: 800
+    height: 394
+    aspect: 2.030456852791878
 files/medium/projects/wimr.jpg:
     width: 800
     height: 667
@@ -3431,10 +3455,22 @@ files/originals/posts/wedding/ym1kgrznnl0q.jpg:
     width: 1200
     height: 1200
     aspect: 1
+files/originals/projects/flux-capacitor.jpg:
+    width: 651
+    height: 181
+    aspect: 3.596685082872928
 files/originals/projects/mbdr.jpg:
     width: 964
     height: 687
     aspect: 1.4032023289665212
+files/originals/projects/syn-calendar.jpg:
+    width: 2245
+    height: 1819
+    aspect: 1.234194612424409
+files/originals/projects/syn-diagram.jpg:
+    width: 843
+    height: 415
+    aspect: 2.031325301204819
 files/thumbs/lighting/500-clown-xmas/IMG_0008-1200x800.jpg:
     width: 400
     height: 267
@@ -4571,10 +4607,22 @@ files/thumbs/posts/wedding/ym1kgrznnl0q.jpg:
     width: 400
     height: 400
     aspect: 1
+files/thumbs/projects/flux-capacitor.jpg:
+    width: 400
+    height: 111
+    aspect: 3.6036036036036037
 files/thumbs/projects/mbdr.jpg:
     width: 400
     height: 285
     aspect: 1.4035087719298245
+files/thumbs/projects/syn-calendar.jpg:
+    width: 400
+    height: 324
+    aspect: 1.2345679012345678
+files/thumbs/projects/syn-diagram.jpg:
+    width: 400
+    height: 197
+    aspect: 2.030456852791878
 files/thumbs/projects/wimr.jpg:
     width: 400
     height: 333

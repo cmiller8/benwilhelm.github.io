@@ -15,6 +15,11 @@ categories:
 video:
   mp4: synesthesia-3.mp4
   webm: synesthesia-3.webm
+  
+internal_video:
+  sparrow: 
+    mp4: sparrow-bullet.mp4
+    webm: sparrow-bullet.webm
 ---
 
 <a href="https://github.com/benwilhelm/flux-capacitor">
@@ -28,7 +33,7 @@ This is a project that's been kicking around in my head for about 8 years now, m
 
 [Synesthesia][1] is a _"neurological phenomenon in which stimulation of one sensory or cognitive pathway leads to automatic, involuntary experiences in a second sensory or cognitive pathway."_ It can manifest in any number of ways, where a synesthete might inherently associate different colors with specific letters and numbers, or specific shapes with different musical chords. My wife and I are both synesthetes, as are her two brothers and my mother. My wife sees even and odd numbers as cool and warm colors, respectively. She even sometimes refers to warm or cool numbers without realizing it. My synesthesia takes a more obscure form, where I associate the months of the year on a counterclockwise loop, with January at 12 o'clock, February at 11 o'clock, etc. The loop is twisted 90 degrees in the middle so that the months on the bottom progress near to far. Kind of like this:
 
-`[ Image of my calendar loop ]`
+<img src="{{ site.cdn_path }}/large/projects/syn-calendar.jpg">
 
 I hadn't even thought of this as synesthesia until it was called out in one of the books I was reading as a less common form. I mentioned this to my brother in law and he immediately drew for me _his_ calendar loop, which follows a much more meandering path.
 
@@ -38,7 +43,8 @@ I hadn't even thought of this as synesthesia until it was called out in one of t
 
 Well, as I read about synesthesia, I recognized that this is how I approach lighting design. Lighting should so seamlessly integrate with the action on stage and the other design elements (in my case, I am especially drawn to sound) that it should feel as though you are sensing a single event with multiple modes, rather than an assembly of storytelling devices. It sounds obvious, but designers often forget this consideration while crafting their individual works. I've been lucky enough to play with a few sound designers who were game to collaborate on the experiences that I was after, creating long strings of cues timed down to the tenth of a second in order to sync up with audio events, with the sequences kicked off by a midi trigger from the sound computer. Kinda like this:
 
-`[video of sparrow bullet extraction, possibly DDSU time portal]`
+{% assign videoFormats = page.internal_video.sparrow %}
+{% include video-player.html %}
 
 But working this way is **tedious** and limiting. If anything changes in the sound timings, you have to restructure everything. You could trigger all of the internal cues off the sound computer, rather than just the first one, but then you're beholden to the sound designer if you want to change the placements. Also, you can only work in fairly broad strokes, and there's no possibility of reacting to live sounds where the timings or sequences are not exactly the same every night. When the timings are off by even a fraction of a second, the illusion is broken and you begin to process and analyze the two effects as products of different sources. I envisioned the ability to create intricate, on-the-fly reactions and interactions between light and sound, both live and recorded, where the light was the _visual embodiment_ of the sound.
 
@@ -75,7 +81,7 @@ But getting back to _why_ I built it myself; I come from the non-profit theatre 
 
 For all of these reasons, I open-sourced the software, and designed it to sit as a middleware between the existing lighting control console and the fixtures themselves. The control console (AKA the light board) connects to a plain old consumer-grade computer via Ethernet ([Artnet][2], to be specific), running my as-yet-unnamed software. This computer can be anything. Windows, Mac, Linux, whatever. We'll call it the "effects machine" for clarity. The effects machine receives the output from the lighting console, modifies the control signal on the fly based on an audio input and parameters set by the user, then outputs DMX-512 (the industry standard control protocol) via a homemade USB widget which can be built for less than $60. (eventually I hope to support off-the-shelf USB-DMX widgets). The effects machine can actually run as a standalone controller, but the real strength of it is that once connected to the console via ArtNet, all of the software parameters on the effects machine can be controlled directly from the lighting console, which means that all of the cuing remains in the console that the operator is already familiar with. The keystrokes for writing cues live in muscle memory for any decent operator, and when teching a show you need to be able to write cues _fast_. Delegating control of the software to the light board means that the operator does not need to learn a new user interface, and the software doesn't need to concern itself with a cue stack. The software behaves sort of like a meta-fixture in the board, controlled over DMX like any other fixture, but altering the DMX values that are sent to other fixtures on the fly based on the audio input it is receiving and the parameters sent from the light board.
 
-[`diagram of setup`]
+<img src="{{ site.cdn_path }}/large/projects/syn-diagram.jpg">
 
 [2]: https://en.wikipedia.org/wiki/Art-Net
 
