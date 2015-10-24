@@ -9,12 +9,12 @@ categories:
 - Bay Area Adventures
 - Off the cuff
 - Photos
-tags: []
-comments: []
+
+comments: true
+
 
 images:
   - src: posts/misc/wpid-IMG_20130201_105052.jpg
 ---
 
 See you next time.
-

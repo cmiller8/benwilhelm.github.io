@@ -1,6 +1,8 @@
 ---
 layout: post
 title: The Haunting on Damen
+comments: true
+
 emphasize: true
 video:
   mp4: haunting.mp4

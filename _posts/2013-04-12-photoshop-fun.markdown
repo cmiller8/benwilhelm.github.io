@@ -13,7 +13,8 @@ tags:
 - pith helmet
 - calabash pipe
 - teddy roosevelt
-comments: []
+
+comments: true
 
 excerpt: This is what happens when you let people take photos of the silly things you do.
 

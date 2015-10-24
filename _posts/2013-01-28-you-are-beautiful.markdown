@@ -9,12 +9,11 @@ categories:
 - Bay Area Adventures
 - Off the cuff
 - Photos
-tags: []
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130127_185945.jpg
 ---
 
 Near Bernal Heights Park, San Francisco.
-

@@ -8,62 +8,9 @@ date_gmt: '2013-07-18 13:55:46 -0500'
 categories:
 - Travel
 - Italian Adventures
-tags: []
-comments:
-- id: 548
-  author: Anna
-  author_email: aebullard@gmail.com
-  author_url: ''
-  date: '2013-07-18 17:16:47 -0500'
-  date_gmt: '2013-07-18 17:16:47 -0500'
-  content: AMAZING. AMAZING. AMAZING. There's a book in this.
-- id: 549
-  author: Carrie
-  author_email: Carrie.Gadda@gmail.com
-  author_url: ''
-  date: '2013-07-18 19:41:35 -0500'
-  date_gmt: '2013-07-18 19:41:35 -0500'
-  content: "This reminds me of every experience I've ever had at the California DMV
-    only this is actually kinda a funny story after the fact! :)\r\n\r\nEnjoy the
-    rest of the trip!!"
-- id: 550
-  author: paige
-  author_email: tedkennedy2@hotmail.com
-  author_url: ''
-  date: '2013-07-20 02:08:15 -0500'
-  date_gmt: '2013-07-20 02:08:15 -0500'
-  content: you know why the 4 extra euro had to be in cash, don't you?  he's was going
-    to pocket it.  Sorry, but after living there a year, i realized any time any extra
-    fee had to be paid in cash, they were just ripping the ignorant american off.  They
-    never asked for any extra processing fee when I was with my italian boyfriend.
-- id: 558
-  author: Ben
-  author_email: benjamin.m.wilhelm@gmail.com
-  author_url: ''
-  date: '2013-07-26 18:01:32 -0500'
-  date_gmt: '2013-07-26 18:01:32 -0500'
-  content: That thought occurred to me, paige, but I decided not to think about it
-    too hard.
-- id: 753
-  author: Darin
-  author_email: davidaireland@gmail.com
-  author_url: http://Melvin.blogspot.com
-  date: '2014-07-09 08:52:26 -0500'
-  date_gmt: '2014-07-09 08:52:26 -0500'
-  content: "I see a lot of interesting articles on your page. You have to spend a
-    \r\nlot of time writing, i know how to save you a lot of work, \r\nthere is a
-    tool that creates unique, google friendly posts in couple of \r\nseconds, just
-    search in google  - laranita's free content source"
-- id: 760
-  author: Leo
-  author_email: alecia_hanger@gmx.net
-  author_url: http://Ladonna.blog.com
-  date: '2014-08-24 07:14:04 -0500'
-  date_gmt: '2014-08-24 07:14:04 -0500'
-  content: "I read a lot of interesting content here. Probably you  spend a lot of
-    time writing, i know how to save \r\nyou a lot of work, there is an online tool
-    that creates \r\nunique, SEO friendly articles in minutes, just type in google
-    \ \r\n- laranitas free content source"
+
+comments: true
+
 ---
 
 So. It's been a few days since the last post, and a lot has happened.  I'll try to get you all caught up efficiently, as that is the Austrian way (and not, as you shall soon see, the Italian way).
@@ -154,4 +101,3 @@ In the end, of course, it was not my winning smile and midwestern charm that won
 
 
 ** once you notice that the word TrenItalia so closely resembles the word Genitalia, you can't unsee it. You will giggle a little at every train that goes by.
-

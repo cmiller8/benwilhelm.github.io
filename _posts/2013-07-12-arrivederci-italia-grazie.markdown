@@ -16,7 +16,8 @@ tags:
 - donuts
 - beer o'clock
 - agriturismo
-comments: []
+
+comments: true
 
 images: 
   - src: posts/misc/wpid-IMG_20130712_180220.jpg

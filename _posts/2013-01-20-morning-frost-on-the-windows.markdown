@@ -8,7 +8,8 @@ categories:
 tags:
 - Home
 - Winter
-comments: []
+
+comments: true
 
 images:
   - src: photography/frost/8.jpg
@@ -20,4 +21,3 @@ images:
 10am, 19&deg;F in Chicago
 
 {% include gallery.html %}
-

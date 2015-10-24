@@ -8,8 +8,8 @@ date_gmt: '2013-02-13 16:08:38 -0600'
 categories:
 - Nerd Stuff
 - Personal
-tags: []
-comments: []
+
+comments: true
 
 emphasize: true
 images:
@@ -20,4 +20,3 @@ images:
 
 
 Oh <a href="http://xkcd.com/722/" target="_blank">XKCD</a>. You're the best.
-

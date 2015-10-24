@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Wells Street Bridge
+comments: true
 
 categories:
   - Off the Cuff

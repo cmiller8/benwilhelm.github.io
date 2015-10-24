@@ -10,9 +10,9 @@ categories:
 - Photos
 tags:
 - Home
-comments: []
+
+comments: true
 
 images: 
   - src: posts/misc/wpid-20130121_233735.jpg
 ---
-

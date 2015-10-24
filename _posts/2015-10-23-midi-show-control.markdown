@@ -9,6 +9,8 @@ categories:
 - Node.js
 - Nerd Stuff
 - Make Stuff
+
+comments: true
 ---
 
 

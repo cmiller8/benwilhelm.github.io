@@ -36,6 +36,7 @@ internal_video:
     mp4: mahnkopf.mp4
     webm: mahnkopf.webm
 
+comments: true
 ---
 
 

@@ -13,7 +13,8 @@ tags:
 - italia
 - Cinque Terre
 - Autostrada
-comments: []
+
+comments: true
 ---
 
 Yesterday, Jen and I went to Cinque Terre for the day. The three-plus hour drive to get there made it a little ambitious for a day trip, but well worth it in the end. Like every morning so far, we had grand plans for being up at 7 and on the road by 7:30. And like every morning so far, the previous night's three-hour dinner that didn't start until 9pm meant that we weren't up until 8 (...ish). We were more or less ready to go by 9:30 or so, and then caused a minor kerfluffle when we came through the breakfast room intending to just grab some yogurt to eat on the road and met Paolo, our amazing and generous host, setting up the breakfast spread.  He seemed genuinely concerned that we were not going to be eating a full breakfast, and we assured him (and assured him and assured him) that we would eat more on the road and that we would join him and the other guests for a full breakfast again tomorrow, but we had to get on the road early today (which was already not happening).  
@@ -32,4 +33,3 @@ After that, we climbed back up the hill and found an afternoon gelato and a beer
 
 
 Next chapter: A Fancy Evening in Milano and the Trip to Innsbruck.
-

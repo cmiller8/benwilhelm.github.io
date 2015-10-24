@@ -10,11 +10,11 @@ categories:
 - Photos
 tags:
 - Home
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130120_214424.jpg
 ---
 
 ...but she likes the photo.
-

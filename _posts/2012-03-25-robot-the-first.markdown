@@ -12,7 +12,8 @@ tags:
 - robots
 - legos
 - video
-comments: []
+
+comments: true
 
 video:
   mp4: robot.mp4

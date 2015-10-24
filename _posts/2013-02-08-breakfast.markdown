@@ -11,7 +11,8 @@ categories:
 tags:
 - coffee
 - the grind
-comments: []
+
+comments: true
 
 images:
   - src: posts/walk-home/wpid-IMG_20130208_092221.jpg
@@ -19,4 +20,3 @@ images:
 
 
 At the Grind in Lincoln Square.
-

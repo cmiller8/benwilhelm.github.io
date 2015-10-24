@@ -13,47 +13,8 @@ tags:
 - italy
 - driving
 - travel
-comments:
-- id: 534
-  author: Jon
-  author_email: jonfaris@hotmail.com
-  author_url: ''
-  date: '2013-07-08 00:56:10 -0500'
-  date_gmt: '2013-07-08 00:56:10 -0500'
-  content: Sounds like a lovely start to your honeymoon - glad you made it there safely.  Enjoy!
-- id: 535
-  author: Lucas
-  author_email: Lucasmerino@gmail.com
-  author_url: ''
-  date: '2013-07-08 00:59:06 -0500'
-  date_gmt: '2013-07-08 00:59:06 -0500'
-  content: What town or village are you staying in?
-- id: 542
-  author: Ben
-  author_email: benjamin.m.wilhelm@gmail.com
-  author_url: ''
-  date: '2013-07-12 20:36:08 -0500'
-  date_gmt: '2013-07-12 20:36:08 -0500'
-  content: We're just outside Sinio, which is about 2 hours southwest of Milan, and
-    maybe an hour southeast of Turin. We're right over the ridge from Barolo, which
-    is apparently significant if you know Italian wines.
-- id: 544
-  author: Lucas
-  author_email: lucasmerino@gmail.com
-  author_url: ''
-  date: '2013-07-13 17:51:35 -0500'
-  date_gmt: '2013-07-13 17:51:35 -0500'
-  content: Yes, Barolo wines are super fancy and expensive and good
-- id: 746
-  author: Akshay
-  author_email: 8q7tfoq46@yahoo.com
-  author_url: http://www.facebook.com/profile.php?id=100003452234099
-  date: '2014-01-15 10:16:01 -0600'
-  date_gmt: '2014-01-15 10:16:01 -0600'
-  content: I found your house in the Cool Hunter, I have to say that I absolutely
-    love it! It shows so much taste, renvceere to the past, simplicity, harmony and
-    a cutting-edge design. One of the most beautiful and authentic places I've seen!
-    Congratulations!
+comments: true
+
 ---
 
 We have begun our honeymoon; eight months late but totally worth the wait. Following a pretty rockin' Fourth of July celebration, we boarded a plane on the fifth bound for Milan by way of Newark, NJ. &nbsp;The overnight flight was uneventful, although neither of us got any sleep to speak of. We landed in Milan at 8:30am, bleary-eyed and armed with our Italian coffee-related phrases.
@@ -95,4 +56,3 @@ As we left the restaurant, we thanked her for making space for us even though we
 
 
 Moral of the story? Make a good-faith effort to order whatever the restaurant recommends. They might just bring you three desserts for your trouble.
-

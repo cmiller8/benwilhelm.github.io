@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Closet Shelves!
+comments: true
 
 excerpt: ...in which we finally get our clothes up off the floor, 6 months after moving in.
 

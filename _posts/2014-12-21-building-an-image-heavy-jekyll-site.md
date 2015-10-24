@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building an Image-Heavy Jekyll Site
+comments: true
 
 excerpt: How to build an image-heavy blog using Jekyll and not bloat your Git repository with image files.
 

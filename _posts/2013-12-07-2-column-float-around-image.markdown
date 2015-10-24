@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 2-Column Float Around Image
+comments: true
+
 excerpt: It's common in print design to wrap text in two columns around both sides
   of an image. However, it's a surprisingly difficult thing to do in web design. Here's
   one method of solving it which allows for separating the image from the text in
@@ -143,4 +145,3 @@ Notes
 
 <a name="ann_two"></a>2) I'm a big fan of stepping back from a problem when I feel stuck. Another developer whose blog I enjoy <a href="http://www.garann.com/dev/2013/the-step-back/" target="_blank">agrees with me</a>.  
 <a href='#source_two'>back</a>
-

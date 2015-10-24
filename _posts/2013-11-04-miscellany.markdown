@@ -9,8 +9,7 @@ categories:
 - Photos
 - Chicago Adventures
 - Travel
-tags: []
-comments: []
+comments: true
 
 images: 
   - src: posts/misc/IMG_20131103_121322.jpg
@@ -28,4 +27,3 @@ It's been a while since I've posted anything to the ol' blog, so here are some p
 
 
 {% include gallery.html %}
-

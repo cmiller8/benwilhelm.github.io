@@ -3,6 +3,7 @@ layout: post
 title: The Synesthesia Project - Part I
 emphasize: true
 subtitle: A software and lighting project with the House Theatre and the Logan Center for the Arts at the University of Chicago
+comments: true
 
 excerpt: Recently, The House Theatre and the University of Chicago provided me and my friend/collaborator Kevin O'Donnell some money and facilities to workshop an early version of the software that I've written to facilitate sound and light interactions in a theatrical context.
 

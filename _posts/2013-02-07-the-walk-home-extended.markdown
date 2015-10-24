@@ -15,7 +15,8 @@ tags:
 - beverage
 - gin
 - night
-comments: []
+
+comments: true
 
 images:
   - src: posts/walk-home/wpid-IMG_20130207_000051.jpg
@@ -23,4 +24,3 @@ images:
   - src: posts/walk-home/wpid-IMG_20130206_235511.jpg
 
 ---
-

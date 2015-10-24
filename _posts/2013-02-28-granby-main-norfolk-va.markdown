@@ -15,9 +15,9 @@ tags:
 - construction
 - demolition
 - fire escapes
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130227_115434.jpg
 ---
-

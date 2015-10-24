@@ -16,7 +16,8 @@ tags:
 - Chicago
 - snow
 - trees
-comments: []
+
+comments: true
 
 images:
   - src: posts/walk-home/wpid-IMG_20130204_221639.jpg
@@ -25,6 +26,3 @@ images:
 Welles Park, Chicago.
 
 <a href="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_222427.jpg"><img class="alignnone" title="IMG_20130204_222427.jpg" alt="image" src="{{ site.dropbox_path }}/large/posts/walk-home/wpid-IMG_20130204_222427.jpg" /></a>
-
-
-

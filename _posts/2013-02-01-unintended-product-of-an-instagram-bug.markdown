@@ -11,9 +11,9 @@ categories:
 - Photos
 tags:
 - happy accidents
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130201_104552.jpg
 ---
-

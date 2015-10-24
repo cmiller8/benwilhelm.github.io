@@ -11,7 +11,8 @@ categories:
 tags:
 - architecture
 - Cleveland
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130105_151611.jpg
@@ -19,4 +20,3 @@ images:
 
 
 Taken from the second floor balcony of Cleveland's West Side Market.
-

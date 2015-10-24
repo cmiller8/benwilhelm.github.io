@@ -11,7 +11,8 @@ categories:
 - Bay Area Adventures
 tags:
 - video
-comments: []
+
+comments: true
 
 video:
   mp4: eclipse.mp4

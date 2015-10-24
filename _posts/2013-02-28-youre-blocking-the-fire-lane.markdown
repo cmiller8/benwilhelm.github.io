@@ -8,8 +8,8 @@ date_gmt: '2013-02-28 22:42:53 -0600'
 categories:
 - Photos
 - Travel
-tags: []
-comments: []
+
+comments: true
 
 images:
   - src: photography/norfolk/IMG_20130228_171221.jpg

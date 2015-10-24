@@ -9,8 +9,8 @@ categories:
 - Bay Area Adventures
 - Personal
 - Photos
-tags: []
-comments: []
+
+comments: true
 
 images:
   - src: posts/wedding/bunting-color.jpg
@@ -51,4 +51,3 @@ It's been 5 months (to the day) since I last posted to my blog, because that's a
 
 
 &nbsp;
-

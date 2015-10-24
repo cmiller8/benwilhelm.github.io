@@ -11,9 +11,9 @@ categories:
 tags:
 - Home
 - should be sleeping
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130203_224841.jpg
 ---
-

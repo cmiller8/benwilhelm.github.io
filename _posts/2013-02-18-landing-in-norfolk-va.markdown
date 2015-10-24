@@ -13,11 +13,11 @@ tags:
 - plane
 - flight
 - virginia
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130217_151352.jpg
 ---
 
 On my way in to design the lighting for <em>The Whipping Man</em> at Virginia Stage Company.
-

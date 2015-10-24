@@ -13,11 +13,11 @@ tags:
 - travel
 - torino
 - italia
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-20130709_123104.jpg
 ---
 
 On the road with _Umberto Cinque_.
-

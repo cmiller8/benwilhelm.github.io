@@ -13,7 +13,8 @@ tags:
 - ice
 - sidewalks
 - weather
-comments: []
+
+comments: true
 
 images:
   - src: posts/ice-storm/wpid-IMG_20130209_135916.jpg

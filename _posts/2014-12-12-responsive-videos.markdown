@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Responsive Video Players
+comments: true
+
 categories: 
 - Nerd Stuff
 - The Website

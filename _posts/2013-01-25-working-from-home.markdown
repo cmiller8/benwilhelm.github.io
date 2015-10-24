@@ -11,10 +11,10 @@ categories:
 tags:
 - Home
 - zeke
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130125_103048.jpg
 
 ---
-

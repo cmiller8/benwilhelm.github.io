@@ -11,7 +11,8 @@ categories:
 tags:
 - hiking
 - palo alto
-comments: []
+
+comments: true
 
 images:
   - src: posts/misc/wpid-IMG_20130126_171529.jpg

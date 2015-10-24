@@ -15,7 +15,8 @@ tags:
 - golden gate bridge
 - san francisco
 - fog
-comments: []
+
+comments: true
 
 images: 
   - src: posts/misc/wpid-IMG_20130402_093811.jpg
@@ -24,4 +25,3 @@ images:
 ---
 
 {% include gallery.html %}
-
