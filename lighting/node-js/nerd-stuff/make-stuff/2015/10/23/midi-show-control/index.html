@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>On the road to Torino</title>
-  <meta name="description" content="On the road with Umberto Cinque.">
+  <title>Midi Show Control for Node.js</title>
+  <meta name="description" content="A Node.js module for interacting with theatrical controllers via Midi Show Control.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://benwilhelm.com/photos/travel/italian-adventures/2013/07/09/on-the-road-to-torino/">
+  <link rel="canonical" href="http://benwilhelm.com/lighting/node-js/nerd-stuff/make-stuff/2015/10/23/midi-show-control/">
   <link rel="alternate" type="application/atom+xml" title="Ben Wilhelm" href="http://benwilhelm.com/feed.xml" />
 
   <script src='/js/site.min.js'></script>
@@ -73,17 +73,19 @@
 
   <header class="post-header">
   	<p class="quiet"><a href="/">&larr; Back to Posts</a></p>
-    <h1 class="post-title">On the road to Torino</h1>
-    <p class="post-meta">Jul 9, 2013</p>
+    <h1 class="post-title">Midi Show Control for Node.js</h1>
+    <p class="post-meta">Oct 23, 2015</p>
 
     
     <p class="categories quiet">Posted in
 	
-	- <a href='/category/photos'>Photos</a>
+	- <a href='/category/lighting'>Lighting</a>
 	
-	- <a href='/category/travel'>Travel</a>
+	- <a href='/category/node-js'>Node.js</a>
 	
-	- <a href='/category/italian-adventures'>Italian Adventures</a>
+	- <a href='/category/nerd-stuff'>Nerd Stuff</a>
+	
+	- <a href='/category/make-stuff'>Make Stuff</a>
 	
     </p>
     
@@ -92,17 +94,35 @@
   <article class="post-content">
 
 	
-		
-		<p>
-			<a href="https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_123104.jpg">
-				<img src='https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/wpid-20130709_123104.jpg' />
-			</a>
-		</p>
-		
 
-	
+    <p><strong>Check it out on…</strong></p>
 
-    <p>On the road with <em>Umberto Cinque</em>.</p>
+<ul>
+  <li><a href="https://github.com/benwilhelm/node-midi-show-control">GitHub</a></li>
+  <li><a href="https://npmjs.com/package/midi-show-control">NPM</a></li>
+</ul>
+
+<hr />
+
+<p>I’m bringing together the two things I do best, theatre and software development, on a pretty epic project called <a href="http://thehousetheatre.com/playsandevents/lastdefenderseason14">The Last Defender</a> with the House Theatre of Chicago. We have a stack of Arduinos, Raspberry Pis, Lighting, Sound, and Video control consoles that all need to coordinate, and the most reliable way to do so is to harken back to the 1980’s and run them with good old MIDI.</p>
+
+<p>This module wraps the <a href="https://npmjs.com/package/midi">midi module</a>, creating an object that allows you to pass and receive javascript objects with parameters that you’ll recognize, abstracting away the need to lookup hex values and construct byte arrays. For instance:</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">msc</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'midi-show-control'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">msc</span><span class="p">.</span><span class="nx">mscOutput</span><span class="p">();</span>
+<span class="nx">output</span><span class="p">.</span><span class="nx">openPort</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+ 
+<span class="nx">output</span><span class="p">.</span><span class="nx">sendMsc</span><span class="p">({</span>
+    <span class="na">deviceId</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="na">commandFormat</span><span class="p">:</span> <span class="s2">"sound.general"</span><span class="p">,</span>
+    <span class="na">command</span><span class="p">:</span> <span class="s2">"go"</span><span class="p">,</span>
+    <span class="na">cue</span><span class="p">:</span> <span class="s2">"25.5"</span><span class="p">,</span>
+    <span class="na">cueList</span><span class="p">:</span> <span class="s2">"3.1"</span><span class="p">,</span>
+    <span class="na">cuePath</span><span class="p">:</span> <span class="s2">"1.2"</span>
+<span class="p">})</span></code></pre></figure>
+
+<p>Easy! Install from <a href="https://npmjs.com/package/midi-show-control">NPM</a> and view the code on <a href="https://github.com/benwilhelm/node-midi-show-control">GitHub</a>. Comments and pull requests welcome.</p>
+
 
   </article>
 
@@ -114,8 +134,8 @@
          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
          */
         var disqus_config = function () {
-            this.page.url = 'http://benwilhelm.com/photos/travel/italian-adventures/2013/07/09/on-the-road-to-torino/';  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = '2013-07-09-on-the-road-to-torino.markdown'
+            this.page.url = 'http://benwilhelm.com/lighting/node-js/nerd-stuff/make-stuff/2015/10/23/midi-show-control/';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = '2015-10-23-midi-show-control.markdown'
         };
         (function() {  // DON'T EDIT BELOW THIS LINE
             var d = document, s = d.createElement('script');

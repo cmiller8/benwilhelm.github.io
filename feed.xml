@@ -6,9 +6,55 @@
 </description>
     <link>http://benwilhelm.com/</link>
     <atom:link href="http://benwilhelm.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Sep 2015 22:39:28 -0500</pubDate>
-    <lastBuildDate>Sun, 20 Sep 2015 22:39:28 -0500</lastBuildDate>
+    <pubDate>Fri, 23 Oct 2015 21:30:23 -0500</pubDate>
+    <lastBuildDate>Fri, 23 Oct 2015 21:30:23 -0500</lastBuildDate>
     <generator>Jekyll v3.0.0.pre.beta8</generator>
+    
+      <item>
+        <title>Midi Show Control for Node.js</title>
+        <description>&lt;p&gt;&lt;strong&gt;Check it out on…&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/benwilhelm/node-midi-show-control&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://npmjs.com/package/midi-show-control&quot;&gt;NPM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I’m bringing together the two things I do best, theatre and software development, on a pretty epic project called &lt;a href=&quot;http://thehousetheatre.com/playsandevents/lastdefenderseason14&quot;&gt;The Last Defender&lt;/a&gt; with the House Theatre of Chicago. We have a stack of Arduinos, Raspberry Pis, Lighting, Sound, and Video control consoles that all need to coordinate, and the most reliable way to do so is to harken back to the 1980’s and run them with good old MIDI.&lt;/p&gt;
+
+&lt;p&gt;This module wraps the &lt;a href=&quot;https://npmjs.com/package/midi&quot;&gt;midi module&lt;/a&gt;, creating an object that allows you to pass and receive javascript objects with parameters that you’ll recognize, abstracting away the need to lookup hex values and construct byte arrays. For instance:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;msc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;midi-show-control&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;msc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mscOutput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;openPort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ 
+&lt;span class=&quot;nx&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sendMsc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;deviceId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;commandFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;sound.general&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;go&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;cue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;25.5&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;cueList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;3.1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;cuePath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1.2&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Easy! Install from &lt;a href=&quot;https://npmjs.com/package/midi-show-control&quot;&gt;NPM&lt;/a&gt; and view the code on &lt;a href=&quot;https://github.com/benwilhelm/node-midi-show-control&quot;&gt;GitHub&lt;/a&gt;. Comments and pull requests welcome.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 23 Oct 2015 00:00:00 -0500</pubDate>
+        <link>http://benwilhelm.com/lighting/node-js/nerd-stuff/make-stuff/2015/10/23/midi-show-control/</link>
+        <guid isPermaLink="true">http://benwilhelm.com/lighting/node-js/nerd-stuff/make-stuff/2015/10/23/midi-show-control/</guid>
+        
+        
+        <category>Lighting</category>
+        
+        <category>Node.js</category>
+        
+        <category>Nerd Stuff</category>
+        
+        <category>Make Stuff</category>
+        
+      </item>
     
       <item>
         <title>The Synesthesia Project - Part I</title>
@@ -700,126 +746,6 @@ Notes&lt;/p&gt;
         <category>Make Stuff</category>
         
         <category>Food and Drink</category>
-        
-      </item>
-    
-      <item>
-        <title>Miscellany</title>
-        <description>&lt;p&gt;It’s been a while since I’ve posted anything to the ol’ blog, so here are some photos from the last few weeks.&lt;/p&gt;
-
-&lt;div class=&quot;gallery packery&quot;&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_121322.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_121322.jpg&quot; data-aspect=&quot;1.25&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/photography/architecture/IMG_20131103_124211.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/photography/architecture/IMG_20131103_124211.jpg&quot; data-aspect=&quot;1.3333333333333333&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_120403.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_120403.jpg&quot; data-aspect=&quot;0.7504690431519699&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_121001.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_121001.jpg&quot; data-aspect=&quot;0.7504690431519699&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_123916.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_123916.jpg&quot; data-aspect=&quot;1.3333333333333333&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131103_124817.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131103_124817.jpg&quot; data-aspect=&quot;0.8438818565400844&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-
-		
-		
-		
-		
-
-	  	&lt;div class=&quot;item pack &quot;&gt;
-		&lt;a href=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/large/posts/misc/IMG_20131109_022453.jpg&quot; title=&quot;&quot;&gt;
-			
-				&lt;img src=&quot;https://dl.dropboxusercontent.com/u/8637739/benwilhelm.com/thumbs/posts/misc/IMG_20131109_022453.jpg&quot; data-aspect=&quot;1.3333333333333333&quot; /&gt;
-			
-		&lt;/a&gt;
-	&lt;/div&gt;
-  
-&lt;/div&gt;
-
-</description>
-        <pubDate>Mon, 04 Nov 2013 03:23:31 -0600</pubDate>
-        <link>http://benwilhelm.com/photos/chicago-adventures/travel/2013/11/04/miscellany/</link>
-        <guid isPermaLink="true">http://benwilhelm.com/photos/chicago-adventures/travel/2013/11/04/miscellany/</guid>
-        
-        
-        <category>Photos</category>
-        
-        <category>Chicago Adventures</category>
-        
-        <category>Travel</category>
         
       </item>
     
